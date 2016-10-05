@@ -13,12 +13,20 @@
                 &lt;div class=&quot;row&quot;&gt;
                     &lt;div class=&quot;col-lg-12&quot;&gt;
 
-                        &lt;div class=&quot;row&quot;&gt;
-                            {{&gt; molecules-warning }}
-                        &lt;/div&gt;
-
-                        &lt;div class=&quot;row hidden-lg&quot;&gt;
+                        &lt;div class=&quot;row hidden-md hidden-lg&quot;&gt;
                             &lt;div class=&quot;col-md-12&quot;&gt;
+                                &lt;div class=&quot;margin-bottom-16&quot;&gt;
+                                {{&gt; organisms-new-message-button }}
+                                &lt;/div&gt;
+                                &lt;div class=&quot;margin-bottom-16&quot;&gt;
+                                {{&gt; organisms-create-to-do-student-button }}
+                                &lt;/div&gt;
+                                &lt;div class=&quot;margin-bottom-16&quot;&gt;
+                                  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
+                                    Ask for Help &lt;span class=&quot;fa fa-question&quot;&gt;&lt;/span&gt;
+                                  &lt;/button&gt;
+                                &lt;/div&gt;
+                                {{&gt; organisms-student-stats }}
                                 {{&gt; organisms-contact-facilitator }}
                                 {{&gt; organisms-bdubs-conversation-small }}
                             &lt;/div&gt;
@@ -26,32 +34,26 @@
 
 
                         &lt;div class=&quot;row&quot;&gt;
-                            &lt;div class=&quot;col-lg-8&quot;&gt;
-                                &lt;!--{{&gt; organisms-interactions }}--&gt;
-                                {{&gt; organisms-to-dos }}
-                                {{&gt; organisms-activity-dashboard }}
+                          &lt;div class=&quot;col-md-8&quot;&gt;
+                            {{&gt; organisms-student-stats }}
+                            {{&gt; organisms-request-to-dos }}
+                            {{&gt; organisms-bdubs-conversation-small }}
+                            {{&gt; organisms-activity-dashboard }}
+                            {{&gt; organisms-jobs-companies-count }}
+                          &lt;/div&gt;
+                          &lt;div class=&quot;col-md-4 hidden-sm&quot;&gt;
+                            &lt;div class=&quot;margin-bottom-16&quot;&gt;
+                              {{&gt; organisms-new-message-button }}
                             &lt;/div&gt;
-                            &lt;div class=&quot;col-lg-4&quot;&gt;
-                                &lt;div class=&quot;visible-lg&quot;&gt;
-                                    {{&gt; organisms-contact-facilitator }}
-                                    {{&gt; organisms-bdubs-conversation-small }}
-                                &lt;/div&gt;
-                                {{&gt; organisms-choose-betterweekday }}
-                                {{&gt; organisms-jobs-companies-count }}
+                            &lt;div class=&quot;margin-bottom-16&quot;&gt;
+                              {{&gt; organisms-create-to-do-student-button }}
                             &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;row&quot;&gt;
-                    &lt;div class=&quot;col-lg-12&quot;&gt;
-                        &lt;div class=&quot;main-box clearfix&quot;&gt;
-                            &lt;header class=&quot;main-box-header clearfix&quot;&gt;
-                                &lt;h2&gt;Helpful Articles&lt;/h2&gt;
-                            &lt;/header&gt;
-                            &lt;div class=&quot;main-box-body clearfix&quot;&gt;
-                                {{&gt; organisms-list-group }}
+                            &lt;div class=&quot;margin-bottom-16&quot;&gt;
+                              &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
+                                Ask for Help &lt;span class=&quot;fa fa-question&quot;&gt;&lt;/span&gt;
+                              &lt;/button&gt;
                             &lt;/div&gt;
+                          &lt;/div&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;

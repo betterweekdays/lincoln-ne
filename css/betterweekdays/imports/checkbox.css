@@ -1,0 +1,59 @@
+.checkbox-nice input {
+  float: left; }
+.checkbox-nice label {
+  font-size: 17px;
+  margin-top: -3px;
+  float: left; }
+
+.checkbox-notification {
+  width: 15px;
+  float: left; }
+
+.checkbox-content {
+  float: left;
+  padding-top: 2px; }
+
+.notification-off {
+  visibility: hidden; }
+
+.to-do-parent-delete {
+  color: #999;
+  float: right;
+  padding-bottom: 2px; }
+
+.list-group.to-do-list-checkbox-nice .list-group-item {
+  padding: 10px 10px 5px 7px !important; }
+
+.to-do-title {
+  display: block;
+  width: 220px;
+  margin-left: 6px; }
+
+.time-estimate {
+  margin-left: 6px; }
+
+.checkbox-checked .to-do-title {
+  color: #999;
+  text-decoration: line-through; }
+
+@media (min-width: 500px) {
+  .to-do-title {
+    margin-left: 4px;
+    width: 360px; }
+
+  .time-estimate {
+    margin-left: 4px; } }
+@media (min-width: 550px) {
+  .to-do-title {
+    width: 400px; } }
+@media (min-width: 650px) {
+  .to-do-title {
+    width: 500px; } }
+@media (min-width: 1000px) {
+  .to-do-title {
+    width: 600px; } }
+@media (min-width: 1200px) {
+  .to-do-title {
+    width: 470px; } }
+
+/*# sourceMappingURL=checkbox.css.map */

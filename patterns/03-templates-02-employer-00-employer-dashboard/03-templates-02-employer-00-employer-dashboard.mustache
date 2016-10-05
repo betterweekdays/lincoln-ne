@@ -34,74 +34,17 @@
                         &lt;/div&gt;
                         &lt;div class=&quot;row&quot;&gt;
                             &lt;div class=&quot;col-lg-8&quot;&gt;
-                                &lt;div class=&quot;main-box clearfix&quot; style=&quot;margin-bottom:0;&quot;&gt;
-                                    &lt;h1&gt;{{ title }}&lt;/h1&gt;
-                                &lt;/div&gt;
 
-                                &lt;!-- Begin horrible hack to display graphs on this page. Do not replicate this! Not enough time to properly debug... --&gt;
+                              {{&gt; organisms-employer-stats }}
 
-                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-1&quot; style=&quot;display:none;&quot;&gt;
-                                    &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                    &lt;/div&gt; 
-                                &lt;/div&gt; 
-                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-2&quot; style=&quot;display:none;&quot;&gt;
-                                    &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                    &lt;/div&gt; 
-                                &lt;/div&gt; 
-                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-3&quot; style=&quot;display:none;&quot;&gt;
-                                    &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                    &lt;/div&gt; 
-                                &lt;/div&gt; 
-                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-4&quot; style=&quot;display:none;&quot;&gt;
-                                    &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                    &lt;/div&gt; 
-                                &lt;/div&gt; 
-                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-5&quot; style=&quot;display:none;&quot;&gt;
-                                    &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                    &lt;/div&gt; 
-                                &lt;/div&gt; 
-                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-6&quot; style=&quot;display:none;&quot;&gt;
-                                    &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                                &lt;!-- End hack. --&gt;
+                                {{&gt; organisms-bdubs-conversation-small }}
 
-                                &lt;div class=&quot;row&quot;&gt;
-                                    &lt;div class=&quot;col-md-6&quot;&gt;
-                                        &lt;div class=&quot;main-box&quot;&gt;
-                                            &lt;div class=&quot;row&quot;&gt;
-                                                &lt;div class=&quot;col-md-12&quot;&gt;
-                                                    &lt;div class=&quot;graph-box&quot;&gt;
-                                                        &lt;h2&gt;Company Views by Students&lt;/h2&gt;
-                                                        &lt;div class=&quot;graph&quot; id=&quot;graph-line-7&quot;&gt;
-                                                            &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-                                    &lt;div class=&quot;col-md-6&quot;&gt;
-                                        &lt;div class=&quot;main-box&quot;&gt;
-                                            &lt;div class=&quot;row&quot;&gt;
-                                                &lt;div class=&quot;col-md-12&quot;&gt;
-                                                    &lt;div class=&quot;graph-box&quot;&gt;
-                                                        &lt;h2 class=&quot;orange&quot;&gt;Job Views by Students&lt;/h2&gt;
-                                                        &lt;div class=&quot;graph&quot; id=&quot;graph-line-8&quot; style=&quot;max-height: 335px; position: relative;&quot;&gt;
-                                                            &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
+                              {{&gt; organisms-cohort-list-employer }}
 
-                                {{&gt; organisms-e-dashboard-favorited-students }}
+                                {{&gt; organisms-employer-graphs }}
 
                             &lt;/div&gt;
+
                             &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
 
                                 &lt;!-- Button trigger modal --&gt;
@@ -138,9 +81,16 @@
                                     Find Students &lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;
                                 &lt;/button&gt;
                             &lt;/div&gt;
-                            &lt;div class=&quot;col-lg-4 visible-lg&quot;&gt;
-                                {{&gt; organisms-bdubs-conversation-small }}
-                            &lt;/div&gt;
+                          &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg visible-lg&quot; onclick=&quot;window.location='{{ link.pages-e-student-playlist }}';&quot;&gt;
+                              Send Message &lt;span class=&quot;fa fa-paper-plane&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                          &lt;/div&gt;
+                          &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg visible-lg&quot; onclick=&quot;window.location='{{ link.pages-e-student-playlist }}';&quot;&gt;
+                              Create Article &lt;span class=&quot;fa fa-paperclip&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                          &lt;/div&gt;
                         &lt;/div&gt;
 
                         &lt;div class=&quot;row&quot;&gt;
@@ -157,3 +107,6 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+
+{{&gt; organisms-peek-student-modal-employer }}
+{{&gt; organisms-create-to-do-modal }}

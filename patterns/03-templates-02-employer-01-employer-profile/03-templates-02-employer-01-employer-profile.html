@@ -4,56 +4,48 @@
 		<title>Better Weekdays Pattern Lab</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
-
-		<!-- bootstrap -->
         <link rel="stylesheet" type="text/css" href="//centaurus.adbee.technology/css/bootstrap/bootstrap.min.css" />
-
-        <!-- libraries -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/libs/nanoscroller.css" />
-
-		<!-- global styles -->
-		<link rel="stylesheet" href="../../css/theme/theme_styles.css?0" media="all" />
-
-        <!-- this page specific styles -->
-
-        <!-- google font libraries -->
+				<link rel="stylesheet" href="../../css/centaurus/centaurus.css?1475705856" media="all" />
+				<link rel="stylesheet" href="../../css/betterweekdays/betterweekdays.css?1475705856" media="all" />
         <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
-
         <!--[if lt IE 9]>
-		<script src="../../js/html5shiv.js"></script>
-		<script src="../../js/respond.min.js"></script>
+					<script src="../../js/html5shiv.js"></script>
+						<script src="../../js/respond.min.js"></script>
         <![endif]-->
-
-		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-				<!-- never cache patterns -->
+			<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+					<!-- never cache patterns -->
 		<meta http-equiv="cache-control" content="max-age=0" />
 		<meta http-equiv="cache-control" content="no-cache" />
 		<meta http-equiv="expires" content="0" />
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?0" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?0" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1475705856" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1475705856" media="all" />
 		
 
-		<!-- End Pattern Lab -->
-
-	
+			<!-- End Pattern Lab -->
 	</head>
 	<body class="fixed-header" id="">
-		
 <div id="theme-wrapper" class="card-posting">
     <!-- Begin .header -->
     <header class="navbar" id="header-navbar">
         <div class="container">
             <a href="#" id="logo" class="navbar-brand">
                 <img src="../../../img/bw_logo_white.png" alt="" class="normal-logo logo-white">
-                <img src="../../../img/bw_logo_grey.png" alt="" class="normal-logo logo-black">
-                <img src="../../../img/bw_logo_grey.png" alt="" class="small-logo hidden-xs hidden-sm hidden">
+                <img src="../../../img/bw_logo_small_white.png" alt="" class="normal-logo">
+                <img src="../../../img/bw_logo_small_white.png" alt="" class="small-logo hidden-xs hidden-sm hidden">
             </a>
 
             <div class="clearfix">
+
+              <ul class="nav navbar-nav pull-left">
+                <li class="visible-md visible-lg loading-spinner loading-graphic-lg hidden"><img src="../../../img/loading-nav-black.gif" alt="Loading graphic"></li>
+                <li class="hidden-md hidden-lg loading-spinner loading-graphic-sm hidden"><img src="../../../img/loading-nav-white.gif" alt="Loading graphic"></li>
+              </ul>
+
                 <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="fa fa-bars"></span>
@@ -63,8 +55,7 @@
                 <div class="nav-no-collapse pull-right" id="header-nav">
                     <ul class="nav navbar-nav pull-right">
                         <li class="dropdown">
-                            <a href="#"><span>	
-Express Scripts</span></a>
+                            <a href="#"><span>My Organization</span></a>
                         </li>
                         <li class="dropdown profile-dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -82,7 +73,8 @@ Express Scripts</span></a>
             </div>
         </div>
     </header>
-    <!-- End .header -->    <div id="page-wrapper" class="container">
+    <!-- End .header -->
+    <div id="page-wrapper" class="container">
         <div class="row">
             <div id="nav-col">
                 <section id="col-left" class="col-left-nano">
@@ -156,7 +148,7 @@ Express Scripts</span></a>
                                                         <ul class="fa-ul no-padding no-image">
                                                             <li><i class="fa-li"></i>Name: <strong>Joshua Thomas</strong></li>
                                                             <li><i class="fa-li"></i>Email: <a href="#">hiring@carouselpediatrics.com</a></li>
-                                                            <li><i class="fa-li"></i>Phone: <strong>(314) 585-0436</strong></li>
+                                                            <li><i class="fa-li"></i>Phone: <strong>(312) 999-9999</strong></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -179,6 +171,8 @@ Express Scripts</span></a>
                                         </div>
                                     </div>
 
+
+
                                     <div class="main-box tab-box minimal-tabs">
                                         <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
                                             <ul id="myTabs" class="nav nav-tabs" role="tablist">
@@ -190,86 +184,104 @@ Express Scripts</span></a>
                                             <div id="myTabContent" class="tab-content">
                                                 <div role="tabpanel" class="tab-pane fade in active" id="to-dos-tab" aria-labelledBy="to-dos-tab">
                                                     <div class="main-box-body clearfix">
-                                                        <ul class="list-group to-dos">
+                                                        <ul class="list-group to-do-list-checkbox-nice to-dos">
                                                             <li class="list-group-item to-do-item-title">
-                                                                <strong><i class="fa fa-users"></i> Students</strong>
+                                                              <strong><i class="fa fa-users"></i> Students</strong>
                                                             </li>
                                                             <li class="list-group-item">
-                                                                <div class="col-sm-10 col-xs-10">Review <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Sonya Frost's resume</a></div>
-                                                                <div class="col-sm-1 col-xs-2"></div>
-                                                                <div class="col-sm-1 col-xs-2">
-                                                                    <button class="btn btn-success" title="Done!">
-                                                                        <i class="fa fa-check"></i>
-                                                                    </button>
+                                                                <div class="col-sm-12">
+                                                                <div class="checkbox-nice">
+                                                                    <input type="checkbox" id="checkbox-1">
+                                                                    <label for="checkbox-1">
+                                                                      <span class="to-do-title">Review <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Jane Frost's resume</a></span>
+                                                                      <p class="time-estimate">10min to use Better Weekdays</p>
+                                                                    </label>
+                                                                </div>
+                                                              </div>
+
+                                                                <div class="clear"></div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-sm-12">
+                                                                  <div class="checkbox-nice">
+                                                                    <input type="checkbox" id="checkbox-2">
+                                                                    <label for="checkbox-2">
+                                                                      <span class="to-do-title">Respond to <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">John Smith's</a> message</span>
+                                                                        <p class="time-estimate">10min to use Better Weekdays</p>
+                                                                    </label>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                            </li>
+
+                                                            <li class="list-group-item to-do-item-title">
+                                                              <strong><i class="fa fa-thumb-tack"></i> Getting Started</strong>
+                                                            </li>
+
+                                                            <li class="list-group-item">
+                                                                <div class="col-sm-12">
+                                                                <div class="checkbox-nice">
+                                                                    <input type="checkbox" id="checkbox-3">
+                                                                    <label for="checkbox-3">
+                                                                      <span class="to-do-title">Contact at least 5 students</span>
+                                                                      <p class="time-estimate">10min to use Better Weekdays</p>
+                                                                    </label>
+                                                                </div>
+                                                              </div>
+                                                                <div class="clear"></div>
+                                                            </li>
+
+                                                            <li class="list-group-item to-do-item-title">
+                                                              <strong><i class="fa fa-life-saver"></i> Career Services</strong>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-sm-12">
+                                                                  <div class="checkbox-nice">
+                                                                    <input type="checkbox" id="checkbox-6">
+                                                                    <label for="checkbox-6">
+                                                                      <span class="to-do-title">Respond to pending messages</span>
+                                                                        <p class="time-estimate">20min to use Better Weekdays</p>
+                                                                    </label>
+                                                                  </div>
                                                                 </div>
                                                                 <div class="clear"></div>
                                                             </li>
                                                             <li class="list-group-item">
-                                                                <div class="col-sm-10 col-xs-10">Respond to <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">John Smith's</a> message</div>
-                                                                <div class="col-sm-1 col-xs-2"></div>
-                                                                <div class="col-sm-1 col-xs-2">
-                                                                    <button class="btn btn-success" title="Done!">
-                                                                        <i class="fa fa-check"></i>
-                                                                    </button>
+                                                                <div class="col-sm-12">
+                                                                  <div class="checkbox-nice">
+                                                                    <input type="checkbox" id="checkbox-7">
+                                                                    <label for="checkbox-7">
+                                                                      <span class="to-do-title">Review applicants</span>
+                                                                        <p class="time-estimate">60min to use Better Weekdays</p>
+                                                                    </label>
+                                                                  </div>
                                                                 </div>
                                                                 <div class="clear"></div>
                                                             </li>
                                                             <li class="list-group-item to-do-item-title">
-                                                                <strong><i class="fa fa-thumb-tack"></i> Getting Started</strong>
+                                                              <strong><i class="fa fa-rocket"></i> Jobs</strong>
                                                             </li>
                                                             <li class="list-group-item">
-                                                                <div class="col-sm-10 col-xs-8">Contact at least 5 students</div>
-                                                                <div class="col-sm-1 col-xs-2 text-right"></div>
-                                                                <div class="col-sm-1 col-xs-2">
-                                                                    <button class="btn btn-success" title="Done!">
-                                                                        <i class="fa fa-check"></i>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                            </li>
-                                                            <li class="list-group-item to-do-item-title">
-                                                                <strong><i class="fa fa-life-saver"></i> Career Services</strong>
-                                                            </li>
-                                                            <li class="list-group-item">
-                                                                <div class="col-sm-10 col-xs-8">Respond to pending messages</div>
-                                                                <div class="col-sm-1 col-xs-2 text-right"></div>
-                                                                <div class="col-sm-1 col-xs-2">
-                                                                    <button class="btn btn-success" title="Done!">
-                                                                        <i class="fa fa-check"></i>
-                                                                    </button>
+                                                                <div class="col-sm-12">
+                                                                  <div class="checkbox-nice">
+                                                                    <input type="checkbox" id="checkbox-6">
+                                                                    <label for="checkbox-6">
+                                                                      <span class="to-do-title">Add salary information for <a href="../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html">Medical Assistant</a></span>
+                                                                        <p class="time-estimate">5min to use Better Weekdays</p>
+                                                                    </label>
+                                                                  </div>
                                                                 </div>
                                                                 <div class="clear"></div>
                                                             </li>
                                                             <li class="list-group-item">
-                                                                <div class="col-sm-10 col-xs-8">Review applicants</div>
-                                                                <div class="col-sm-1 col-xs-2 text-right"></div>
-                                                                <div class="col-sm-1 col-xs-2">
-                                                                    <button class="btn btn-success" title="Done!">
-                                                                        <i class="fa fa-check"></i>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                            </li>
-                                                            <li class="list-group-item to-do-item-title">
-                                                                <strong><i class="fa fa-rocket"></i> Jobs</strong>
-                                                            </li>
-                                                            <li class="list-group-item">
-                                                                <div class="col-sm-10 col-xs-8">Add salary information for <a href="../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html"><strong>Psychology</strong></a></div>
-                                                                <div class="col-sm-1 col-xs-2 text-right"></div>
-                                                                <div class="col-sm-1 col-xs-2">
-                                                                    <button class="btn btn-success" title="Done!">
-                                                                        <i class="fa fa-check"></i>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                            </li>
-                                                            <li class="list-group-item">
-                                                                <div class="col-sm-10 col-xs-8">Post 5 jobs</div>
-                                                                <div class="col-sm-1 col-xs-2 text-right"></div>
-                                                                <div class="col-sm-1 col-xs-2">
-                                                                    <button class="btn btn-success" title="Done!">
-                                                                        <i class="fa fa-check"></i>
-                                                                    </button>
+                                                                <div class="col-sm-12">
+                                                                  <div class="checkbox-nice">
+                                                                    <input type="checkbox" id="checkbox-7">
+                                                                    <label for="checkbox-7">
+                                                                      <span class="to-do-title">Post 5 jobs</span>
+                                                                        <p class="time-estimate">60min to use Better Weekdays</p>
+                                                                    </label>
+                                                                  </div>
                                                                 </div>
                                                                 <div class="clear"></div>
                                                             </li>
@@ -282,7 +294,7 @@ Express Scripts</span></a>
                                                     </div>
 
                                                     <p>12/07/2015</p>
-                                                    <p><a href="../../patterns/04-pages-02-employer-e-student-profile/04-pages-02-employer-e-student-profile.html">Sonya Frost</a></p>
+                                                    <p><a href="../../patterns/04-pages-02-employer-e-student-profile/04-pages-02-employer-e-student-profile.html">Jane Frost</a></p>
 
                                                     <hr />
 
@@ -320,14 +332,14 @@ Express Scripts</span></a>
                                                                 <div class="col-xs-3">
                                                                     1 day ago
                                                                 </div>
-                                                                <div class="col-xs-9"><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Psychology</a></div>
+                                                                <div class="col-xs-9"><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Medical Assistant</a></div>
                                                                 <div class="clear"></div>
                                                             </li>
                                                             <li class="list-group-item">
                                                                 <div class="col-xs-3">
                                                                     2 days ago
                                                                 </div>
-                                                                <div class="col-xs-9"><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Awesome Psychology</a></div>
+                                                                <div class="col-xs-9"><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Awesome Medical Assistant</a></div>
                                                                 <div class="clear"></div>
                                                             </li>
                                                             <li class="list-group-item to-do-item-title">
@@ -337,14 +349,14 @@ Express Scripts</span></a>
                                                                 <div class="col-xs-3">
                                                                     1 day ago
                                                                 </div>
-                                                                <div class="col-xs-9"><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Psychology I</a></div>
+                                                                <div class="col-xs-9"><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Medical Assistant I</a></div>
                                                                 <div class="clear"></div>
                                                             </li>
                                                             <li class="list-group-item">
                                                                 <div class="col-xs-3">
                                                                     6 days ago
                                                                 </div>
-                                                                <div class="col-xs-9"><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Psychology II</a></div>
+                                                                <div class="col-xs-9"><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Medical Assistant II</a></div>
                                                                 <div class="clear"></div>
                                                             </li>
                                                         </ul>
@@ -353,6 +365,7 @@ Express Scripts</span></a>
                                             </div>
                                         </div>
                                     </div>
+
 
                                 </div>
 
@@ -409,7 +422,7 @@ Express Scripts</span></a>
                                                         <div class="col-xs-4">
                                                             3 days ago
                                                         </div>
-                                                        <div class="col-xs-8"><a href="#">Viewed <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Sonya Frost</a></div>
+                                                        <div class="col-xs-8"><a href="#">Viewed <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Jane Frost</a></div>
                                                         <div class="clear"></div>
                                                     </li>
                                                     <li class="list-group-item">
@@ -458,7 +471,7 @@ Express Scripts</span></a>
                                                         <div class="col-xs-4">
                                                             5 days ago
                                                         </div>
-                                                        <div class="col-xs-8"><a href="#">Messaged <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Sonya Frost</a></div>
+                                                        <div class="col-xs-8"><a href="#">Messaged <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Jane Frost</a></div>
                                                         <div class="clear"></div>
                                                     </li>
                                                 </ul>
@@ -504,8 +517,8 @@ Express Scripts</span></a>
                             <option></option>
                             <option>Getting Started</option>
                             <option>Career Services</option>
-                            <option>Job: Psychology - Chicago, IL</option>
-                            <option>Job: Psychology - Columbus, Ohio</option>
+                            <option>Job: Medical Assistant - Chicago, IL</option>
+                            <option>Job: Medical Assistant - Columbus, Ohio</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -521,40 +534,40 @@ Express Scripts</span></a>
         </div>
     </div>
 </div>
-<!-- Modal -->
-<div class="modal fade" id="new-message-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">New Message</h4>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="recipient-name" class="control-label">To:</label>
-                        <input id="recipient-name" class="form-control" placeholder="Name" type="text" >
-                    </div>
-                    <div class="form-group">
-                        <label for="comment">Message:</label>
-                        <textarea class="form-control" placeholder="Message" rows="5" id="comment"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-info">Send</button>
-            </div>
-        </div>
-    </div>
-</div>
+ <!-- Modal -->
+ <div class="modal fade" id="new-message-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                 <h4 class="modal-title" id="myModalLabel">New Message</h4>
+             </div>
+             <div class="modal-body">
+                 <form>
+                     <div class="form-group">
+                         <label for="recipient-name" class="control-label">To:</label>
+                         <input id="recipient-name" class="form-control" placeholder="Name" type="text" >
+                     </div>
+                     <div class="form-group">
+                         <label for="comment">Message:</label>
+                         <textarea class="form-control" placeholder="Message" rows="5" id="comment"></textarea>
+                     </div>
+                 </form>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                 <button type="submit" class="btn btn-info">Send</button>
+             </div>
+         </div>
+     </div>
+ </div>
 <!--DO NOT REMOVE-->
 	
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "templates-employer-profile";
-		var lineage        = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"},{"lineagePattern":"molecules-cs-left-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-cs-left-nav\/01-molecules-05-navigation-05-cs-left-nav.html"},{"lineagePattern":"molecules-left-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-left-nav\/01-molecules-05-navigation-05-left-nav.html"},{"lineagePattern":"organisms-create-to-do-button","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-24-create-to-do-button\/02-organisms-03-sections-24-create-to-do-button.html"},{"lineagePattern":"organisms-new-message-button","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-25-new-message-button\/02-organisms-03-sections-25-new-message-button.html"},{"lineagePattern":"organisms-bdubs-conversation-small","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-10-bdubs-conversation-small\/02-organisms-03-sections-10-bdubs-conversation-small.html"},{"lineagePattern":"organisms-to-dos-employer-cs","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-21-to-dos-employer-cs\/02-organisms-03-sections-21-to-dos-employer-cs.html"},{"lineagePattern":"organisms-messages-list-employer","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-31-messages-list-employer\/02-organisms-03-sections-31-messages-list-employer.html"},{"lineagePattern":"organisms-jobs-dashboard-employer","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-22-jobs-dashboard-employer\/02-organisms-03-sections-22-jobs-dashboard-employer.html"},{"lineagePattern":"organisms-employer-recent-activity","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-30-employer-recent-activity\/02-organisms-03-sections-30-employer-recent-activity.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"},{"lineagePattern":"organisms-create-to-do-modal","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-24-create-to-do-modal\/02-organisms-03-sections-24-create-to-do-modal.html"},{"lineagePattern":"organisms-new-message-modal","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-25-new-message-modal\/02-organisms-03-sections-25-new-message-modal.html"}];
-		var lineageR       = [{"lineagePattern":"pages-cs-employer-profile","lineagePath":"..\/..\/patterns\/04-pages-00-career-services-cs-employer-profile\/04-pages-00-career-services-cs-employer-profile.html"}];
+		var lineage        = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"},{"lineagePattern":"molecules-cs-left-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-cs-left-nav\/01-molecules-05-navigation-05-cs-left-nav.html"},{"lineagePattern":"molecules-left-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-left-nav\/01-molecules-05-navigation-05-left-nav.html"},{"lineagePattern":"organisms-create-to-do-button","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-24-create-to-do-button\/02-organisms-03-sections-24-create-to-do-button.html"},{"lineagePattern":"organisms-new-message-button","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-25-new-message-button\/02-organisms-03-sections-25-new-message-button.html"},{"lineagePattern":"organisms-bdubs-conversation-small","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-10-bdubs-conversation-small\/02-organisms-03-sections-10-bdubs-conversation-small.html"},{"lineagePattern":"organisms-e-searches","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-52-e-searches\/02-organisms-03-sections-52-e-searches.html"},{"lineagePattern":"organisms-e-dashboard-favorited-students","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-40-e-dashboard-favorited-students\/02-organisms-03-sections-40-e-dashboard-favorited-students.html"},{"lineagePattern":"organisms-e-dashboard-interview-students","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-43-e-dashboard-interview-students\/02-organisms-03-sections-43-e-dashboard-interview-students.html"},{"lineagePattern":"organisms-e-dashboard-make-offer-students","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-44-e-dashboard-make-offer-students\/02-organisms-03-sections-44-e-dashboard-make-offer-students.html"},{"lineagePattern":"organisms-to-dos-employer-cs","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-21-to-dos-employer-cs\/02-organisms-03-sections-21-to-dos-employer-cs.html"},{"lineagePattern":"organisms-messages-list-employer","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-31-messages-list-employer\/02-organisms-03-sections-31-messages-list-employer.html"},{"lineagePattern":"organisms-jobs-dashboard-employer","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-22-jobs-dashboard-employer\/02-organisms-03-sections-22-jobs-dashboard-employer.html"},{"lineagePattern":"organisms-employer-recent-activity","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-30-employer-recent-activity\/02-organisms-03-sections-30-employer-recent-activity.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"},{"lineagePattern":"organisms-create-to-do-modal","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-24-create-to-do-modal\/02-organisms-03-sections-24-create-to-do-modal.html"},{"lineagePattern":"organisms-new-message-modal","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-25-new-message-modal\/02-organisms-03-sections-25-new-message-modal.html"}];
+		var lineageR       = [{"lineagePattern":"pages-cs-employer-profile","lineagePath":"..\/..\/patterns\/04-pages-00-career-services-cs-employer-profile\/04-pages-00-career-services-cs-employer-profile.html"},{"lineagePattern":"pages-cs-employer-user-profile","lineagePath":"..\/..\/patterns\/04-pages-00-career-services-cs-employer-user-profile\/04-pages-00-career-services-cs-employer-user-profile.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>
@@ -590,10 +603,10 @@ Express Scripts</span></a>
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-0">
+	<script id="pl-js-polyfill-insert-1475705856">
 		(function() {
 			if (self != top) {
-				var cb = '0';
+				var cb = '1475705856';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -602,10 +615,10 @@ Express Scripts</span></a>
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-0">
+	<script id="pl-js-insert-1475705856">
 		(function() {
 			if (self != top) {
-				var cb = '0';
+				var cb = '1475705856';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
@@ -637,7 +650,10 @@ Express Scripts</span></a>
 
 <!-- theme scripts -->
 <script src="../../js/scripts.js"></script>
-<script src="//raw.githubusercontent.com/HubSpot/pace/v0.5.6/pace.min.js"></script>
+<!-- <script src="//raw.githubusercontent.com/HubSpot/pace/v0.5.6/pace.min.js"></script> -->
+
+
+
 
 
 

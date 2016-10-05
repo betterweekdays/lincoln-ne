@@ -21,15 +21,26 @@
                                     &lt;/div&gt;
 
                                     &lt;div class=&quot;row hidden-lg&quot;&gt;
-                                    &lt;div class=&quot;col-xs-6 margin-bottom-16 text-right&quot;&gt;
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16&quot;&gt;
                                         {{&gt; organisms-new-message-button }}
                                     &lt;/div&gt;
 
-                                    &lt;div class=&quot;col-xs-6 margin-bottom-16&quot;&gt;
-                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
-                                            Favorite &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
-                                        &lt;/button&gt;
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16 text-right&quot;&gt;
+                                        {{&gt; organisms-new-note-button }}
                                     &lt;/div&gt;
+
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16&quot;&gt;
+                                        {{&gt; organisms-favorite-button }}
+                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16 text-right&quot;&gt;
+                                        {{&gt; organisms-interview-button }}
+                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;col-xs-6 col-xs-offset-6 margin-bottom-16 text-right&quot;&gt;
+                                        {{&gt; organisms-make-offer-button }}
+                                    &lt;/div&gt;
+
 
                                     &lt;/div&gt;
 
@@ -41,9 +52,9 @@
                                                     &lt;div class=&quot;col-sm-12&quot;&gt;
                                                         &lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;
                                                             &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Email: &lt;a href=&quot;#&quot;&gt;sonya.frost@gmail.com&lt;/a&gt;&lt;/li&gt;
-                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;School: &lt;strong&gt;Washington University in St. Louis&lt;/strong&gt;&lt;/li&gt;
-                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Degree/Program: &lt;strong&gt;Psychology&lt;/strong&gt;&lt;/li&gt;
-                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Phone: &lt;strong&gt;(314) 585-0436&lt;/strong&gt;&lt;/li&gt;
+                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;School: &lt;strong&gt;Better Weekdays University&lt;/strong&gt;&lt;/li&gt;
+                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Degree/Program: &lt;strong&gt;Medical Assistant&lt;/strong&gt;&lt;/li&gt;
+                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Phone: &lt;strong&gt;(312) 999-9999&lt;/strong&gt;&lt;/li&gt;
                                                             &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;GPA: &lt;strong&gt;3.4&lt;/strong&gt;&lt;/li&gt;
                                                         &lt;/ul&gt;
                                                     &lt;/div&gt;
@@ -57,7 +68,7 @@
                                                 &lt;div class=&quot;main-box-body clearfix&quot;&gt;
                                                     &lt;div class=&quot;col-sm-12&quot;&gt;
                                                         &lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;
-                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Job Areas: &lt;strong&gt;Organizational Leadership&lt;/strong&gt;&lt;/li&gt;
+                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Job Areas: &lt;strong&gt;Healthcare&lt;/strong&gt;&lt;/li&gt;
                                                             &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Locations: &lt;strong&gt;St. Louis, MO&lt;/strong&gt;&lt;/li&gt;
                                                             &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Experience: &lt;strong&gt;1-2 Years&lt;/strong&gt;&lt;/li&gt;
                                                             &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Goal: &lt;strong&gt;Summer Internship&lt;/strong&gt;&lt;/li&gt;
@@ -68,11 +79,31 @@
                                         &lt;/div&gt;
                                     &lt;/div&gt;
 
+                                    &lt;div class=&quot;main-box tab-box minimal-tabs&quot;&gt;
+                                        &lt;div class=&quot;bs-example bs-example-tabs&quot; data-example-id=&quot;togglable-tabs&quot;&gt;
+                                            &lt;ul id=&quot;myTabs&quot; class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+                                                &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#resume-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;to-dos-tab&quot;&gt;Resume&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#messages-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;messages-tab&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#notes-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;notes-tab&quot;&gt;Notes&lt;/a&gt;&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                            &lt;div id=&quot;myTabContent&quot; class=&quot;tab-content&quot;&gt;
+                                                &lt;div role=&quot;tabpanel&quot; style=&quot;min-height:1200px;&quot; class=&quot;tab-pane fade in active pre-scrollable&quot; id=&quot;resume-tab&quot; aria-labelledBy=&quot;to-dos-tab&quot;&gt;
+                                                    &lt;iframe src=&quot;https://docs.google.com/gview?url=https%3A//app.betterweekdays.com/sites/default/files/medical_assistant_demo_resume-indianapolis.pdf&amp;embedded=true&quot; style=&quot;width:100%; height:800px;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+                                                &lt;/div&gt;
+                                                &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade pre-scrollable&quot; id=&quot;messages-tab&quot; aria-labelledBy=&quot;messages-tab&quot;&gt;
+                                                    {{&gt; organisms-messages-list }}
+                                                &lt;/div&gt;
+                                                &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade pre-scrollable&quot; id=&quot;notes-tab&quot; aria-labelledBy=&quot;notes-tab&quot;&gt;
+                                                    {{&gt; organisms-notes-list }}
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;&lt;!-- /example --&gt;
+                                    &lt;/div&gt;
+
                                     &lt;div class=&quot;row&quot;&gt;
                                         &lt;div class=&quot;col-lg-12&quot;&gt;
 
                                             &lt;div class=&quot;row&quot;&gt;
-                                                    &lt;iframe src=&quot;https://docs.google.com/gview?url=https%3A//demo.betterweekdays.com/img/job-new/Psychology-demo-resume.pdf&amp;embedded=true&quot; style=&quot;width:100%; height:800px;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
                                             &lt;/div&gt;
                                         &lt;/div&gt;
                                     &lt;/div&gt;
@@ -84,9 +115,19 @@
                                 &lt;/div&gt;
 
                                 &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
-                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
-                                        Favorite &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
-                                    &lt;/button&gt;
+                                    {{&gt; organisms-new-note-button }}
+                                &lt;/div&gt;
+
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
+                                    {{&gt; organisms-favorite-button }}
+                                &lt;/div&gt;
+
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
+                                    {{&gt; organisms-interview-button }}
+                                &lt;/div&gt;
+
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
+                                    {{&gt; organisms-make-offer-button }}
                                 &lt;/div&gt;
 
                                 &lt;div class=&quot;col-lg-4&quot;&gt;
@@ -107,3 +148,4 @@
 
 {{&gt; organisms-create-to-do-modal }}
 {{&gt; organisms-new-message-modal }}
+{{&gt; organisms-new-note-modal }}

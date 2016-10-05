@@ -4,11 +4,17 @@
         &lt;div class=&quot;container&quot;&gt;
             &lt;a href=&quot;#&quot; id=&quot;logo&quot; class=&quot;navbar-brand&quot;&gt;
                 &lt;img src=&quot;../../../img/bw_logo_white.png&quot; alt=&quot;&quot; class=&quot;normal-logo logo-white&quot;&gt;
-                &lt;img src=&quot;../../../img/bw_logo_grey.png&quot; alt=&quot;&quot; class=&quot;normal-logo logo-black&quot;&gt;
-                &lt;img src=&quot;../../../img/bw_logo_grey.png&quot; alt=&quot;&quot; class=&quot;small-logo hidden-xs hidden-sm hidden&quot;&gt;
+                &lt;img src=&quot;../../../img/bw_logo_small_white.png&quot; alt=&quot;&quot; class=&quot;normal-logo&quot;&gt;
+                &lt;img src=&quot;../../../img/bw_logo_small_white.png&quot; alt=&quot;&quot; class=&quot;small-logo hidden-xs hidden-sm hidden&quot;&gt;
             &lt;/a&gt;
 
             &lt;div class=&quot;clearfix&quot;&gt;
+
+              &lt;ul class=&quot;nav navbar-nav pull-left&quot;&gt;
+                &lt;li class=&quot;visible-md visible-lg loading-spinner loading-graphic-lg hidden&quot;&gt;&lt;img src=&quot;../../../img/loading-nav-black.gif&quot; alt=&quot;Loading graphic&quot;&gt;&lt;/li&gt;
+                &lt;li class=&quot;hidden-md hidden-lg loading-spinner loading-graphic-sm hidden&quot;&gt;&lt;img src=&quot;../../../img/loading-nav-white.gif&quot; alt=&quot;Loading graphic&quot;&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+
                 &lt;button class=&quot;navbar-toggle&quot; data-target=&quot;.navbar-ex1-collapse&quot; data-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;
                     &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
                     &lt;span class=&quot;fa fa-bars&quot;&gt;&lt;/span&gt;
@@ -18,8 +24,7 @@
                 &lt;div class=&quot;nav-no-collapse pull-right&quot; id=&quot;header-nav&quot;&gt;
                     &lt;ul class=&quot;nav navbar-nav pull-right&quot;&gt;
                         &lt;li class=&quot;dropdown&quot;&gt;
-                            &lt;a href=&quot;#&quot;&gt;&lt;span&gt;	
-Express Scripts&lt;/span&gt;&lt;/a&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span&gt;My Organization&lt;/span&gt;&lt;/a&gt;
                         &lt;/li&gt;
                         &lt;li class=&quot;dropdown profile-dropdown&quot;&gt;
                             &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
@@ -37,7 +42,8 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/header&gt;
-    &lt;!-- End .header --&gt;    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+    &lt;!-- End .header --&gt;
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
             &lt;div id=&quot;nav-col&quot;&gt;
                 &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
@@ -48,6 +54,12 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
                                         &lt;a href=&quot;/patterns/04-pages-02-employer-e-dashboard/04-pages-02-employer-e-dashboard.html&quot;&gt;
                                             &lt;i class=&quot;fa fa-dashboard&quot;&gt;&lt;/i&gt;
                                             &lt;span&gt;Dashboard&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class=&quot;&quot;&gt;
+                                        &lt;a href=&quot;/patterns/04-pages-02-employer-e-company-landing-new/04-pages-02-employer-e-company-landing-new.html&quot;&gt;
+                                            &lt;i class=&quot;fa fa-building&quot;&gt;&lt;/i&gt;
+                                            &lt;span&gt;Company&lt;/span&gt;
                                         &lt;/a&gt;
                                     &lt;/li&gt;
                                     &lt;li class=&quot;&quot;&gt;
@@ -66,6 +78,12 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
                                         &lt;a href=&quot;/patterns/04-pages-02-employer-e-reports/04-pages-02-employer-e-reports.html&quot;&gt;
                                             &lt;i class=&quot;fa fa-list&quot;&gt;&lt;/i&gt;
                                             &lt;span&gt;Reports&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class=&quot;&quot;&gt;
+                                        &lt;a href=&quot;/patterns/04-pages-02-employer-e-profile/04-pages-02-employer-e-profile.html&quot;&gt;
+                                            &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+                                            &lt;span&gt;Profile&lt;/span&gt;
                                         &lt;/a&gt;
                                     &lt;/li&gt;
                                     &lt;li class=&quot;&quot;&gt;
@@ -98,6 +116,10 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
                                             &lt;/select&gt;
                                         &lt;/div&gt;
                                     &lt;/form&gt;
+
+                                    &lt;a href=&quot;../../patterns/04-pages-02-employer-e-reports-loaded/04-pages-02-employer-e-reports-loaded.html&quot; class=&quot;btn btn-primary btn-lg margin-top-10&quot;&gt;
+                                        View Report
+                                    &lt;/a&gt;
 
                                 &lt;/div&gt;
                             &lt;/div&gt;
@@ -140,6 +162,22 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
                                             &lt;/select&gt;
                                         &lt;/div&gt;
 
+                                        &lt;div class=&quot;form-group margin-top-20&quot;&gt;
+
+                                        &lt;a href=&quot;../../patterns/04-pages-02-employer-e-reports-loaded/04-pages-02-employer-e-reports-loaded.html&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
+                                            Run Report
+                                            &lt;span class=&quot;fa fa-gear&quot;&gt;&lt;/span&gt;
+                                        &lt;/a&gt;
+
+                                        &lt;!-- &lt;div class=&quot;col-xs-12 margin-top-20&quot;&gt;
+                                            &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
+                                                Email
+                                                &lt;span class=&quot;fa fa-envelope-o&quot;&gt;&lt;/span&gt;
+                                            &lt;/button&gt;
+                                        &lt;/div&gt; --&gt;
+
+                                      &lt;/div&gt;
+
                                     &lt;/form&gt;
 
                                 &lt;/div&gt;
@@ -148,19 +186,9 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
                         &lt;div class=&quot;col-md-4&quot;&gt;
                             &lt;div class=&quot;row&quot;&gt;
 
-                                &lt;div class=&quot;col-xs-12&quot;&gt;
-                                    &lt;a href=&quot;../../patterns/04-pages-02-employer-e-reports-loaded/04-pages-02-employer-e-reports-loaded.html&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
-                                        Run Report
-                                        &lt;span class=&quot;fa fa-gear&quot;&gt;&lt;/span&gt;
-                                    &lt;/a&gt;
-                                &lt;/div&gt;
 
-                                &lt;div class=&quot;col-xs-12 margin-top-20&quot;&gt;
-                                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
-                                        Email
-                                        &lt;span class=&quot;fa fa-envelope-o&quot;&gt;&lt;/span&gt;
-                                    &lt;/button&gt;
-                                &lt;/div&gt;
+
+
 
                             &lt;/div&gt;
                         &lt;/div&gt;

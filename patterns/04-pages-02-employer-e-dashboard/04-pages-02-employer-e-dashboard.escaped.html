@@ -4,11 +4,17 @@
         &lt;div class=&quot;container&quot;&gt;
             &lt;a href=&quot;#&quot; id=&quot;logo&quot; class=&quot;navbar-brand&quot;&gt;
                 &lt;img src=&quot;../../../img/bw_logo_white.png&quot; alt=&quot;&quot; class=&quot;normal-logo logo-white&quot;&gt;
-                &lt;img src=&quot;../../../img/bw_logo_grey.png&quot; alt=&quot;&quot; class=&quot;normal-logo logo-black&quot;&gt;
-                &lt;img src=&quot;../../../img/bw_logo_grey.png&quot; alt=&quot;&quot; class=&quot;small-logo hidden-xs hidden-sm hidden&quot;&gt;
+                &lt;img src=&quot;../../../img/bw_logo_small_white.png&quot; alt=&quot;&quot; class=&quot;normal-logo&quot;&gt;
+                &lt;img src=&quot;../../../img/bw_logo_small_white.png&quot; alt=&quot;&quot; class=&quot;small-logo hidden-xs hidden-sm hidden&quot;&gt;
             &lt;/a&gt;
 
             &lt;div class=&quot;clearfix&quot;&gt;
+
+              &lt;ul class=&quot;nav navbar-nav pull-left&quot;&gt;
+                &lt;li class=&quot;visible-md visible-lg loading-spinner loading-graphic-lg hidden&quot;&gt;&lt;img src=&quot;../../../img/loading-nav-black.gif&quot; alt=&quot;Loading graphic&quot;&gt;&lt;/li&gt;
+                &lt;li class=&quot;hidden-md hidden-lg loading-spinner loading-graphic-sm hidden&quot;&gt;&lt;img src=&quot;../../../img/loading-nav-white.gif&quot; alt=&quot;Loading graphic&quot;&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+
                 &lt;button class=&quot;navbar-toggle&quot; data-target=&quot;.navbar-ex1-collapse&quot; data-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;
                     &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
                     &lt;span class=&quot;fa fa-bars&quot;&gt;&lt;/span&gt;
@@ -18,8 +24,7 @@
                 &lt;div class=&quot;nav-no-collapse pull-right&quot; id=&quot;header-nav&quot;&gt;
                     &lt;ul class=&quot;nav navbar-nav pull-right&quot;&gt;
                         &lt;li class=&quot;dropdown&quot;&gt;
-                            &lt;a href=&quot;#&quot;&gt;&lt;span&gt;	
-Express Scripts&lt;/span&gt;&lt;/a&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span&gt;My Organization&lt;/span&gt;&lt;/a&gt;
                         &lt;/li&gt;
                         &lt;li class=&quot;dropdown profile-dropdown&quot;&gt;
                             &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
@@ -37,7 +42,8 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/header&gt;
-    &lt;!-- End .header --&gt;    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+    &lt;!-- End .header --&gt;
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
             &lt;div id=&quot;nav-col&quot;&gt;
                 &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
@@ -48,6 +54,12 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
                                         &lt;a href=&quot;/patterns/04-pages-02-employer-e-dashboard/04-pages-02-employer-e-dashboard.html&quot;&gt;
                                             &lt;i class=&quot;fa fa-dashboard&quot;&gt;&lt;/i&gt;
                                             &lt;span&gt;Dashboard&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class=&quot;&quot;&gt;
+                                        &lt;a href=&quot;/patterns/04-pages-02-employer-e-company-landing-new/04-pages-02-employer-e-company-landing-new.html&quot;&gt;
+                                            &lt;i class=&quot;fa fa-building&quot;&gt;&lt;/i&gt;
+                                            &lt;span&gt;Company&lt;/span&gt;
                                         &lt;/a&gt;
                                     &lt;/li&gt;
                                     &lt;li class=&quot;&quot;&gt;
@@ -66,6 +78,12 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
                                         &lt;a href=&quot;/patterns/04-pages-02-employer-e-reports/04-pages-02-employer-e-reports.html&quot;&gt;
                                             &lt;i class=&quot;fa fa-list&quot;&gt;&lt;/i&gt;
                                             &lt;span&gt;Reports&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class=&quot;&quot;&gt;
+                                        &lt;a href=&quot;/patterns/04-pages-02-employer-e-profile/04-pages-02-employer-e-profile.html&quot;&gt;
+                                            &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+                                            &lt;span&gt;Profile&lt;/span&gt;
                                         &lt;/a&gt;
                                     &lt;/li&gt;
                                     &lt;li class=&quot;&quot;&gt;
@@ -132,169 +150,169 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
                         &lt;/div&gt;
                         &lt;div class=&quot;row&quot;&gt;
                             &lt;div class=&quot;col-lg-8&quot;&gt;
-                                &lt;div class=&quot;main-box clearfix&quot; style=&quot;margin-bottom:0;&quot;&gt;
-                                    &lt;h1&gt;	
-Express Scripts&lt;/h1&gt;
-                                &lt;/div&gt;
 
-                                &lt;!-- Begin horrible hack to display graphs on this page. Do not replicate this! Not enough time to properly debug... --&gt;
-
-                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-1&quot; style=&quot;display:none;&quot;&gt;
-                                    &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                    &lt;/div&gt; 
-                                &lt;/div&gt; 
-                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-2&quot; style=&quot;display:none;&quot;&gt;
-                                    &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                    &lt;/div&gt; 
-                                &lt;/div&gt; 
-                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-3&quot; style=&quot;display:none;&quot;&gt;
-                                    &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                    &lt;/div&gt; 
-                                &lt;/div&gt; 
-                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-4&quot; style=&quot;display:none;&quot;&gt;
-                                    &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                    &lt;/div&gt; 
-                                &lt;/div&gt; 
-                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-5&quot; style=&quot;display:none;&quot;&gt;
-                                    &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                    &lt;/div&gt; 
-                                &lt;/div&gt; 
-                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-6&quot; style=&quot;display:none;&quot;&gt;
-                                    &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                              &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                    &lt;div class=&quot;infographic-box&quot;&gt;
+                                      &lt;div class=&quot;col-sm-2&quot;&gt;
+                                        &lt;i class=&quot;fa fa-signal yellow-bg&quot;&gt;&lt;/i&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class=&quot;col-sm-10&quot;&gt;
+                                        &lt;span class=&quot;big yellow&quot;&gt;Your Activity&lt;/span&gt;
+                                        &lt;p&gt;&lt;strong&gt;35&lt;/strong&gt; candidates searched, &lt;strong&gt;4&lt;/strong&gt; viewed, &lt;strong&gt;1&lt;/strong&gt; favorited&lt;/p&gt;
+                                        &lt;p&gt;&lt;strong&gt;4&lt;/strong&gt; messages sent&lt;/p&gt;
+                                        &lt;p&gt;&lt;strong&gt;1&lt;/strong&gt; article posted, &lt;strong&gt;2&lt;/strong&gt; jobs posted&lt;/p&gt;
+                                      &lt;/div&gt;
                                     &lt;/div&gt;
-                                &lt;/div&gt;
-                                &lt;!-- End hack. --&gt;
+                              &lt;/div&gt;
 
-                                &lt;div class=&quot;row&quot;&gt;
-                                    &lt;div class=&quot;col-md-6&quot;&gt;
-                                        &lt;div class=&quot;main-box&quot;&gt;
-                                            &lt;div class=&quot;row&quot;&gt;
-                                                &lt;div class=&quot;col-md-12&quot;&gt;
-                                                    &lt;div class=&quot;graph-box&quot;&gt;
-                                                        &lt;h2&gt;Company Views by Students&lt;/h2&gt;
-                                                        &lt;div class=&quot;graph&quot; id=&quot;graph-line-7&quot;&gt;
-                                                            &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                    &lt;div class=&quot;main-box-body clearfix bdubs-box&quot;&gt;
+                                        &lt;div class=&quot;conversation-wrapper&quot;&gt;
+                                            &lt;div class=&quot;conversation-content&quot;&gt;
+                                                &lt;div class=&quot;conversation-inner&quot;&gt;
+
+
+                                                    &lt;div class=&quot;conversation-item item-left clearfix&quot;&gt;
+                                                        &lt;div class=&quot;conversation-user&quot;&gt;
+                                                            &lt;img src=&quot;../../img/robot50x50.png&quot; alt=&quot;&quot;/&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class=&quot;conversation-body&quot;&gt;
+                                                            &lt;div class=&quot;name&quot;&gt;
+                                                                BDubs Bot
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;headline text&quot;&gt;
+                                                                    &lt;p&gt;My user research has shown that personal encouragement is most important to job seekers.&lt;/p&gt;
+
+
                                                             &lt;/div&gt;
                                                         &lt;/div&gt;
                                                     &lt;/div&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-                                    &lt;div class=&quot;col-md-6&quot;&gt;
-                                        &lt;div class=&quot;main-box&quot;&gt;
-                                            &lt;div class=&quot;row&quot;&gt;
-                                                &lt;div class=&quot;col-md-12&quot;&gt;
-                                                    &lt;div class=&quot;graph-box&quot;&gt;
-                                                        &lt;h2 class=&quot;orange&quot;&gt;Job Views by Students&lt;/h2&gt;
-                                                        &lt;div class=&quot;graph&quot; id=&quot;graph-line-8&quot; style=&quot;max-height: 335px; position: relative;&quot;&gt;
-                                                            &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
+
+
+
+
                                                 &lt;/div&gt;
                                             &lt;/div&gt;
                                         &lt;/div&gt;
                                     &lt;/div&gt;
                                 &lt;/div&gt;
+                              &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                  &lt;select&gt;
+                                    &lt;option&gt;Suggested Candidates&lt;/option&gt;
+                                    &lt;option&gt;My Favorites&lt;/option&gt;
+                                    &lt;option&gt;Candidates I've Contacted&lt;/option&gt;
+                                  &lt;/select&gt;
+                                &lt;/header&gt;
+    &lt;div class=&quot;clearfix &quot;&gt;
+        &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+            &lt;div class=&quot;table-responsive&quot;&gt;
+                &lt;table id=&quot;table-activity&quot; class=&quot;table table-hover normal&quot;&gt;
+                    &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Name&lt;/th&gt;
+                        &lt;th&gt;Why?&lt;/th&gt;
+                        &lt;th&gt;&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                    &lt;tr class=&quot;lead-new&quot;&gt;
+                        &lt;td&gt;
+                            &lt;a data-toggle=&quot;modal&quot; data-target=&quot;#peek-student-modal&quot; class=&quot;cursor-pointer&quot;&gt;Amy Awesome&lt;/a&gt;
 
-                                &lt;div class=&quot;main-box clearfix &quot;&gt;
-                                    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
-                                        &lt;h2&gt;Favorites&lt;/h2&gt;
-                                    &lt;/header&gt;
-                                    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
-                                        &lt;div class=&quot;table-responsive&quot;&gt;
-                                            &lt;table id=&quot;table-activity&quot; class=&quot;table table-hover normal&quot;&gt;
-                                                &lt;thead&gt;
-                                                &lt;tr&gt;
-                                                    &lt;th&gt;Name&lt;/th&gt;
-                                                    &lt;th&gt;Job&lt;/th&gt;
-                                                    &lt;th&gt;Last Active&lt;/th&gt;
-                                                    &lt;th&gt;&lt;/th&gt;
-                                                &lt;/tr&gt;
-                                                &lt;/thead&gt;
-                                                &lt;tbody&gt;
-                                                &lt;tr class=&quot;lead-new&quot;&gt;
-                                                    &lt;td&gt;
-                                                        &lt;a href=&quot;../../patterns/04-pages-02-employer-e-student-profile/04-pages-02-employer-e-student-profile.html&quot;&gt;Sonya Frost&lt;/a&gt;
-                                                        &lt;br /&gt;
-                                                        Washington University in St. Louis - Psychology
-                                                    &lt;/td&gt;
-                                                    &lt;td&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Psychology&lt;/a&gt;&lt;/td&gt;
-                                                    &lt;td&gt;5 minutes ago&lt;/td&gt;
-                                                    &lt;td&gt;
-                                                            &lt;div class=&quot;lead-buttons&quot;&gt;
-                                                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
-                                                                    Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
-                                                                &lt;/button&gt;&amp;nbsp;
-                                                                &lt;button class=&quot;btn btn-default&quot; title=&quot;Nope&quot;&gt;
-                                                                    &lt;i class=&quot;fa fa-times&quot;&gt; &lt;/i&gt;
-                                                                &lt;/button&gt;
-                                                            &lt;/div&gt;
-                                                    &lt;/td&gt;
-                                                &lt;/tr&gt;
-                                                &lt;tr class=&quot;lead-new&quot;&gt;
-                                                    &lt;td&gt;
-                                                        &lt;a href=&quot;../../patterns/04-pages-02-employer-e-student-profile/04-pages-02-employer-e-student-profile.html&quot;&gt;Fiona Apple&lt;/a&gt;
-                                                        &lt;br /&gt;
-                                                        St. Louis University - Marketing
-                                                    &lt;/td&gt;
-                                                    &lt;td&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Account Manager&lt;/a&gt;&lt;/td&gt;
-                                                    &lt;td&gt;1 day ago&lt;/td&gt;
-                                                    &lt;td&gt;
-                                                            &lt;div class=&quot;lead-buttons&quot;&gt;
-                                                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
-                                                                    Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
-                                                                &lt;/button&gt;&amp;nbsp;
-                                                                &lt;button class=&quot;btn btn-default&quot; title=&quot;Nope&quot;&gt;
-                                                                    &lt;i class=&quot;fa fa-times&quot;&gt; &lt;/i&gt;
-                                                                &lt;/button&gt;
-                                                            &lt;/div&gt;
-                                                    &lt;/td&gt;
-                                                &lt;/tr&gt;
-                                                &lt;tr class=&quot;lead-new&quot;&gt;
-                                                    &lt;td&gt;
-                                                        &lt;a href=&quot;../../patterns/04-pages-02-employer-e-student-profile/04-pages-02-employer-e-student-profile.html&quot;&gt;Sonya Awesome&lt;/a&gt;
-                                                        &lt;br /&gt;
-                                                        Washington University in St. Louis - Psychology
-                                                    &lt;/td&gt;
-                                                    &lt;td&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Psychology&lt;/a&gt;&lt;/td&gt;
-                                                    &lt;td&gt;2 days ago&lt;/td&gt;
-                                                    &lt;td&gt;
-                                                            &lt;div class=&quot;lead-buttons&quot;&gt;
-                                                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
-                                                                    Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
-                                                                &lt;/button&gt;&amp;nbsp;
-                                                                &lt;button class=&quot;btn btn-default&quot; title=&quot;Nope&quot;&gt;
-                                                                    &lt;i class=&quot;fa fa-times&quot;&gt; &lt;/i&gt;
-                                                                &lt;/button&gt;
-                                                            &lt;/div&gt;
-                                                    &lt;/td&gt;
-                                                &lt;/tr&gt;
-                                                &lt;tr class=&quot;lead-new&quot;&gt;
-                                                    &lt;td&gt;
-                                                        &lt;a href=&quot;../../patterns/04-pages-02-employer-e-student-profile/04-pages-02-employer-e-student-profile.html&quot;&gt;John Baby&lt;/a&gt;
-                                                        &lt;br /&gt;
-                                                        University of Missouri - Biology
-                                                    &lt;/td&gt;
-                                                    &lt;td&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Behavioral Health Consultant&lt;/a&gt;&lt;/td&gt;
-                                                    &lt;td&gt;5 days ago&lt;/td&gt;
-                                                    &lt;td&gt;
-                                                            &lt;div class=&quot;lead-buttons&quot;&gt;
-                                                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
-                                                                    Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
-                                                                &lt;/button&gt;&amp;nbsp;
-                                                                &lt;button class=&quot;btn btn-default&quot; title=&quot;Nope&quot;&gt;
-                                                                    &lt;i class=&quot;fa fa-times&quot;&gt; &lt;/i&gt;
-                                                                &lt;/button&gt;
-                                                            &lt;/div&gt;
-                                                    &lt;/td&gt;
-                                                &lt;/tr&gt;
-                                                &lt;/tbody&gt;
-                                            &lt;/table&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
+                            &lt;br /&gt;
+                            Better Weekdays University - CMA
+                        &lt;/td&gt;
+                        &lt;td&gt;&lt;i&gt;Previewed, Favorited, and Interested in applying to &lt;/i&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Medical Assistant&lt;/a&gt;&lt;/td&gt;
+                        &lt;td&gt;
+                                &lt;div class=&quot;lead-buttons&quot;&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
+                                        Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;&amp;nbsp;
                                 &lt;/div&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;lead-new&quot;&gt;
+                      &lt;td&gt;
+                        &lt;a data-toggle=&quot;modal&quot; data-target=&quot;#peek-student-modal&quot; class=&quot;cursor-pointer&quot;&gt;John Frankenstein&lt;/a&gt;
+
+                        &lt;br /&gt;
+                        Better Weekdays University - CMA
+                      &lt;/td&gt;
+                      &lt;td&gt;&lt;i&gt;Previewed, Favorited, and Interested in applying to &lt;/i&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Medical Assistant III&lt;/a&gt;&lt;/td&gt;
+                      &lt;td&gt;
+                          &lt;div class=&quot;lead-buttons&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
+                              Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;&amp;nbsp;
+                          &lt;/div&gt;
+                      &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;lead-new&quot;&gt;
+                        &lt;td&gt;
+                            &lt;a data-toggle=&quot;modal&quot; data-target=&quot;#peek-student-modal&quot; class=&quot;cursor-pointer&quot;&gt;Fiona Apple&lt;/a&gt;
+                            &lt;br /&gt;
+                            BWD University - Nursing
+                        &lt;/td&gt;
+                        &lt;td&gt;&lt;i&gt;Previewed and Favorited &lt;/i&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Nurse I&lt;/a&gt;, &lt;i&gt;Favorited your company page&lt;/i&gt;&lt;/td&gt;
+                        &lt;td&gt;
+                                &lt;div class=&quot;lead-buttons&quot;&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
+                                        Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;&amp;nbsp;
+                                &lt;/div&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;lead-new&quot;&gt;
+                        &lt;td&gt;
+                            &lt;a data-toggle=&quot;modal&quot; data-target=&quot;#peek-student-modal&quot; class=&quot;cursor-pointer&quot;&gt;Sonya Awesome&lt;/a&gt;
+                            &lt;br /&gt;
+                            Better Weekdays University - CMA
+                        &lt;/td&gt;
+                        &lt;td&gt;&lt;i&gt;Previewed&lt;/i&gt; &lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Medical Assistant&lt;/a&gt;&lt;/td&gt;
+                        &lt;td&gt;
+                                &lt;div class=&quot;lead-buttons&quot;&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
+                                        Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;&amp;nbsp;
+                                &lt;/div&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;lead-new&quot;&gt;
+                      &lt;td&gt;
+                        &lt;a data-toggle=&quot;modal&quot; data-target=&quot;#peek-student-modal&quot; class=&quot;cursor-pointer&quot;&gt;Jamar Washington&lt;/a&gt;
+                        &lt;br /&gt;
+                        Better Weekdays University - CMA
+                      &lt;/td&gt;
+                      &lt;td&gt;&lt;i&gt;Previewed&lt;/i&gt; &lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Medical Assistant II&lt;/a&gt;, &lt;i&gt;Favorited your article&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;How You Can Impact Healthcare through Technology&lt;/a&gt;&lt;/td&gt;
+                      &lt;td&gt;
+                          &lt;div class=&quot;lead-buttons&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
+                              Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;&amp;nbsp;
+                          &lt;/div&gt;
+                      &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;lead-new&quot;&gt;
+                        &lt;td&gt;
+                            &lt;a data-toggle=&quot;modal&quot; data-target=&quot;#peek-student-modal&quot; class=&quot;cursor-pointer&quot;&gt;John Baby&lt;/a&gt;
+                            &lt;br /&gt;
+                            BWD University - Health Administration
+                        &lt;/td&gt;
+                        &lt;td&gt;&lt;i&gt;Is studying&lt;/i&gt; Accounting&lt;/td&gt;
+                        &lt;td&gt;
+                                &lt;div class=&quot;lead-buttons&quot;&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
+                                        Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;&amp;nbsp;
+                                &lt;/div&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 
 &lt;!-- Modal --&gt;
 &lt;div class=&quot;modal fade&quot; id=&quot;new-message-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
@@ -323,8 +341,69 @@ Express Scripts&lt;/h1&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+                              &lt;/div&gt;
+                                &lt;!-- Begin horrible hack to display graphs on this page. Do not replicate this! Not enough time to properly debug... --&gt;
 
+                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-1&quot; style=&quot;display:none;&quot;&gt;
+                                  &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                  &lt;/div&gt; 
+                                &lt;/div&gt; 
+                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-2&quot; style=&quot;display:none;&quot;&gt;
+                                  &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                  &lt;/div&gt; 
+                                &lt;/div&gt; 
+                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-3&quot; style=&quot;display:none;&quot;&gt;
+                                  &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                  &lt;/div&gt; 
+                                &lt;/div&gt; 
+                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-4&quot; style=&quot;display:none;&quot;&gt;
+                                  &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                  &lt;/div&gt; 
+                                &lt;/div&gt; 
+                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-5&quot; style=&quot;display:none;&quot;&gt;
+                                  &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                  &lt;/div&gt; 
+                                &lt;/div&gt; 
+                                &lt;div class=&quot;graph&quot; id=&quot;graph-line-6&quot; style=&quot;display:none;&quot;&gt;
+                                  &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End hack. --&gt;
+
+                                &lt;div class=&quot;row&quot;&gt;
+                                  &lt;div class=&quot;col-md-6&quot;&gt;
+                                    &lt;div class=&quot;main-box&quot;&gt;
+                                      &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col-md-12&quot;&gt;
+                                          &lt;div class=&quot;graph-box&quot;&gt;
+                                            &lt;h2&gt;Company Views by Students&lt;/h2&gt;
+                                            &lt;div class=&quot;graph&quot; id=&quot;graph-line-7&quot;&gt;
+                                              &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                              &lt;/div&gt;
+                                            &lt;/div&gt;
+                                          &lt;/div&gt;
+                                        &lt;/div&gt;
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+                                  &lt;/div&gt;
+                                  &lt;div class=&quot;col-md-6&quot;&gt;
+                                    &lt;div class=&quot;main-box&quot;&gt;
+                                      &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col-md-12&quot;&gt;
+                                          &lt;div class=&quot;graph-box&quot;&gt;
+                                            &lt;h2 class=&quot;orange&quot;&gt;Job Views by Students&lt;/h2&gt;
+                                            &lt;div class=&quot;graph&quot; id=&quot;graph-line-8&quot; style=&quot;max-height: 335px; position: relative;&quot;&gt;
+                                              &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                              &lt;/div&gt;
+                                            &lt;/div&gt;
+                                          &lt;/div&gt;
+                                        &lt;/div&gt;
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
                             &lt;/div&gt;
+
                             &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
 
                                 &lt;!-- Button trigger modal --&gt;
@@ -361,38 +440,16 @@ Express Scripts&lt;/h1&gt;
                                     Find Students &lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;
                                 &lt;/button&gt;
                             &lt;/div&gt;
-                            &lt;div class=&quot;col-lg-4 visible-lg&quot;&gt;
-                                &lt;div class=&quot;main-box clearfix&quot;&gt;
-                                    &lt;div class=&quot;main-box-body clearfix bdubs-box&quot;&gt;
-                                        &lt;div class=&quot;conversation-wrapper&quot;&gt;
-                                            &lt;div class=&quot;conversation-content&quot;&gt;
-                                                &lt;div class=&quot;conversation-inner&quot;&gt;
-
-
-                                                    &lt;div class=&quot;conversation-item item-left clearfix&quot;&gt;
-                                                        &lt;div class=&quot;conversation-user&quot;&gt;
-                                                            &lt;img src=&quot;../../img/robot50x50.png&quot; alt=&quot;&quot;/&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;conversation-body&quot;&gt;
-                                                            &lt;div class=&quot;name&quot;&gt;
-                                                                BDubs Bot
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;headline text&quot;&gt;
-                                                                    &lt;p&gt;My user research has shown that personal encouragement is most important to job seekers.&lt;/p&gt;
-
-
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
-
-
-
-
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;                            &lt;/div&gt;
+                          &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg visible-lg&quot; onclick=&quot;window.location='../../patterns/04-pages-02-employer-e-student-playlist/04-pages-02-employer-e-student-playlist.html';&quot;&gt;
+                              Send Message &lt;span class=&quot;fa fa-paper-plane&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                          &lt;/div&gt;
+                          &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg visible-lg&quot; onclick=&quot;window.location='../../patterns/04-pages-02-employer-e-student-playlist/04-pages-02-employer-e-student-playlist.html';&quot;&gt;
+                              Create Article &lt;span class=&quot;fa fa-paperclip&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                          &lt;/div&gt;
                         &lt;/div&gt;
 
                         &lt;div class=&quot;row&quot;&gt;
@@ -418,6 +475,219 @@ Express Scripts&lt;/h1&gt;
                     &lt;/p&gt;
                 &lt;/footer&gt;
                 &lt;!-- End Footer --&gt;            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;peek-student-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content peek&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html&quot;&gt;Amy Awesome&lt;/a&gt;&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-sm-6&quot;&gt;
+                        &lt;ul class=&quot;fa-ul no-padding peek-meta-data&quot;&gt;
+                            &lt;li&gt;Degree/Program: Medical Assistant&lt;/li&gt;
+                            &lt;li&gt;Email: &lt;a href=&quot;#&quot;&gt;amy.awesome@gmail.com&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-sm-6 text-right&quot;&gt;
+                        &lt;ul class=&quot;fa-ul no-padding peek-meta-data&quot;&gt;
+                            &lt;li&gt;GPA: 3.7&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;p class=&quot;lead-new-meta&quot;&gt;
+                            &lt;a data-original-title=&quot;Looking for an internship.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;&quot;&gt;&lt;span class=&quot;fa fa-info&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                            &amp;nbsp;&lt;a data-original-title=&quot;Favorited your company.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;&quot;&gt;&lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                            &amp;nbsp;&lt;a data-original-title=&quot;Uploaded a resume.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;&quot;&gt;&lt;span class=&quot;fa fa-file-text&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;hr /&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-sm-6&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;accordion-toggle collapsed btn btn-primary btn-lg&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse-one&quot;&gt;
+                            New Note &lt;span class=&quot;fa fa-plus&quot;&gt;&lt;/span&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-sm-6 text-right&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;accordion-toggle collapsed btn btn-primary btn-lg&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse-two&quot;&gt;
+                            New Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;panel-group accordion&quot; id=&quot;accordion&quot;&gt;
+                    &lt;div class=&quot;panel panel-default&quot;&gt;
+                        &lt;div id=&quot;collapse-one&quot; class=&quot;panel-collapse collapse peek-meta-data&quot;&gt;
+                            &lt;form&gt;
+                                &lt;!--&lt;div class=&quot;form-group&quot;&gt;--&gt;
+                                    &lt;!--&lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Student:&lt;/label&gt;--&gt;
+                                    &lt;!--&lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Name or Email&quot; type=&quot;text&quot; &gt;--&gt;
+                                &lt;!--&lt;/div&gt;--&gt;
+                                &lt;div class=&quot;form-group&quot;&gt;
+                                    &lt;label for=&quot;comment&quot;&gt;Note:&lt;/label&gt;
+                                    &lt;textarea class=&quot;form-control&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;
+                                &lt;/div&gt;
+                            &lt;/form&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Create&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;panel-group accordion&quot; id=&quot;accordion&quot;&gt;
+                    &lt;div class=&quot;panel panel-default&quot;&gt;
+                        &lt;div id=&quot;collapse-two&quot; class=&quot;panel-collapse collapse peek-meta-data&quot;&gt;
+                            &lt;form&gt;
+                                &lt;div class=&quot;form-group&quot;&gt;
+                                    &lt;label for=&quot;comment&quot;&gt;Message:&lt;/label&gt;
+                                    &lt;textarea class=&quot;form-control&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;
+                                &lt;/div&gt;
+                            &lt;/form&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Send&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+
+                &lt;/div&gt;
+
+                &lt;hr /&gt;
+
+                &lt;!--EMPTY STATE--&gt;
+
+                &lt;!--&lt;div class=&quot;peek-meta-data assessment-peek&quot;&gt;--&gt;
+                    &lt;!--&lt;div class=&quot;peek-meta-data assessment-peek&quot;&gt;--&gt;
+                                &lt;!--&lt;h2&gt;&lt;span class=&quot;fa fa-pie-chart&quot;&gt;&lt;/span&gt; Assessment&lt;/h2&gt;--&gt;
+                                &lt;!--&lt;p class=&quot;text-center gray&quot;&gt;Has not taken asssessment yet.&lt;/p&gt;--&gt;
+                        &lt;!--&lt;/div&gt;--&gt;
+                &lt;!--&lt;/div&gt;--&gt;
+
+                &lt;!--/EMPTY STATE--&gt;
+
+                &lt;div class=&quot;peek-meta-data assessment-peek&quot;&gt;
+                    &lt;div class=&quot;peek-meta-data assessment-peek&quot;&gt;
+                        &lt;h2&gt;&lt;span class=&quot;fa fa-pie-chart&quot;&gt;&lt;/span&gt; Assessment&lt;/h2&gt;
+                        &lt;ul class=&quot;list-group&quot;&gt;
+                            &lt;li class=&quot;list-group-item to-do-item-title&quot;&gt;
+                                &lt;strong&gt;Dominant Career Values&lt;/strong&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                &lt;a data-original-title=&quot;Individual seeks out underlying reason things happen and likes to investigate.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;Theoretical Discovery&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                &lt;a data-original-title=&quot;Individual's capacity to see the big picture and develop logical strategy positions them to manage and advise.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;Strategic Decisions&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                &lt;a data-original-title=&quot;Individual is motivated by excitement and competition, entrepreneurial and challenging circumstances.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;Entrepreneurial Challenge&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item to-do-item-title&quot;&gt;
+                                &lt;strong&gt;Key Strengths&lt;/strong&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Very Inquisitive
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Accomplishment-Oriented
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Highly Motivated
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item to-do-item-title&quot;&gt;
+                                &lt;strong&gt;Motivated to&lt;/strong&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Study difficult puzzles
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Solve big problems
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Conquer tough challenges
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item to-do-item-title&quot;&gt;
+                                &lt;strong&gt;Abilities&lt;/strong&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Detailed analysis
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Strategic thinking
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Creative thinking
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item to-do-item-title&quot;&gt;
+                                &lt;strong&gt;Personality&lt;/strong&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Thorough
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Demanding
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Adventurous
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+
+
+                &lt;!--&lt;form role=&quot;form&quot;&gt;--&gt;
+                &lt;!--&lt;div class=&quot;form-group&quot;&gt;--&gt;
+                &lt;!--&lt;label for=&quot;invite-email&quot; class=&quot;control-label&quot;&gt;To:&lt;/label&gt;--&gt;
+                &lt;!--&lt;input id=&quot;invite-email&quot; class=&quot;form-control&quot; placeholder=&quot;Name&quot;&gt;--&gt;
+                &lt;!--&lt;/div&gt;--&gt;
+                &lt;!--&lt;/form&gt;--&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                &lt;!--&lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='../../patterns/04-pages-00-career-services-cs-students-browse/04-pages-00-career-services-cs-students-browse.html';&quot;&gt;Recommend&lt;/button&gt;--&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;create-to-do-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;New To-Do&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;form&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;To:&lt;/label&gt;
+                        &lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Name or Email&quot; type=&quot;text&quot; &gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Type:&lt;/label&gt;
+                        &lt;select class=&quot;form-control&quot;&gt;
+                            &lt;option&gt;&lt;/option&gt;
+                            &lt;option&gt;Getting Started&lt;/option&gt;
+                            &lt;option&gt;Career Services&lt;/option&gt;
+                            &lt;option&gt;Job: Medical Assistant - Chicago, IL&lt;/option&gt;
+                            &lt;option&gt;Job: Medical Assistant - Columbus, Ohio&lt;/option&gt;
+                        &lt;/select&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;to-do-title&quot; class=&quot;control-label&quot;&gt;Title:&lt;/label&gt;
+                        &lt;input id=&quot;to-do-title&quot; class=&quot;form-control&quot; placeholder=&quot;&quot; type=&quot;text&quot; &gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='../../patterns/04-pages-00-career-services-cs-dashboard/04-pages-00-career-services-cs-dashboard.html';&quot;&gt;Go&lt;/button&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;

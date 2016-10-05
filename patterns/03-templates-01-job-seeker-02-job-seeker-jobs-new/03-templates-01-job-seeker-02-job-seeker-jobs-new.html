@@ -4,55 +4,48 @@
 		<title>Better Weekdays Pattern Lab</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
-
-		<!-- bootstrap -->
         <link rel="stylesheet" type="text/css" href="//centaurus.adbee.technology/css/bootstrap/bootstrap.min.css" />
-
-        <!-- libraries -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/libs/nanoscroller.css" />
-
-		<!-- global styles -->
-		<link rel="stylesheet" href="../../css/theme/theme_styles.css?0" media="all" />
-
-        <!-- this page specific styles -->
-
-        <!-- google font libraries -->
+				<link rel="stylesheet" href="../../css/centaurus/centaurus.css?1475705856" media="all" />
+				<link rel="stylesheet" href="../../css/betterweekdays/betterweekdays.css?1475705856" media="all" />
         <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
-
         <!--[if lt IE 9]>
-		<script src="../../js/html5shiv.js"></script>
-		<script src="../../js/respond.min.js"></script>
+					<script src="../../js/html5shiv.js"></script>
+						<script src="../../js/respond.min.js"></script>
         <![endif]-->
-
-		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-				<!-- never cache patterns -->
+			<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+					<!-- never cache patterns -->
 		<meta http-equiv="cache-control" content="max-age=0" />
 		<meta http-equiv="cache-control" content="no-cache" />
 		<meta http-equiv="expires" content="0" />
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?0" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?0" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1475705856" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1475705856" media="all" />
 		
 
-		<!-- End Pattern Lab -->
-
-	
+			<!-- End Pattern Lab -->
 	</head>
 	<body class="fixed-header" id="">
-		<div id="theme-wrapper">
+<div id="theme-wrapper">
     <!-- Begin .header -->
     <header class="navbar" id="header-navbar">
         <div class="container">
             <a href="#" id="logo" class="navbar-brand">
                 <img src="../../../img/bw_logo_white.png" alt="" class="normal-logo logo-white">
-                <img src="../../../img/bw_logo_grey.png" alt="" class="normal-logo logo-black">
-                <img src="../../../img/bw_logo_grey.png" alt="" class="small-logo hidden-xs hidden-sm hidden">
+                <img src="../../../img/bw_logo_small_white.png" alt="" class="normal-logo">
+                <img src="../../../img/bw_logo_small_white.png" alt="" class="small-logo hidden-xs hidden-sm hidden">
             </a>
 
             <div class="clearfix">
+
+              <ul class="nav navbar-nav pull-left">
+                <li class="visible-md visible-lg loading-spinner loading-graphic-lg hidden"><img src="../../../img/loading-nav-black.gif" alt="Loading graphic"></li>
+                <li class="hidden-md hidden-lg loading-spinner loading-graphic-sm hidden"><img src="../../../img/loading-nav-white.gif" alt="Loading graphic"></li>
+              </ul>
+
                 <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="fa fa-bars"></span>
@@ -62,8 +55,7 @@
                 <div class="nav-no-collapse pull-right" id="header-nav">
                     <ul class="nav navbar-nav pull-right">
                         <li class="dropdown">
-                            <a href="#"><span>	
-Express Scripts</span></a>
+                            <a href="#"><span>My Organization</span></a>
                         </li>
                         <li class="dropdown profile-dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -81,7 +73,8 @@ Express Scripts</span></a>
             </div>
         </div>
     </header>
-    <!-- End .header -->    <div id="page-wrapper" class="container playlist">
+    <!-- End .header -->
+    <div id="page-wrapper" class="container playlist">
         <div class="row">
             <div id="nav-col">
                 <section id="col-left" class="col-left-nano">
@@ -105,6 +98,12 @@ Express Scripts</span></a>
                                         <a href="/patterns/04-pages-01-job-seeker-js-jobs/04-pages-01-job-seeker-js-jobs.html">
                                             <i class="fa fa-rocket"></i>
                                             <span>Jobs</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/patterns/04-pages-01-job-seeker-js-companies/04-pages-01-job-seeker-js-companies.html">
+                                            <i class="fa fa-building"></i>
+                                            <span>Companies</span>
                                         </a>
                                     </li>
                                     <li class="">
@@ -143,168 +142,15 @@ Express Scripts</span></a>
                 </section>
             </div>
             <div id="content-wrapper">
-
-                <div class="row">
+              <div class="col-md-12 hidden-md hidden-lg">
+                <button type="button" class="accordion-toggle collapsed btn btn-primary btn-lg margin-bottom-10" data-toggle="collapse" data-parent="#accordion" href="#collapse-one">
+                  Filter <span class="fa fa-filter"></span>
+                </button>
+              </div>
                     <div class="col-lg-12">
                         <div class="row">
-                            <div class="col-lg-8">
-                                <div class="main-box infographic-box-center clearfix">
-                                    <div class="clearfix">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="main-box-header playlist-tags">
-                                                    <ul>
-                                                        <li>New</li>
-                                                        <li>Viewed</li>
-                                                        <li>Degree/Program: Organizational Leadership</li>
-                                                        <li>Personalized</li>
-                                                        <li>Internship</li>
-                                                        <li>From Career Services</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 playlist-title">
-                                            <a href="../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html">
-                                                    <span>Certified Psychology Medical Receptionist</span>
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-12 playlist-sub-title">
-                                                <p>Give patients the care and comfort they need to feel better, faster.</p>
-                                            </div>
-                                        </div>
-                                        <div class="playlist-glances">
-                                            <div class="row">
-                                                <div class="col-xs-6 playlist-glance playlist-company">
-                                                    <h3>Company</h3>
-                                                    <p>Veterans Health Administration</p>
-                                                </div>
-                                                <div class="col-xs-6 playlist-glance playlist-location">
-                                                    <h3>Location</h3>
-                                                    <p>Indianapolis, IN</p>
-                                                </div>
-                                            </div>
-                                            <hr />
-                                            <div class="row">
-                                                <div class="col-xs-6 playlist-glance playlist-balance">
-                                                    <h3>Work / Life Balance <a data-original-title="How current employees feel about not having to work all the time." href="#" data-toggle="tooltip" title="" class="fa fa-question-circle"></a></h3>
-                                                    <p>&#9733;&#9733;&#9733;&#189;</p>
-                                                </div>
-                                                <div class="col-xs-6 playlist-glance playlist-outlook">
-                                                    <h3>Opportunity <a data-original-title="How current employees feel about the ability to advance within the company." href="#" data-toggle="tooltip" title="" class="fa fa-question-circle"></a></h3>
-                                                    <p>&#9733;&#9733;&#9733;&#9733;&#189;</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-6 playlist-glance playlist-culture">
-                                                    <h3>Culture & Values <a data-original-title="How employees measure company culture." href="#" data-toggle="tooltip" title="" class="fa fa-question-circle"></a></h3>
-                                                    <p>&#9733;&#9733;</p>
-                                                </div>
-                                                <div class="col-xs-6 playlist-glance playlist-compensation">
-                                                    <h3>Compensation <a data-original-title="The average median salary in the entire United States for folks in this industry." href="#" data-toggle="tooltip" title="" class="fa fa-question-circle"></a></h3>
-                                                    <p>$29,960 median salary</p>
-                                                </div>
-                                            </div>
-                                            <hr />
-                                            <div class="playlist-glance">
-                                                <h3>Responsibilities <a data-original-title="The day-to-day expectations of this job." href="#" data-toggle="tooltip" title="" class="fa fa-question-circle"></a></h3>
-                                                <ul>
-                                                    <li>Attention to Detail, Dependability, Cooperation, Integrity</li>
-                                                    <li>Record patients' medical history, vital statistics, or information such as test results in medical records.</li>
-                                                    <li>Prepare treatment rooms for patient examinations, keeping the rooms neat and clean.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="row">
-                                                <p class="small playlist-glassdoor"><a href='http://www.glassdoor.com/index.htm'>powered by <img src='http://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /></a></p>
-                                            </div>
-                                        </div>
-                                        <div class="row playlist-feedback-desktop">
-                                            <div class="row text-center">
-                                                <form class="form-inline giant">
-                                                    <button type="submit" class="btn btn-danger" onclick="window.location='../../patterns/04-pages-04-job-seeker-journey-jsj-jobs-journey2/04-pages-04-job-seeker-journey-jsj-jobs-journey2.html';"><span class="fa fa-thumbs-down"> Not Me</span></button>
-                                                    <button type="submit" class="btn btn-success" onclick="window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';"><span class="fa fa-thumbs-up"> Me</span></button>
-                                                    <button type="submit" class="btn btn-info" onclick="window.location='../../patterns/04-pages-04-job-seeker-journey-jsj-intro-journey2/04-pages-04-job-seeker-journey-jsj-intro-journey2.html';"><span class="fa fa-forward"> Next</span></button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--<div class="col-lg-4">
-                                <div class="main-box clearfix visible-lg">
-                                    <div class="main-box-body clearfix">
-                                        <div class="row">
-                                            <div class="col-lg-12 margin-top-20">
-                                                <p>Search Terms <a data-original-title="We automatically search for jobs using the best industry terms to save you time." href="#" data-toggle="tooltip" title="" class="fa fa-question-circle"></a></p>
-                                                <p><em>Psychology, CNA, certified</em></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                            </div>-->
-                            <div class="col-lg-4">
-                                <div class="main-box clearfix">
-                                    <div class="main-box-body clearfix">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <form action="#" method="post" id="bw-job-playlist-filter-form" accept-charset="UTF-8">
-                                                    <div>
-                                                        <div class="form-group margin-top-20" id="playlists">
-                                                            <div class="form-item form-type-select form-item-location">
-                                                                <select class="form-control" id="playlists">
-                                                                    <option value="alljobs" data-custom="Browse all the jobs with whatever filters you want">All Jobs</option>
-                                                                    <option value="degreeprogram" data-custom="We find jobs commonly related to the industry of your degree/program">Degree/Program Jobs</option>
-                                                                    <option value="personalized" data-custom="We read and parse your resume to find personalized jobs">Personalized Jobs</option>
-                                                                    <option value="playlist123" data-custom="Get your feet wet at the #1 store in the world!">Internships at Amazon.com</option>
-                                                                    <option value="playlist567" data-custom="See who is hiring over the holidays">'Home for the Holidays' Jobs</option>
-                                                                    <option value="playlist890" data-custom="Love to travel? These jobs are for you.">Jetsetter Jobs</option>
-                                                                </select>
-                                                                <br />
-                                                                <p id="dropdowndesc" class="text-center">Browse all the jobs with whatever filters you want</p>
-                                                            </div>
-                                                        </div>
-                                                        <hr />
-                                                        <div class="form-group" id="location">
-                                                            <div class="form-item form-type-select form-item-location">
-                                                                <label for="edit-location">I want to work near </label>
-                                                                <select class="form-control">
-                                                                    <option value="">- Select -</option>
-                                                                    <option value="St. Louis">St. Louis, MO</option>
-                                                                    <option value="Chicago">Chicago, IL</option>
-                                                                    <option value="Indianapolis">Indianapolis, IN</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group" id="jobarea">
-                                                            <div class="form-item form-type-select form-item-jobarea">
-                                                                <label for="edit-jobarea">I'm interested in </label>
-                                                                <select class="form-control">
-                                                                    <option value="">- Select -</option>
-                                                                    <option value="Organizational Leadership">Organizational Leadership</option>
-                                                                    <option value="Organizational Leadership Other">Organizational Leadership Other</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12 form-group checkbox-nice">
-                                                            <div class="form-item form-type-checkbox form-item-internship">
-                                                                <input type="checkbox" id="edit-internship" name="internship" value="1" class="form-checkbox">
-                                                                <label class="option" for="edit-internship">Internships ONLY </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group no-margin-bottom">
-                                                            <input class="btn btn-success form-submit" type="submit" id="edit-submit" name="op" value="Let's Go">
-                                                        </div>
-                                                        <input type="hidden" name="form_build_id" value="form-Cgp0z1h55BabTiWbbraSWpvvPdrZ1azuJmUjVC0Hwt4">
-                                                        <input type="hidden" name="form_token" value="cER2i429OxduwXffvBUe6uBi7eI7KXvyTPuh6LTSgvU">
-                                                        <input type="hidden" name="form_id" value="bw_job_playlist_filter_form">
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                            </div>
-
-                            <div class="col-lg-4">
+                            <div class="col-md-8">
+                              <div id="collapse-one" class="panel-collapse collapse peek-meta-data">
                                 <div class="main-box clearfix">
                                     <div class="main-box-body clearfix bdubs-box">
                                         <div class="conversation-wrapper">
@@ -334,36 +180,210 @@ Express Scripts</span></a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>                            </div>
+                                </div>                                <div class="main-box clearfix">
+                                    <div class="main-box-body clearfix">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <form action="#" method="post" id="bw-job-playlist-filter-form" accept-charset="UTF-8">
+                                                    <div>
+                                                        <div class="form-group margin-top-20" id="playlists">
+                                                            <div class="form-item form-type-select form-item-location">
+                                                                <!--<select class="form-control" id="playlists">
+                                                                    <option value="alljobs" data-custom="Browse all the jobs with whatever filters you want">All Jobs</option>
+                                                                    <option value="degreeprogram" data-custom="We find jobs commonly related to the industry of your degree/program">Degree/Program Jobs</option>
+                                                                    <option value="personalized" data-custom="We read and parse your resume to find personalized jobs">Personalized Jobs</option>
+                                                                    <option value="playlist123" data-custom="Get your feet wet at the #1 store in the world!">Internships at Amazon.com</option>
+                                                                    <option value="playlist567" data-custom="See who is hiring over the holidays">'Home for the Holidays' Jobs</option>
+                                                                    <option value="playlist890" data-custom="Love to travel? These jobs are for you.">Jetsetter Jobs</option>
+                                                                </select>-->
+                                                              <div class="col-md-4">
+                                                                <p><input type="radio" name="search" checked data-custom="We find jobs commonly related to the industry of your degree/program"value="alljobs"> Suggest For Me</p>
+                                                              </div>
+                                                              <div class="col-md-4">
+                                                                <p><input type="radio" name="search" data-custom="Browse all the jobs with whatever filters you want" value="suggest"> Search by Keywords</p>
+                                                              </div>
+                                                              <div class="col-md-4">
+                                                                <p><input type="radio" name="search" value="playlist123"> Internships at Amazon.com</p>
+                                                              </div>
+
+                                                              <br />
+                                                              <p id="dropdowndesc" class="text-center">Browse all the jobs with whatever filters you want</p>
+                                                            </div>
+                                                        </div>
+                                                        <hr />
+                                                        <div class="form-group" id="location">
+                                                            <div class="form-item form-type-select form-item-location">
+                                                                <label for="edit-location">I want to work near </label>
+                                                                <select class="form-control">
+                                                                    <option value="">- Select -</option>
+                                                                    <option value="St. Louis">St. Louis, MO</option>
+                                                                    <option value="Chicago">Chicago, IL</option>
+                                                                    <option value="Indianapolis">Indianapolis, IN</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" id="jobarea">
+                                                            <div class="form-item form-type-select form-item-jobarea">
+                                                                <label for="edit-jobarea">I'm interested in </label>
+                                                                <select class="form-control">
+                                                                    <option value="">- Select -</option>
+                                                                    <option value="Healthcare">Healthcare</option>
+                                                                    <option value="Healthcare Other">Healthcare Other</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 form-group checkbox-nice">
+                                                            <div class="form-item form-type-checkbox form-item-internship">
+                                                                <input type="checkbox" id="edit-internship" name="internship" value="1" class="form-checkbox">
+                                                                <label class="option" for="edit-internship">Internships ONLY </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group no-margin-bottom">
+                                                            <input class="btn btn-success form-submit" type="submit" id="edit-submit" name="op" value="Let's Go">
+                                                        </div>
+                                                        <input type="hidden" name="form_build_id" value="form-Cgp0z1h55BabTiWbbraSWpvvPdrZ1azuJmUjVC0Hwt4">
+                                                        <input type="hidden" name="form_token" value="cER2i429OxduwXffvBUe6uBi7eI7KXvyTPuh6LTSgvU">
+                                                        <input type="hidden" name="form_id" value="bw_job_playlist_filter_form">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                                <div class="main-box infographic-box-center clearfix">
+                                    <div class="clearfix">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="main-box-header playlist-tags">
+                                                    <ul>
+                                                        <li>New</li>
+                                                        <li>Viewed</li>
+                                                        <li>Degree/Program: Medical Assisting</li>
+                                                        <li>Personalized</li>
+                                                        <li>Internship</li>
+                                                        <li>From Career Services</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 playlist-title">
+                                            <a href="../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html">
+                                                    <span>Certified Medical Assistant Medical Receptionist</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-12 playlist-sub-title">
+                                                <p>Give patients the care and comfort they need to feel better, faster.</p>
+                                            </div>
+                                        </div>
+                                        <div class="playlist-glances">
+                                            <div class="row">
+                                                <div class="col-xs-6 playlist-glance playlist-company">
+                                                    <p><img class="employer-logo-playlist" src="../../images/company-logo-wwt.png" /></p>
+                                                    <p>World Wide Technology</p>
+                                                </div>
+                                                <div class="col-xs-6 playlist-glance playlist-location">
+                                                    <p>Indianapolis, IN</p>
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            <div class="row">
+                                                <div class="col-xs-6 playlist-glance playlist-balance">
+                                                    <h3>Work / Life Balance</h3>
+                                                    <p>&#9733;&#9733;&#9733;&#189;</p>
+                                                    <div id="target1" class="collapse">
+                                                        <p>How current employees feel about not having to work all the time.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6 playlist-glance playlist-outlook">
+                                                    <h3>Opportunity</h3>
+                                                    <p>&#9733;&#9733;&#9733;&#9733;&#189;</p>
+                                                    <div id="target2" class="collapse">
+                                                        <p>How current employees feel about not having to work all the time.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-6 playlist-glance playlist-culture">
+                                                    <h3>Culture &amp; Values</h3>
+                                                    <p>&#9733;&#9733;</p>
+                                                    <div id="target3" class="collapse">
+                                                        <p>How employees measure company culture.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6 playlist-glance playlist-compensation">
+                                                    <h3>Compensation</h3>
+                                                    <p>$29,960 median salary</p>
+                                                    <div id="target4" class="collapse">
+                                                        <p>The average median salary in the entire United States for folks in this industry.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                  <p class="playlist-explain">
+                                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#target1,#target2,#target3,#target4">What do these scores mean?</a>
+                                                  </p>
+                                            </div>
+                                            <hr />
+                                            <div class="playlist-glance">
+                                                <h3>Responsibilities <a data-original-title="The day-to-day expectations of this job." href="#" data-toggle="tooltip" title="" class="fa fa-question-circle"></a></h3>
+                                                <ul>
+                                                    <li>Attention to Detail, Dependability, Cooperation, Integrity</li>
+                                                    <li>Record patients' medical history, vital statistics, or information such as test results in medical records.</li>
+                                                    <li>Prepare treatment rooms for patient examinations, keeping the rooms neat and clean.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <p class="small playlist-glassdoor"><a href='http://www.glassdoor.com/index.htm'>powered by <img src='http://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /></a></p>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="row playlist-feedback-desktop">
+                                            <div class="row text-center">
+                                                <form class="form-inline giant">
+                                                    <button type="submit" class="btn btn-danger" onclick="window.location='../../patterns/04-pages-04-job-seeker-journey-jsj-jobs-journey2/04-pages-04-job-seeker-journey-jsj-jobs-journey2.html';"><span class="icon-heartbrokenempty" style="font-size:22px; display:block; float:left; padding-top:6px; margin-right:4px;"></span><span style="margin-bottom:2px;"></span> Not Me</button>
+                                                    <button type="submit" class="btn btn-success" onclick="window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';"><span class="icon-heartempty" style="font-size:22px; display:block; float:left; padding-top:6px; margin-right:4px;"></span> Me</button>
+                                                    <button type="submit" class="btn btn-default" onclick="window.location='../../patterns/04-pages-04-job-seeker-journey-jsj-intro-journey2/04-pages-04-job-seeker-journey-jsj-intro-journey2.html';"><span class="fa fa-forward"></span> Next</button>
+                                                </form>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                              <button type="button" class="accordion-toggle collapsed btn btn-primary btn-lg margin-bottom-10" data-toggle="collapse" data-parent="#accordion" href="#collapse-one">
+                                Filter <span class="fa fa-filter"></span>
+                              </button>
+                            </div>
                         </div>
-
                     </div>
-                </div>
-
-                <!-- Begin Footer -->
-                <footer id="footer-bar" class="row">
-                    <p id="footer-copyright" class="col-xs-12">
-                        &copy; 2015 <a href="http://www.betterweekdays.com/" target="_blank">Better Weekdays</a>. All rights reserved.
-                    </p>
-                </footer>
-                <!-- End Footer -->            </div>
+              <!-- Begin Footer -->
+              <footer id="footer-bar" class="row">
+                  <p id="footer-copyright" class="col-xs-12">
+                      &copy; 2015 <a href="http://www.betterweekdays.com/" target="_blank">Better Weekdays</a>. All rights reserved.
+                  </p>
+              </footer>
+              <!-- End Footer -->                </div>
+            </div>
         </div>
     </div>
     <div class="playlist-feedback-mobile">
         <div class="row text-center">
             <form class="form-inline giant">
-                <button type="submit" class="btn btn-danger" onclick="window.location='../../patterns/04-pages-04-job-seeker-journey-jsj-jobs-journey2/04-pages-04-job-seeker-journey-jsj-jobs-journey2.html';"><span class="fa fa-thumbs-down"> Not Me</span></button>
-                <button type="submit" class="btn btn-success" onclick="window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';"><span class="fa fa-thumbs-up"> Me</span></button>
-                <button type="submit" class="btn btn-info" onclick="window.location='../../patterns/04-pages-04-job-seeker-journey-jsj-intro-journey2/04-pages-04-job-seeker-journey-jsj-intro-journey2.html';"><span class="fa fa-forward"></span></button>
+                <button type="submit" class="btn btn-danger" onclick="window.location='../../patterns/04-pages-04-job-seeker-journey-jsj-jobs-journey2/04-pages-04-job-seeker-journey-jsj-jobs-journey2.html';"><span class="icon-heartbrokenempty" style="margin-right:5px; display:block; padding-top:2px; float:left;"></span><span style="display:block; float:right;">Not Me</span></button>
+                <button type="submit" class="btn btn-success" onclick="window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';"><span class="icon-heartempty" style="margin-right:5px; display:block; padding-top:2px; float:left;"></span> <span style="display:block; float:right;"> Me</span></button>
+                <button type="submit" class="btn btn-default" onclick="window.location='../../patterns/04-pages-04-job-seeker-journey-jsj-intro-journey2/04-pages-04-job-seeker-journey-jsj-intro-journey2.html';"><span class="fa fa-forward"></span> Next</button>
             </form>
         </div>
     </div>
-</div><!--DO NOT REMOVE-->
+</div>
+<!--DO NOT REMOVE-->
 	
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "templates-job-seeker-jobs-new";
-		var lineage        = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"},{"lineagePattern":"molecules-left-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-left-nav\/01-molecules-05-navigation-05-left-nav.html"},{"lineagePattern":"organisms-playlist-filters-searchterms","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-38-playlist-filters-searchterms\/02-organisms-03-sections-38-playlist-filters-searchterms.html"},{"lineagePattern":"organisms-playlist-filters","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-15-playlist-filters\/02-organisms-03-sections-15-playlist-filters.html"},{"lineagePattern":"organisms-bdubs-conversation-small","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-10-bdubs-conversation-small\/02-organisms-03-sections-10-bdubs-conversation-small.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
+		var lineage        = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"},{"lineagePattern":"molecules-left-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-left-nav\/01-molecules-05-navigation-05-left-nav.html"},{"lineagePattern":"organisms-bdubs-conversation-small","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-10-bdubs-conversation-small\/02-organisms-03-sections-10-bdubs-conversation-small.html"},{"lineagePattern":"organisms-playlist-filters","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-15-playlist-filters\/02-organisms-03-sections-15-playlist-filters.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
 		var lineageR       = [{"lineagePattern":"pages-js-jobs","lineagePath":"..\/..\/patterns\/04-pages-01-job-seeker-js-jobs\/04-pages-01-job-seeker-js-jobs.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
@@ -400,10 +420,10 @@ Express Scripts</span></a>
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-0">
+	<script id="pl-js-polyfill-insert-1475705856">
 		(function() {
 			if (self != top) {
-				var cb = '0';
+				var cb = '1475705856';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -412,10 +432,10 @@ Express Scripts</span></a>
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-0">
+	<script id="pl-js-insert-1475705856">
 		(function() {
 			if (self != top) {
-				var cb = '0';
+				var cb = '1475705856';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
@@ -447,7 +467,10 @@ Express Scripts</span></a>
 
 <!-- theme scripts -->
 <script src="../../js/scripts.js"></script>
-<script src="//raw.githubusercontent.com/HubSpot/pace/v0.5.6/pace.min.js"></script>
+<!-- <script src="//raw.githubusercontent.com/HubSpot/pace/v0.5.6/pace.min.js"></script> -->
+
+
+
 
 
 

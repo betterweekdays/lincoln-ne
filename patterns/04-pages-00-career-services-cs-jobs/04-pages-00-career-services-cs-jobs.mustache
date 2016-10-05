@@ -49,12 +49,12 @@
                                                 &lt;/thead&gt;
                                                 &lt;tbody&gt;
                                                 &lt;tr&gt;
-                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-job-posting }}&quot;&gt;Psychology&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-job-posting }}&quot;&gt;Medical Assistant&lt;/a&gt;&lt;/td&gt;
                                                     &lt;td&gt;07/22/15 9:10 AM&lt;/td&gt;
                                                     &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Copy&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
                                                 &lt;/tr&gt;
                                                 &lt;tr&gt;
-                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-job-posting }}&quot;&gt;Direct Sales Manager Trainee&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-job-posting }}&quot;&gt;Digital Marketing Analyst&lt;/a&gt;&lt;/td&gt;
                                                     &lt;td&gt;07/22/15 9:09 AM&lt;/td&gt;
                                                     &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Copy&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
                                                 &lt;/tr&gt;
@@ -64,12 +64,12 @@
                                                     &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Copy&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
                                                 &lt;/tr&gt;
                                                 &lt;tr&gt;
-                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-job-posting }}&quot;&gt;Business Systems Analyst&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-job-posting }}&quot;&gt;Phlebotomist&lt;/a&gt;&lt;/td&gt;
                                                     &lt;td&gt;07/22/15 9:07 AM&lt;/td&gt;
                                                     &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Copy&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
                                                 &lt;/tr&gt;
                                                 &lt;tr&gt;
-                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-job-posting }}&quot;&gt;Customer Delivery Specialist&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-job-posting }}&quot;&gt;Dialysis Technician&lt;/a&gt;&lt;/td&gt;
                                                     &lt;td&gt;07/22/15 9:06 AM&lt;/td&gt;
                                                     &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Copy&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
                                                 &lt;/tr&gt;
@@ -79,7 +79,7 @@
                                                     &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Copy&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
                                                 &lt;/tr&gt;
                                                 &lt;tr&gt;
-                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-job-posting }}&quot;&gt;Website Applications Specialist&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-job-posting }}&quot;&gt;Automotive Mechanic&lt;/a&gt;&lt;/td&gt;
                                                     &lt;td&gt;07/22/15 9:02 AM&lt;/td&gt;
                                                     &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Copy&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
                                                 &lt;/tr&gt;
@@ -93,7 +93,14 @@
                                         &lt;div class=&quot;row&quot;&gt;
 
 
-                                            &lt;div class=&quot;col-xs-12 visible-lg&quot;&gt;
+                                          &lt;div class=&quot;col-xs-12 visible-lg&quot;&gt;
+
+                                            {{&gt; organisms-post-job-wizard-button }}
+
+                                          &lt;/div&gt;
+
+
+                                            &lt;div class=&quot;col-xs-12 visible-lg margin-top-20&quot;&gt;
 
                                                 &lt;!-- Button trigger modal --&gt;
                                                 &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;
@@ -228,8 +235,7 @@
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;script&gt;
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').focus()
-})
-&lt;/script&gt;
+{{&gt; organisms-post-job-wizard-modal }}
+&lt;style&gt;
+.modal-backdrop {display:none;}
+&lt;/style&gt;

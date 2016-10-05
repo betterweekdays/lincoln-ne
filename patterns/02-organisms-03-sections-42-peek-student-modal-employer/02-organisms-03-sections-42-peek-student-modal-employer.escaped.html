@@ -1,0 +1,176 @@
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;peek-student-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content peek&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html&quot;&gt;Amy Awesome&lt;/a&gt;&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-sm-6&quot;&gt;
+                        &lt;ul class=&quot;fa-ul no-padding peek-meta-data&quot;&gt;
+                            &lt;li&gt;Degree/Program: Medical Assistant&lt;/li&gt;
+                            &lt;li&gt;Email: &lt;a href=&quot;#&quot;&gt;amy.awesome@gmail.com&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-sm-6 text-right&quot;&gt;
+                        &lt;ul class=&quot;fa-ul no-padding peek-meta-data&quot;&gt;
+                            &lt;li&gt;GPA: 3.7&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;p class=&quot;lead-new-meta&quot;&gt;
+                            &lt;a data-original-title=&quot;Looking for an internship.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;&quot;&gt;&lt;span class=&quot;fa fa-info&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                            &amp;nbsp;&lt;a data-original-title=&quot;Favorited your company.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;&quot;&gt;&lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                            &amp;nbsp;&lt;a data-original-title=&quot;Uploaded a resume.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;&quot;&gt;&lt;span class=&quot;fa fa-file-text&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;hr /&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-sm-6&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;accordion-toggle collapsed btn btn-primary btn-lg&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse-one&quot;&gt;
+                            New Note &lt;span class=&quot;fa fa-plus&quot;&gt;&lt;/span&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-sm-6 text-right&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;accordion-toggle collapsed btn btn-primary btn-lg&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse-two&quot;&gt;
+                            New Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;panel-group accordion&quot; id=&quot;accordion&quot;&gt;
+                    &lt;div class=&quot;panel panel-default&quot;&gt;
+                        &lt;div id=&quot;collapse-one&quot; class=&quot;panel-collapse collapse peek-meta-data&quot;&gt;
+                            &lt;form&gt;
+                                &lt;!--&lt;div class=&quot;form-group&quot;&gt;--&gt;
+                                    &lt;!--&lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Student:&lt;/label&gt;--&gt;
+                                    &lt;!--&lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Name or Email&quot; type=&quot;text&quot; &gt;--&gt;
+                                &lt;!--&lt;/div&gt;--&gt;
+                                &lt;div class=&quot;form-group&quot;&gt;
+                                    &lt;label for=&quot;comment&quot;&gt;Note:&lt;/label&gt;
+                                    &lt;textarea class=&quot;form-control&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;
+                                &lt;/div&gt;
+                            &lt;/form&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Create&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;panel-group accordion&quot; id=&quot;accordion&quot;&gt;
+                    &lt;div class=&quot;panel panel-default&quot;&gt;
+                        &lt;div id=&quot;collapse-two&quot; class=&quot;panel-collapse collapse peek-meta-data&quot;&gt;
+                            &lt;form&gt;
+                                &lt;div class=&quot;form-group&quot;&gt;
+                                    &lt;label for=&quot;comment&quot;&gt;Message:&lt;/label&gt;
+                                    &lt;textarea class=&quot;form-control&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;
+                                &lt;/div&gt;
+                            &lt;/form&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Send&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+
+                &lt;/div&gt;
+
+                &lt;hr /&gt;
+
+                &lt;!--EMPTY STATE--&gt;
+
+                &lt;!--&lt;div class=&quot;peek-meta-data assessment-peek&quot;&gt;--&gt;
+                    &lt;!--&lt;div class=&quot;peek-meta-data assessment-peek&quot;&gt;--&gt;
+                                &lt;!--&lt;h2&gt;&lt;span class=&quot;fa fa-pie-chart&quot;&gt;&lt;/span&gt; Assessment&lt;/h2&gt;--&gt;
+                                &lt;!--&lt;p class=&quot;text-center gray&quot;&gt;Has not taken asssessment yet.&lt;/p&gt;--&gt;
+                        &lt;!--&lt;/div&gt;--&gt;
+                &lt;!--&lt;/div&gt;--&gt;
+
+                &lt;!--/EMPTY STATE--&gt;
+
+                &lt;div class=&quot;peek-meta-data assessment-peek&quot;&gt;
+                    &lt;div class=&quot;peek-meta-data assessment-peek&quot;&gt;
+                        &lt;h2&gt;&lt;span class=&quot;fa fa-pie-chart&quot;&gt;&lt;/span&gt; Assessment&lt;/h2&gt;
+                        &lt;ul class=&quot;list-group&quot;&gt;
+                            &lt;li class=&quot;list-group-item to-do-item-title&quot;&gt;
+                                &lt;strong&gt;Dominant Career Values&lt;/strong&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                &lt;a data-original-title=&quot;Individual seeks out underlying reason things happen and likes to investigate.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;Theoretical Discovery&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                &lt;a data-original-title=&quot;Individual's capacity to see the big picture and develop logical strategy positions them to manage and advise.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;Strategic Decisions&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                &lt;a data-original-title=&quot;Individual is motivated by excitement and competition, entrepreneurial and challenging circumstances.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;Entrepreneurial Challenge&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item to-do-item-title&quot;&gt;
+                                &lt;strong&gt;Key Strengths&lt;/strong&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Very Inquisitive
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Accomplishment-Oriented
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Highly Motivated
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item to-do-item-title&quot;&gt;
+                                &lt;strong&gt;Motivated to&lt;/strong&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Study difficult puzzles
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Solve big problems
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Conquer tough challenges
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item to-do-item-title&quot;&gt;
+                                &lt;strong&gt;Abilities&lt;/strong&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Detailed analysis
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Strategic thinking
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Creative thinking
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item to-do-item-title&quot;&gt;
+                                &lt;strong&gt;Personality&lt;/strong&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Thorough
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Demanding
+                            &lt;/li&gt;
+                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                Adventurous
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+
+
+                &lt;!--&lt;form role=&quot;form&quot;&gt;--&gt;
+                &lt;!--&lt;div class=&quot;form-group&quot;&gt;--&gt;
+                &lt;!--&lt;label for=&quot;invite-email&quot; class=&quot;control-label&quot;&gt;To:&lt;/label&gt;--&gt;
+                &lt;!--&lt;input id=&quot;invite-email&quot; class=&quot;form-control&quot; placeholder=&quot;Name&quot;&gt;--&gt;
+                &lt;!--&lt;/div&gt;--&gt;
+                &lt;!--&lt;/form&gt;--&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                &lt;!--&lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='../../patterns/04-pages-00-career-services-cs-students-browse/04-pages-00-career-services-cs-students-browse.html';&quot;&gt;Recommend&lt;/button&gt;--&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;

@@ -4,11 +4,17 @@
         &lt;div class=&quot;container&quot;&gt;
             &lt;a href=&quot;#&quot; id=&quot;logo&quot; class=&quot;navbar-brand&quot;&gt;
                 &lt;img src=&quot;../../../img/bw_logo_white.png&quot; alt=&quot;&quot; class=&quot;normal-logo logo-white&quot;&gt;
-                &lt;img src=&quot;../../../img/bw_logo_grey.png&quot; alt=&quot;&quot; class=&quot;normal-logo logo-black&quot;&gt;
-                &lt;img src=&quot;../../../img/bw_logo_grey.png&quot; alt=&quot;&quot; class=&quot;small-logo hidden-xs hidden-sm hidden&quot;&gt;
+                &lt;img src=&quot;../../../img/bw_logo_small_white.png&quot; alt=&quot;&quot; class=&quot;normal-logo&quot;&gt;
+                &lt;img src=&quot;../../../img/bw_logo_small_white.png&quot; alt=&quot;&quot; class=&quot;small-logo hidden-xs hidden-sm hidden&quot;&gt;
             &lt;/a&gt;
 
             &lt;div class=&quot;clearfix&quot;&gt;
+
+              &lt;ul class=&quot;nav navbar-nav pull-left&quot;&gt;
+                &lt;li class=&quot;visible-md visible-lg loading-spinner loading-graphic-lg hidden&quot;&gt;&lt;img src=&quot;../../../img/loading-nav-black.gif&quot; alt=&quot;Loading graphic&quot;&gt;&lt;/li&gt;
+                &lt;li class=&quot;hidden-md hidden-lg loading-spinner loading-graphic-sm hidden&quot;&gt;&lt;img src=&quot;../../../img/loading-nav-white.gif&quot; alt=&quot;Loading graphic&quot;&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+
                 &lt;button class=&quot;navbar-toggle&quot; data-target=&quot;.navbar-ex1-collapse&quot; data-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;
                     &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
                     &lt;span class=&quot;fa fa-bars&quot;&gt;&lt;/span&gt;
@@ -18,8 +24,7 @@
                 &lt;div class=&quot;nav-no-collapse pull-right&quot; id=&quot;header-nav&quot;&gt;
                     &lt;ul class=&quot;nav navbar-nav pull-right&quot;&gt;
                         &lt;li class=&quot;dropdown&quot;&gt;
-                            &lt;a href=&quot;#&quot;&gt;&lt;span&gt;	
-Express Scripts&lt;/span&gt;&lt;/a&gt;
+                            &lt;a href=&quot;#&quot;&gt;&lt;span&gt;My Organization&lt;/span&gt;&lt;/a&gt;
                         &lt;/li&gt;
                         &lt;li class=&quot;dropdown profile-dropdown&quot;&gt;
                             &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
@@ -37,7 +42,8 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/header&gt;
-    &lt;!-- End .header --&gt;    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+    &lt;!-- End .header --&gt;
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
             &lt;div id=&quot;nav-col&quot;&gt;
                 &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
@@ -48,6 +54,12 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
                                         &lt;a href=&quot;/patterns/04-pages-02-employer-e-dashboard/04-pages-02-employer-e-dashboard.html&quot;&gt;
                                             &lt;i class=&quot;fa fa-dashboard&quot;&gt;&lt;/i&gt;
                                             &lt;span&gt;Dashboard&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class=&quot;active&quot;&gt;
+                                        &lt;a href=&quot;/patterns/04-pages-02-employer-e-company-landing-new/04-pages-02-employer-e-company-landing-new.html&quot;&gt;
+                                            &lt;i class=&quot;fa fa-building&quot;&gt;&lt;/i&gt;
+                                            &lt;span&gt;Company&lt;/span&gt;
                                         &lt;/a&gt;
                                     &lt;/li&gt;
                                     &lt;li class=&quot;&quot;&gt;
@@ -69,6 +81,12 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
                                         &lt;/a&gt;
                                     &lt;/li&gt;
                                     &lt;li class=&quot;&quot;&gt;
+                                        &lt;a href=&quot;/patterns/04-pages-02-employer-e-profile/04-pages-02-employer-e-profile.html&quot;&gt;
+                                            &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+                                            &lt;span&gt;Profile&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class=&quot;&quot;&gt;
                                         &lt;a href=&quot;/patterns/04-pages-05-landing-l-login/04-pages-05-landing-l-login.html&quot;&gt;
                                             &lt;i class=&quot;fa fa-power-off&quot;&gt;&lt;/i&gt;
                                             &lt;span&gt;Logout&lt;/span&gt;
@@ -80,180 +98,220 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
             &lt;/div&gt;
 
             &lt;div id=&quot;content-wrapper&quot;&gt;
+
+                &lt;div class=&quot;row visible-xs&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+                        &lt;div class=&quot;main-box card padding-20&quot;&gt;
+                            &lt;img src=&quot;../../images/company-logo-wwt.png&quot; class=&quot;mobile-employer-logo&quot; /&gt;
+                            &lt;h2 style=&quot;color:#e93f3c;&quot; class=&quot;mobile-employer-headline&quot;&gt;Hi we're World Wide Technology and we save our customers time and money by serving all their technology needs under one roof, and being their one trusted provider that knows them best.&lt;/h2&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
                 &lt;div class=&quot;row&quot;&gt;
                     &lt;div class=&quot;col-lg-12&quot;&gt;
+                        &lt;div class=&quot;main-box card card-image transparent-box-container&quot;&gt;
+                            &lt;div class=&quot;transparent-image-box hidden-xs&quot;&gt;
+                                &lt;img src=&quot;../../images/company-logo-wwt.png&quot; class=&quot;transparent-box-employer-logo&quot;/&gt;
+                                &lt;h2 class=&quot;transparent-image-box-headline&quot; style=&quot;color:#e93f3c;&quot;&gt;Hi we're World Wide Technology and we save our customers time and money by serving all their technology needs under one roof, and being their one trusted provider that knows them best.&lt;/h2&gt;
+                            &lt;/div&gt;
+                            &lt;img src=&quot;../../images/employers.jpg&quot; alt=&quot;&quot; class=&quot;employer-hero-image&quot;/&gt;
+                            &lt;ul class=&quot;employer-anchor-nav&quot;&gt;
+                                &lt;li&gt;&lt;a href=&quot;#overview&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#jobs&quot;&gt;Jobs&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#reputation&quot;&gt;Reputation&lt;/a&gt;&lt;/li&gt;
+                                &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Industry&lt;/a&gt;&lt;/li&gt;--&gt;
+                                &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Benefits&lt;/a&gt;&lt;/li&gt;--&gt;
+                                &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Social&lt;/a&gt;&lt;/li&gt;--&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
 
+                &lt;div class=&quot;row&quot; id=&quot;overview&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+                        &lt;div class=&quot;main-box-overflow-hidden card&quot;&gt;
+                            &lt;div class=&quot;row&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;row&quot;&gt;
+                                &lt;div class=&quot;col-sm-6 employer-intro-text&quot;&gt;
+                                    &lt;p style=&quot;color:#2b80c8&quot; class=&quot;employer-lede&quot;&gt;We bring an innovative and proven approach to how organizations around the world discover, evaluate, architect andimplement technology.&lt;/p&gt;
+                                    &lt;p&gt;WWT works closely with industry leaders such as Cisco, HP, EMC, NetApp, Citrix, VMware and Dell, focusing on: Fortune 500 companies, service providers and the public sector.&lt;/p&gt;
+                                    &lt;p&gt;WWT employs more than 3,000 people and operates more than 2 million square feet of state-of-the-art warehousing, distribution and integration space strategically located throughout the world. WWT has been named on FORTUNE &ldquo;100 Best Places to Work For&reg;&rdquo;&nbsp;for four consecutive year.&lt;/p&gt;
+                                    &lt;hr /&gt;
+                                    &lt;p class=&quot;employer-at-a-glance&quot;&gt;Benefits&lt;/p&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;Tuition Reimbursement&lt;/li&gt;
+                                        &lt;li&gt;Medical Coverage&lt;/li&gt;
+                                    &lt;/ul&gt;&lt;hr /&gt;
+                                    &lt;p class=&quot;employer-at-a-glance&quot;&gt;At a Glance&lt;/p&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;HQ: San Franscisco, CA&lt;/li&gt;
+                                        &lt;li&gt;Founded: 1852&lt;/li&gt;
+                                        &lt;li&gt;# of Employees: 265000&lt;/li&gt;
+                                        &lt;li&gt;&lt;a style=&quot;color: #2b80c8&quot; href=&quot;#&quot;&gt;Website&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                    &lt;hr class=&quot;visible-xs&quot; style=&quot;margin-bottom:-30px;&quot;/&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-sm-6 padding-right-30 padding-bottom-30 padding-left-30-xs&quot;&gt;
+
+                                    &lt;div class=&quot;google-maps employer-detail-map margin-top-30&quot;&gt;
+                                        &lt;iframe  src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98569006259!2d-122.50781171223302!3d37.75781489468121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1459814231493&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen&gt;&lt;/iframe&gt;                                &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;row&quot; id=&quot;jobs&quot;&gt;
+                    &lt;div class=&quot;employer-detail-jobs col-sm-6&quot; &gt;
+                       &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-lg-12&quot;&gt;
+                               &lt;div class=&quot;main-box infographic-box&quot;&gt;
+            &lt;div class=&quot;match lead-new&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+
+                        &lt;div class=&quot;col-sm-8&quot;&gt;
+                            &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;
+                                Certified Medical Assistant Medical Receptionist
+                            &lt;/a&gt;&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;Veterans Health Administration - Indianapolis, IN&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;40hr / week - $29,600 / year&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                    &lt;!--&lt;div class=&quot;col-lg-12&quot;&gt;--&gt;
+                        &lt;!--&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg&quot; onclick=&quot;window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';&quot;&gt;--&gt;
+                            &lt;!--View--&gt;
+                        &lt;!--&lt;/button&gt;--&gt;
+                        &lt;!--&lt;div class=&quot;pull-right&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-success btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-thumbs-down&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;--&gt;
+                    &lt;!--&lt;/div&gt;--&gt;
+                &lt;!--&lt;/div&gt;--&gt;
+            &lt;/div&gt;                               &lt;/div&gt;
+                           &lt;/div&gt;
+                       &lt;/div&gt;
+
+                       &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-lg-12&quot;&gt;
+                               &lt;div class=&quot;main-box infographic-box&quot;&gt;
+            &lt;div class=&quot;match lead-new&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+
+                        &lt;div class=&quot;col-sm-8&quot;&gt;
+                            &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;
+                                Certified Medical Assistant Medical Receptionist
+                            &lt;/a&gt;&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;Veterans Health Administration - Indianapolis, IN&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;40hr / week - $29,600 / year&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                    &lt;!--&lt;div class=&quot;col-lg-12&quot;&gt;--&gt;
+                        &lt;!--&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg&quot; onclick=&quot;window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';&quot;&gt;--&gt;
+                            &lt;!--View--&gt;
+                        &lt;!--&lt;/button&gt;--&gt;
+                        &lt;!--&lt;div class=&quot;pull-right&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-success btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-thumbs-down&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;--&gt;
+                    &lt;!--&lt;/div&gt;--&gt;
+                &lt;!--&lt;/div&gt;--&gt;
+            &lt;/div&gt;                               &lt;/div&gt;
+                           &lt;/div&gt;
+                       &lt;/div&gt;
+
+                       &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-lg-12&quot;&gt;
+                               &lt;div class=&quot;main-box infographic-box&quot;&gt;
+            &lt;div class=&quot;match lead-new&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+
+                        &lt;div class=&quot;col-sm-8&quot;&gt;
+                            &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;
+                                Certified Medical Assistant Medical Receptionist
+                            &lt;/a&gt;&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;Veterans Health Administration - Indianapolis, IN&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;40hr / week - $29,600 / year&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                    &lt;!--&lt;div class=&quot;col-lg-12&quot;&gt;--&gt;
+                        &lt;!--&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg&quot; onclick=&quot;window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';&quot;&gt;--&gt;
+                            &lt;!--View--&gt;
+                        &lt;!--&lt;/button&gt;--&gt;
+                        &lt;!--&lt;div class=&quot;pull-right&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-success btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-thumbs-down&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;--&gt;
+                    &lt;!--&lt;/div&gt;--&gt;
+                &lt;!--&lt;/div&gt;--&gt;
+            &lt;/div&gt;                               &lt;/div&gt;
+                           &lt;/div&gt;
+                       &lt;/div&gt;
+
+                       &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-lg-12&quot;&gt;
+                               &lt;div class=&quot;main-box infographic-box&quot;&gt;
+            &lt;div class=&quot;match lead-new&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+
+                        &lt;div class=&quot;col-sm-8&quot;&gt;
+                            &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;
+                                Certified Medical Assistant Medical Receptionist
+                            &lt;/a&gt;&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;Veterans Health Administration - Indianapolis, IN&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;40hr / week - $29,600 / year&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                    &lt;!--&lt;div class=&quot;col-lg-12&quot;&gt;--&gt;
+                        &lt;!--&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg&quot; onclick=&quot;window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';&quot;&gt;--&gt;
+                            &lt;!--View--&gt;
+                        &lt;!--&lt;/button&gt;--&gt;
+                        &lt;!--&lt;div class=&quot;pull-right&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-success btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-thumbs-down&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;--&gt;
+                    &lt;!--&lt;/div&gt;--&gt;
+                &lt;!--&lt;/div&gt;--&gt;
+            &lt;/div&gt;                               &lt;/div&gt;
+                           &lt;/div&gt;
+                       &lt;/div&gt;                    &lt;/div&gt;
+
+                    &lt;div class=&quot;employer-detail-jobs col-sm-6&quot; &gt;
                         &lt;div class=&quot;row&quot;&gt;
-                            &lt;div class=&quot;posting-wrapper&quot;&gt;
-                                &lt;div class=&quot;col-lg-8&quot;&gt;
-                                    &lt;div class=&quot;main-box clearfix heading-with-sub-heading&quot;&gt;
-                                        &lt;h1&gt;Veterans Health Administration&lt;/h1&gt;
-                                        &lt;h2&gt;Help Genius Scientists Put Their Work in the Hands of Millions&lt;/h2&gt;
-                                    &lt;/div&gt;
-
-                                    &lt;div class=&quot;hidden-lg&quot;&gt;
-                                        &lt;div class=&quot;main-box clearfix&quot;&gt;
-                                            &lt;div class=&quot;main-box-body clearfix bdubs-box&quot;&gt;
-                                                &lt;div class=&quot;conversation-wrapper&quot;&gt;
-                                                    &lt;div class=&quot;conversation-content&quot;&gt;
-                                                        &lt;div class=&quot;conversation-inner&quot;&gt;
-
-
-                                                            &lt;div class=&quot;conversation-item item-left clearfix&quot;&gt;
-                                                                &lt;div class=&quot;conversation-user&quot;&gt;
-                                                                    &lt;img src=&quot;../../img/robot50x50.png&quot; alt=&quot;&quot;/&gt;
-                                                                &lt;/div&gt;
-                                                                &lt;div class=&quot;conversation-body&quot;&gt;
-                                                                    &lt;div class=&quot;name&quot;&gt;
-                                                                        BDubs Bot
-                                                                    &lt;/div&gt;
-                                                                    &lt;div class=&quot;headline text&quot;&gt;
-                                                                            &lt;p&gt;My user research has shown that it's important to maintain regular contact with employers.&lt;/p&gt;
-
-
-                                                                    &lt;/div&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-
-
-
-
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;                                    &lt;/div&gt;
-
-                                    &lt;div class=&quot;row&quot;&gt;
-                                        &lt;div class=&quot;col-md-12&quot;&gt;
-                                            &lt;div class=&quot;main-box card card-image&quot;&gt;
-
-                                                &lt;img src=&quot;../../images/pediatrics.png&quot; alt=&quot;Pediatrics&quot; /&gt;
-                                                &lt;hr /&gt;
-                                                &lt;p&gt;At Veterans Health Administration we serve over 2.4 million customers. We help genius scientists put their work in the hands of millions.&lt;/p&gt;
-                                                &lt;p&gt;Our mission is to power the quality of life while securing a energy future for America. We are the largest electric power provider in Missouri and third largest natural gas distribution operation in Illinois. Our companies generate a net capacity of nearly 10,200 megawatts of electricity and own more than 7,500 circuit miles of transmission lines.&lt;/p&gt;
-                                                &lt;p&gt;Benefits&lt;/p&gt;
-                                                &lt;ul&gt;
-                                                    &lt;li&gt;Life Insurance&lt;/li&gt;
-                                                    &lt;li&gt;Work/Life Assistance&lt;/li&gt;
-                                                    &lt;li&gt;Retirment Plan&lt;/li&gt;
-                                                    &lt;li&gt;Educational Assistance&lt;/li&gt;
-                                                &lt;/ul&gt;
-
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-
-                                    &lt;div class=&quot;hidden-lg&quot;&gt;
-                                        &lt;div class=&quot;main-box card&quot;&gt;
-                                            &lt;h2&gt;Details&lt;/h2&gt;
-                                            &lt;div class=&quot;row&quot;&gt;
-                                                &lt;div class=&quot;col-xs-6&quot;&gt;
-                                                    &lt;img src=&quot;/img/job-new/Wilkes-Barre-General-Hospital.jpg&quot; width=&quot;100%&quot;&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class=&quot;col-xs-5&quot;&gt;
-                                                    &lt;h4&gt;Veterans Health Administration&lt;/h4&gt;
-                                                    &lt;ul&gt;
-                                                        &lt;li&gt;HQ: Indianapolis, IN&lt;/li&gt;
-                                                        &lt;li&gt;Founded: 1997&lt;/li&gt;
-                                                        &lt;li&gt;Revenue: $9.7B&lt;/li&gt;
-                                                        &lt;li&gt;# of Employees: 9,200&lt;/li&gt;
-                                                    &lt;/ul&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class=&quot;row&quot;&gt;
-                                                &lt;div class=&quot;col-sm-12&quot;&gt;
-                                                    &lt;ul class=&quot;bottom-links&quot;&gt;
-                                                        &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Website&lt;/a&gt;&lt;/li&gt;
-                                                        &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-twitter&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                                        &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-facebook&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                                        &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-linkedin&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                                        &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-youtube&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                                    &lt;/ul&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-
-                                    &lt;div class=&quot;hidden-lg&quot;&gt;
-
-                                        &lt;div class=&quot;main-box card-orange card&quot;&gt;
-                                            &lt;h2&gt;Location&lt;/h2&gt;
-                                            &lt;div class=&quot;row&quot;&gt;
-                                                &lt;div class=&quot;col-xs-6&quot;&gt;
-                                                    &lt;img src=&quot;/img/job-new/map.png&quot; width=&quot;100%&quot;/&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class=&quot;col-xs-5&quot;&gt;
-                                                    &lt;h4&gt;Indianapolis, IN&lt;/h4&gt;
-                                                    &lt;ul&gt;
-                                                        &lt;li&gt;Population: 820,445&lt;/li&gt;
-                                                        &lt;li&gt;Avg. Monthly Cost: 2.5k&lt;/li&gt;
-                                                        &lt;li&gt;Humid Continental Climate&lt;/li&gt;
-                                                    &lt;/ul&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class=&quot;row&quot;&gt;
-                                                &lt;div class=&quot;col-sm-12&quot;&gt;
-                                                    &lt;ul class=&quot;bottom-links&quot;&gt;
-                                                        &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;
-                                                    &lt;/ul&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-
-                                        &lt;div class=&quot;main-box card-purple card job-detail-card&quot;&gt;
-                                            &lt;h2&gt;Reputation&lt;/h2&gt;
-                                            &lt;div class=&quot;row&quot;&gt;
-                                                &lt;div class=&quot;col-xs-12 text-center margin-top-60&quot;&gt;
-                                                    &lt;div class=&quot;col-xs-6&quot;&gt;
-                                                        &lt;h4&gt;Work / Life Balance &lt;a data-original-title=&quot;How current employees feel about not having to work all the time.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
-                                                        &lt;p&gt;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#189;&lt;/p&gt;
-                                                    &lt;/div&gt;
-                                                    &lt;div class=&quot;col-xs-6&quot;&gt;
-                                                        &lt;h4&gt;Opportunity &lt;a data-original-title=&quot;How current employees feel about the ability to advance within the company.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
-                                                        &lt;p&gt;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#189;&lt;/p&gt;
-                                                    &lt;/div&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class=&quot;col-xs-12 text-center&quot;&gt;
-                                                    &lt;div class=&quot;col-xs-6&quot;&gt;
-                                                        &lt;h4&gt;Culture &amp; Values &lt;a data-original-title=&quot;How employees measure company culture.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
-                                                        &lt;p&gt;&amp;#9733;&amp;#9733;&lt;/p&gt;
-                                                    &lt;/div&gt;
-                                                    &lt;div class=&quot;col-xs-6&quot;&gt;
-                                                        &lt;h4&gt;Leadership &lt;a data-original-title=&quot;How employees measure the vision and confidence in the company\'s executive team.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
-                                                        &lt;p&gt;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#189;&lt;/p&gt;
-                                                    &lt;/div&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class=&quot;col-sm-12 text-center margin-top-20&quot;&gt;
-                                                    &lt;p class=&quot;small&quot;&gt;&lt;a href='http://www.glassdoor.com/index.htm'&gt;powered by &lt;img src='http://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /&gt;&lt;/a&gt;&lt;/p&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-
-                                        &lt;/div&gt;
-
-                                        &lt;div class=&quot;main-box card&quot;&gt;
-                                            &lt;h2&gt;Contact Information&lt;/h2&gt;
-                                            &lt;div class=&quot;main-box-body clearfix&quot;&gt;
-                                                &lt;div class=&quot;col-sm-12&quot;&gt;
-                                                    &lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;
-                                                        &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Name: &lt;strong&gt;Joshua Thomas&lt;/strong&gt;&lt;/li&gt;
-                                                        &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Email: &lt;a href=&quot;#&quot;&gt;hiring@carouse...ics.com&lt;/a&gt;&lt;/li&gt;
-                                                        &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Phone: &lt;strong&gt;(314) 585-0436&lt;/strong&gt;&lt;/li&gt;
-                                                    &lt;/ul&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-
-                                    &lt;div class=&quot;row&quot;&gt;
-                                        &lt;div class=&quot;col-lg-12&quot;&gt;
-                                            &lt;div class=&quot;main-box infographic-box&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                &lt;div class=&quot;main-box infographic-box&quot;&gt;
             &lt;div class=&quot;match lead-new&quot;&gt;
                 &lt;div class=&quot;row&quot;&gt;
 
                         &lt;div class=&quot;col-sm-8&quot;&gt;
                             &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;
-                                Certified Psychology Medical Receptionist
+                                Certified Medical Assistant Medical Receptionist
                             &lt;/a&gt;&lt;/p&gt;
                             &lt;p class=&quot;lead-new-meta&quot;&gt;Veterans Health Administration - Indianapolis, IN&lt;/p&gt;
                             &lt;p class=&quot;lead-new-meta&quot;&gt;40hr / week - $29,600 / year&lt;/p&gt;
@@ -275,218 +333,447 @@ Express Scripts&lt;/span&gt;&lt;/a&gt;
                         &lt;/div&gt;--&gt;
                     &lt;!--&lt;/div&gt;--&gt;
                 &lt;!--&lt;/div&gt;--&gt;
-            &lt;/div&gt;                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-
-                                    &lt;div class=&quot;row&quot;&gt;
-                                        &lt;div class=&quot;col-lg-12&quot;&gt;
-                                            &lt;div class=&quot;main-box infographic-box&quot;&gt;
-            &lt;div class=&quot;match lead-new&quot;&gt;
-                &lt;div class=&quot;row&quot;&gt;
-
-                        &lt;div class=&quot;col-sm-8&quot;&gt;
-                            &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;
-                                Certified Psychology Medical Receptionist
-                            &lt;/a&gt;&lt;/p&gt;
-                            &lt;p class=&quot;lead-new-meta&quot;&gt;Veterans Health Administration - Indianapolis, IN&lt;/p&gt;
-                            &lt;p class=&quot;lead-new-meta&quot;&gt;40hr / week - $29,600 / year&lt;/p&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-
-                &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
-                    &lt;!--&lt;div class=&quot;col-lg-12&quot;&gt;--&gt;
-                        &lt;!--&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg&quot; onclick=&quot;window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';&quot;&gt;--&gt;
-                            &lt;!--View--&gt;
-                        &lt;!--&lt;/button&gt;--&gt;
-                        &lt;!--&lt;div class=&quot;pull-right&quot;&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-success btn-lg&quot;&gt;
-                                &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
-                            &lt;/button&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;
-                                &lt;span class=&quot;fa fa-thumbs-down&quot;&gt;&lt;/span&gt;
-                            &lt;/button&gt;
-                        &lt;/div&gt;--&gt;
-                    &lt;!--&lt;/div&gt;--&gt;
-                &lt;!--&lt;/div&gt;--&gt;
-            &lt;/div&gt;                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-
-                                    &lt;div class=&quot;row&quot;&gt;
-                                        &lt;div class=&quot;col-lg-12&quot;&gt;
-                                            &lt;div class=&quot;main-box infographic-box&quot;&gt;
-            &lt;div class=&quot;match lead-new&quot;&gt;
-                &lt;div class=&quot;row&quot;&gt;
-
-                        &lt;div class=&quot;col-sm-8&quot;&gt;
-                            &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;
-                                Certified Psychology Medical Receptionist
-                            &lt;/a&gt;&lt;/p&gt;
-                            &lt;p class=&quot;lead-new-meta&quot;&gt;Veterans Health Administration - Indianapolis, IN&lt;/p&gt;
-                            &lt;p class=&quot;lead-new-meta&quot;&gt;40hr / week - $29,600 / year&lt;/p&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-
-                &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
-                    &lt;!--&lt;div class=&quot;col-lg-12&quot;&gt;--&gt;
-                        &lt;!--&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg&quot; onclick=&quot;window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';&quot;&gt;--&gt;
-                            &lt;!--View--&gt;
-                        &lt;!--&lt;/button&gt;--&gt;
-                        &lt;!--&lt;div class=&quot;pull-right&quot;&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-success btn-lg&quot;&gt;
-                                &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
-                            &lt;/button&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;
-                                &lt;span class=&quot;fa fa-thumbs-down&quot;&gt;&lt;/span&gt;
-                            &lt;/button&gt;
-                        &lt;/div&gt;--&gt;
-                    &lt;!--&lt;/div&gt;--&gt;
-                &lt;!--&lt;/div&gt;--&gt;
-            &lt;/div&gt;                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-
-                                    &lt;div class=&quot;row&quot;&gt;
-                                        &lt;div class=&quot;col-lg-12&quot;&gt;
-                                            &lt;div class=&quot;main-box infographic-box&quot;&gt;
-            &lt;div class=&quot;match lead-new&quot;&gt;
-                &lt;div class=&quot;row&quot;&gt;
-
-                        &lt;div class=&quot;col-sm-8&quot;&gt;
-                            &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;
-                                Certified Psychology Medical Receptionist
-                            &lt;/a&gt;&lt;/p&gt;
-                            &lt;p class=&quot;lead-new-meta&quot;&gt;Veterans Health Administration - Indianapolis, IN&lt;/p&gt;
-                            &lt;p class=&quot;lead-new-meta&quot;&gt;40hr / week - $29,600 / year&lt;/p&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-
-                &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
-                    &lt;!--&lt;div class=&quot;col-lg-12&quot;&gt;--&gt;
-                        &lt;!--&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg&quot; onclick=&quot;window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';&quot;&gt;--&gt;
-                            &lt;!--View--&gt;
-                        &lt;!--&lt;/button&gt;--&gt;
-                        &lt;!--&lt;div class=&quot;pull-right&quot;&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-success btn-lg&quot;&gt;
-                                &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
-                            &lt;/button&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;
-                                &lt;span class=&quot;fa fa-thumbs-down&quot;&gt;&lt;/span&gt;
-                            &lt;/button&gt;
-                        &lt;/div&gt;--&gt;
-                    &lt;!--&lt;/div&gt;--&gt;
-                &lt;!--&lt;/div&gt;--&gt;
-            &lt;/div&gt;                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-
-                                &lt;div class=&quot;col-lg-4 visible-lg&quot;&gt;
-                                    &lt;div class=&quot;main-box card&quot;&gt;
-                                        &lt;h2&gt;Details&lt;/h2&gt;
-                                        &lt;div class=&quot;row&quot;&gt;
-                                            &lt;div class=&quot;col-lg-6&quot;&gt;
-                                                &lt;img src=&quot;/img/job-new/Wilkes-Barre-General-Hospital.jpg&quot; width=&quot;100%&quot;&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class=&quot;col-lg-5&quot;&gt;
-                                                &lt;h4&gt;Veterans Health Administration&lt;/h4&gt;
-                                                &lt;ul&gt;
-                                                    &lt;li&gt;HQ: Indianapolis, IN&lt;/li&gt;
-                                                    &lt;li&gt;Founded: 1997&lt;/li&gt;
-                                                    &lt;li&gt;Revenue: $9.7B&lt;/li&gt;
-                                                    &lt;li&gt;# of Employees: 9,200&lt;/li&gt;
-                                                &lt;/ul&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                        &lt;div class=&quot;row&quot;&gt;
-                                            &lt;div class=&quot;col-sm-12&quot;&gt;
-                                                &lt;ul class=&quot;bottom-links&quot;&gt;
-                                                    &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Website&lt;/a&gt;&lt;/li&gt;
-                                                    &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-twitter&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                                    &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-facebook&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                                    &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-linkedin&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                                    &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-youtube&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                                &lt;/ul&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-
-                                &lt;div class=&quot;col-lg-4 visible-lg&quot;&gt;
-
-                                    &lt;div class=&quot;main-box card-orange card&quot;&gt;
-                                        &lt;h2&gt;Location&lt;/h2&gt;
-                                        &lt;div class=&quot;row&quot;&gt;
-                                            &lt;div class=&quot;col-sm-6&quot;&gt;
-                                                &lt;img src=&quot;/img/job-new/map.png&quot; width=&quot;100%&quot;/&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class=&quot;col-sm-5&quot;&gt;
-                                                &lt;h4&gt;Indianapolis, IN&lt;/h4&gt;
-                                                &lt;ul&gt;
-                                                    &lt;li&gt;Population: 820,445&lt;/li&gt;
-                                                    &lt;li&gt;Avg. Monthly Cost: 2.5k&lt;/li&gt;
-                                                    &lt;li&gt;Humid Continental Climate&lt;/li&gt;
-                                                &lt;/ul&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                        &lt;div class=&quot;row&quot;&gt;
-                                            &lt;div class=&quot;col-sm-12&quot;&gt;
-                                                &lt;ul class=&quot;bottom-links&quot;&gt;
-                                                    &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;
-                                                &lt;/ul&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-
-                                    &lt;div class=&quot;main-box card-purple card job-detail-card&quot;&gt;
-                                        &lt;h2&gt;Reputation&lt;/h2&gt;
-                                        &lt;div class=&quot;row&quot;&gt;
-                                            &lt;div class=&quot;col-sm-12 text-center margin-top-60&quot;&gt;
-                                                &lt;div class=&quot;col-sm-6&quot;&gt;
-                                                    &lt;h4&gt;Work / Life Balance &lt;a data-original-title=&quot;How current employees feel about not having to work all the time.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
-                                                    &lt;p&gt;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#189;&lt;/p&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class=&quot;col-sm-6&quot;&gt;
-                                                    &lt;h4&gt;Opportunity &lt;a data-original-title=&quot;How current employees feel about the ability to advance within the company.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
-                                                    &lt;p&gt;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#189;&lt;/p&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class=&quot;col-sm-12 text-center&quot;&gt;
-                                                &lt;div class=&quot;col-xs-6&quot;&gt;
-                                                    &lt;h4&gt;Culture &amp; Values &lt;a data-original-title=&quot;How employees measure company culture.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
-                                                    &lt;p&gt;&amp;#9733;&amp;#9733;&lt;/p&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class=&quot;col-xs-6&quot;&gt;
-                                                    &lt;h4&gt;Leadership &lt;a data-original-title=&quot;How employees measure the vision and confidence in the company\'s executive team.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
-                                                    &lt;p&gt;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#189;&lt;/p&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class=&quot;col-sm-12 text-center margin-top-20&quot;&gt;
-                                                &lt;p class=&quot;small&quot;&gt;&lt;a href='http://www.glassdoor.com/index.htm'&gt;powered by &lt;img src='http://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /&gt;&lt;/a&gt;&lt;/p&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-
-                                    &lt;/div&gt;
-
-                                    &lt;div class=&quot;main-box card&quot;&gt;
-                                        &lt;h2&gt;Contact Information&lt;/h2&gt;
-                                        &lt;div class=&quot;main-box-body clearfix&quot;&gt;
-                                            &lt;div class=&quot;col-sm-12&quot;&gt;
-                                                &lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;
-                                                    &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Name: &lt;strong&gt;Joshua Thomas&lt;/strong&gt;&lt;/li&gt;
-                                                    &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Email: &lt;a href=&quot;#&quot;&gt;hiring@carouse...ics.com&lt;/a&gt;&lt;/li&gt;
-                                                    &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Phone: &lt;strong&gt;(314) 585-0436&lt;/strong&gt;&lt;/li&gt;
-                                                &lt;/ul&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
+            &lt;/div&gt;                                &lt;/div&gt;
                             &lt;/div&gt;
                         &lt;/div&gt;
 
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                &lt;div class=&quot;main-box infographic-box&quot;&gt;
+            &lt;div class=&quot;match lead-new&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+
+                        &lt;div class=&quot;col-sm-8&quot;&gt;
+                            &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;
+                                Certified Medical Assistant Medical Receptionist
+                            &lt;/a&gt;&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;Veterans Health Administration - Indianapolis, IN&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;40hr / week - $29,600 / year&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                    &lt;!--&lt;div class=&quot;col-lg-12&quot;&gt;--&gt;
+                        &lt;!--&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg&quot; onclick=&quot;window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';&quot;&gt;--&gt;
+                            &lt;!--View--&gt;
+                        &lt;!--&lt;/button&gt;--&gt;
+                        &lt;!--&lt;div class=&quot;pull-right&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-success btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-thumbs-down&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;--&gt;
+                    &lt;!--&lt;/div&gt;--&gt;
+                &lt;!--&lt;/div&gt;--&gt;
+            &lt;/div&gt;                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                &lt;div class=&quot;main-box infographic-box&quot;&gt;
+            &lt;div class=&quot;match lead-new&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+
+                        &lt;div class=&quot;col-sm-8&quot;&gt;
+                            &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;
+                                Certified Medical Assistant Medical Receptionist
+                            &lt;/a&gt;&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;Veterans Health Administration - Indianapolis, IN&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;40hr / week - $29,600 / year&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                    &lt;!--&lt;div class=&quot;col-lg-12&quot;&gt;--&gt;
+                        &lt;!--&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg&quot; onclick=&quot;window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';&quot;&gt;--&gt;
+                            &lt;!--View--&gt;
+                        &lt;!--&lt;/button&gt;--&gt;
+                        &lt;!--&lt;div class=&quot;pull-right&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-success btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-thumbs-down&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;--&gt;
+                    &lt;!--&lt;/div&gt;--&gt;
+                &lt;!--&lt;/div&gt;--&gt;
+            &lt;/div&gt;                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                &lt;div class=&quot;main-box infographic-box&quot;&gt;
+            &lt;div class=&quot;match lead-new&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+
+                        &lt;div class=&quot;col-sm-8&quot;&gt;
+                            &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;
+                                Certified Medical Assistant Medical Receptionist
+                            &lt;/a&gt;&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;Veterans Health Administration - Indianapolis, IN&lt;/p&gt;
+                            &lt;p class=&quot;lead-new-meta&quot;&gt;40hr / week - $29,600 / year&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                    &lt;!--&lt;div class=&quot;col-lg-12&quot;&gt;--&gt;
+                        &lt;!--&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg&quot; onclick=&quot;window.location='../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html';&quot;&gt;--&gt;
+                            &lt;!--View--&gt;
+                        &lt;!--&lt;/button&gt;--&gt;
+                        &lt;!--&lt;div class=&quot;pull-right&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-success btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;
+                                &lt;span class=&quot;fa fa-thumbs-down&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;--&gt;
+                    &lt;!--&lt;/div&gt;--&gt;
+                &lt;!--&lt;/div&gt;--&gt;
+            &lt;/div&gt;                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;row&quot; id=&quot;reputation&quot;&gt;
+                    &lt;div class=&quot;col-sm-12&quot;&gt;
+
+                    &lt;div class=&quot;main-box card-purple card&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-sm-12 text-center margin-top-20&quot;&gt;
+                                &lt;div class=&quot;col-sm-6&quot;&gt;
+                                    &lt;h4&gt;Work / Life Balance &lt;a data-original-title=&quot;How current employees feel about not having to work all the time.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
+                                    &lt;div class=&quot;stars&quot;&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-half.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-empty.png&quot; /&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-sm-6&quot;&gt;
+                                    &lt;h4&gt;Opportunity &lt;a data-original-title=&quot;How current employees feel about the ability to advance within the company.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
+                                    &lt;div class=&quot;stars&quot;&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-half.png&quot; /&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-sm-12 text-center&quot;&gt;
+                                &lt;div class=&quot;col-xs-6&quot;&gt;
+                                    &lt;h4&gt;Culture &amp; Values &lt;a data-original-title=&quot;How employees measure company culture.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
+                                    &lt;div class=&quot;stars&quot;&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-empty.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-empty.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-empty.png&quot; /&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-xs-6&quot;&gt;
+                                    &lt;h4&gt;Leadership &lt;a data-original-title=&quot;How employees measure the vision and confidence in the company\'s executive team.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
+                                    &lt;div class=&quot;stars&quot;&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                        &lt;img src=&quot;../../img/stars/star-full.png&quot; /&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-sm-12 text-center margin-top-20&quot;&gt;
+                                &lt;p class=&quot;small&quot;&gt;&lt;a href='http://www.glassdoor.com/index.htm'&gt;powered by &lt;img src='http://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /&gt;&lt;/a&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
                     &lt;/div&gt;
                 &lt;/div&gt;
+
+
+                &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                    &lt;!--&lt;div class=&quot;col-lg-12&quot;&gt;--&gt;
+
+                        &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                            &lt;!--&lt;div class=&quot;posting-wrapper&quot;&gt;--&gt;
+                                &lt;!--&lt;div class=&quot;col-lg-8&quot;&gt;--&gt;
+                                    &lt;!--&lt;div class=&quot;main-box clearfix heading-with-sub-heading&quot;&gt;--&gt;
+                                        &lt;!--&lt;h1&gt;World Wide Technology, Inc.&lt;/h1&gt;--&gt;
+                                        &lt;!--&lt;h2&gt;Help Genius Scientists Put Their Work in the Hands of Millions&lt;/h2&gt;--&gt;
+                                    &lt;!--&lt;/div&gt;--&gt;
+
+                                    &lt;!--&lt;div class=&quot;hidden-lg&quot;&gt;--&gt;
+                                        &lt;!--&lt;div class=&quot;main-box clearfix&quot;&gt;
+    &lt;div class=&quot;main-box-body clearfix bdubs-box&quot;&gt;
+        &lt;div class=&quot;conversation-wrapper&quot;&gt;
+            &lt;div class=&quot;conversation-content&quot;&gt;
+                &lt;div class=&quot;conversation-inner&quot;&gt;
+
+
+                    &lt;div class=&quot;conversation-item item-left clearfix&quot;&gt;
+                        &lt;div class=&quot;conversation-user&quot;&gt;
+                            &lt;img src=&quot;../../img/robot50x50.png&quot; alt=&quot;&quot;/&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;conversation-body&quot;&gt;
+                            &lt;div class=&quot;name&quot;&gt;
+                                BDubs Bot
+                            &lt;/div&gt;
+                            &lt;div class=&quot;headline text&quot;&gt;
+                                    &lt;p&gt;My user research has shown that it's important to maintain regular contact with employers.&lt;/p&gt;
+
+
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+
+
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;--&gt;
+                                    &lt;!--&lt;/div&gt;--&gt;
+
+                                    &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                                        &lt;!--&lt;div class=&quot;col-md-12&quot;&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;main-box card card-image&quot;&gt;--&gt;
+
+                                                &lt;!--&lt;img src=&quot;../../images/pediatrics.png&quot; alt=&quot;Pediatrics&quot; /&gt;--&gt;
+                                                &lt;!--&lt;hr /&gt;--&gt;
+                                                &lt;!--&lt;p&gt;At Veterans Health Administration we serve over 2.4 million customers. We help genius scientists put their work in the hands of millions.&lt;/p&gt;--&gt;
+                                                &lt;!--&lt;p&gt;Our mission is to power the quality of life while securing a energy future for America. We are the largest electric power provider in Missouri and third largest natural gas distribution operation in Illinois. Our companies generate a net capacity of nearly 10,200 megawatts of electricity and own more than 7,500 circuit miles of transmission lines.&lt;/p&gt;--&gt;
+                                                &lt;!--&lt;p&gt;Benefits&lt;/p&gt;--&gt;
+                                                &lt;!--&lt;ul&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;Life Insurance&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;Work/Life Assistance&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;Retirment Plan&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;Educational Assistance&lt;/li&gt;--&gt;
+                                                &lt;!--&lt;/ul&gt;--&gt;
+
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                        &lt;!--&lt;/div&gt;--&gt;
+                                    &lt;!--&lt;/div&gt;--&gt;
+
+                                    &lt;!--&lt;div class=&quot;hidden-lg&quot;&gt;--&gt;
+                                        &lt;!--&lt;div class=&quot;main-box card&quot;&gt;--&gt;
+                                            &lt;!--&lt;h2&gt;Details&lt;/h2&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-xs-6&quot;&gt;--&gt;
+                                                    &lt;!--&lt;img src=&quot;/img/job-new/va-logo.png&quot; width=&quot;100%&quot;&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-xs-5&quot;&gt;--&gt;
+                                                    &lt;!--&lt;h4&gt;Veterans Health Administration&lt;/h4&gt;--&gt;
+                                                    &lt;!--&lt;ul&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;HQ: Indianapolis, IN&lt;/li&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;Founded: 1997&lt;/li&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;Revenue: $9.7B&lt;/li&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;# of Employees: 9,200&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;/ul&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-sm-12&quot;&gt;--&gt;
+                                                    &lt;!--&lt;ul class=&quot;bottom-links&quot;&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Website&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-twitter&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-facebook&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-linkedin&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-youtube&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;/ul&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                        &lt;!--&lt;/div&gt;--&gt;
+                                    &lt;!--&lt;/div&gt;--&gt;
+
+                                    &lt;!--&lt;div class=&quot;hidden-lg&quot;&gt;--&gt;
+
+                                        &lt;!--&lt;div class=&quot;main-box card-orange card&quot;&gt;--&gt;
+                                            &lt;!--&lt;h2&gt;Location&lt;/h2&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-xs-6&quot;&gt;--&gt;
+                                                    &lt;!--&lt;img src=&quot;/img/job-new/map.png&quot; width=&quot;100%&quot;/&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-xs-5&quot;&gt;--&gt;
+                                                    &lt;!--&lt;h4&gt;Indianapolis, IN&lt;/h4&gt;--&gt;
+                                                    &lt;!--&lt;ul&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;Population: 820,445&lt;/li&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;Avg. Monthly Cost: 2.5k&lt;/li&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;Humid Continental Climate&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;/ul&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-sm-12&quot;&gt;--&gt;
+                                                    &lt;!--&lt;ul class=&quot;bottom-links&quot;&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;/ul&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                        &lt;!--&lt;/div&gt;--&gt;
+
+                                        &lt;!--&lt;div class=&quot;main-box card-purple card job-detail-card&quot;&gt;--&gt;
+                                            &lt;!--&lt;h2&gt;Reputation&lt;/h2&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-xs-12 text-center margin-top-60&quot;&gt;--&gt;
+                                                    &lt;!--&lt;div class=&quot;col-xs-6&quot;&gt;--&gt;
+                                                        &lt;!--&lt;h4&gt;Work / Life Balance &lt;a data-original-title=&quot;How current employees feel about not having to work all the time.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;--&gt;
+                                                        &lt;!--&lt;p&gt;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#189;&lt;/p&gt;--&gt;
+                                                    &lt;!--&lt;/div&gt;--&gt;
+                                                    &lt;!--&lt;div class=&quot;col-xs-6&quot;&gt;--&gt;
+                                                        &lt;!--&lt;h4&gt;Opportunity &lt;a data-original-title=&quot;How current employees feel about the ability to advance within the company.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;--&gt;
+                                                        &lt;!--&lt;p&gt;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#189;&lt;/p&gt;--&gt;
+                                                    &lt;!--&lt;/div&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-xs-12 text-center&quot;&gt;--&gt;
+                                                    &lt;!--&lt;div class=&quot;col-xs-6&quot;&gt;--&gt;
+                                                        &lt;!--&lt;h4&gt;Culture &amp; Values &lt;a data-original-title=&quot;How employees measure company culture.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;--&gt;
+                                                        &lt;!--&lt;p&gt;&amp;#9733;&amp;#9733;&lt;/p&gt;--&gt;
+                                                    &lt;!--&lt;/div&gt;--&gt;
+                                                    &lt;!--&lt;div class=&quot;col-xs-6&quot;&gt;--&gt;
+                                                        &lt;!--&lt;h4&gt;Leadership &lt;a data-original-title=&quot;How employees measure the vision and confidence in the company\'s executive team.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;--&gt;
+                                                        &lt;!--&lt;p&gt;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#189;&lt;/p&gt;--&gt;
+                                                    &lt;!--&lt;/div&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-sm-12 text-center margin-top-20&quot;&gt;--&gt;
+                                                    &lt;!--&lt;p class=&quot;small&quot;&gt;&lt;a href='http://www.glassdoor.com/index.htm'&gt;powered by &lt;img src='http://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /&gt;&lt;/a&gt;&lt;/p&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+
+                                        &lt;!--&lt;/div&gt;--&gt;
+
+                                        &lt;!--&lt;div class=&quot;main-box card&quot;&gt;--&gt;
+                                            &lt;!--&lt;h2&gt;Contact Information&lt;/h2&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;main-box-body clearfix&quot;&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-sm-12&quot;&gt;--&gt;
+                                                    &lt;!--&lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Name: &lt;strong&gt;Joshua Thomas&lt;/strong&gt;&lt;/li&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Email: &lt;a href=&quot;#&quot;&gt;hiring@carouse...ics.com&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                        &lt;!--&lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Phone: &lt;strong&gt;(312) 999-9999&lt;/strong&gt;&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;/ul&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                        &lt;!--&lt;/div&gt;--&gt;
+                                    &lt;!--&lt;/div&gt;--&gt;
+
+
+
+                                &lt;!--&lt;/div&gt;--&gt;
+
+                                &lt;!--&lt;div class=&quot;col-lg-4 visible-lg&quot;&gt;--&gt;
+                                    &lt;!--&lt;div class=&quot;main-box card&quot;&gt;--&gt;
+                                        &lt;!--&lt;h2&gt;Details&lt;/h2&gt;--&gt;
+                                        &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;col-lg-6&quot;&gt;--&gt;
+                                                &lt;!--&lt;img src=&quot;/img/job-new/va-logo.png&quot; width=&quot;100%&quot;&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;col-lg-5&quot;&gt;--&gt;
+                                                &lt;!--&lt;h4&gt;Veterans Health Administration&lt;/h4&gt;--&gt;
+                                                &lt;!--&lt;ul&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;HQ: Indianapolis, IN&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;Founded: 1997&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;Revenue: $9.7B&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;# of Employees: 9,200&lt;/li&gt;--&gt;
+                                                &lt;!--&lt;/ul&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                        &lt;!--&lt;/div&gt;--&gt;
+                                        &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;col-sm-12&quot;&gt;--&gt;
+                                                &lt;!--&lt;ul class=&quot;bottom-links&quot;&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Website&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-twitter&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-facebook&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-linkedin&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;fa fa-youtube&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                &lt;!--&lt;/ul&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                        &lt;!--&lt;/div&gt;--&gt;
+                                    &lt;!--&lt;/div&gt;--&gt;
+                                &lt;!--&lt;/div&gt;--&gt;
+
+                                &lt;!--&lt;div class=&quot;col-lg-4 visible-lg&quot;&gt;--&gt;
+
+                                    &lt;!--&lt;div class=&quot;main-box card-orange card&quot;&gt;--&gt;
+                                        &lt;!--&lt;h2&gt;Location&lt;/h2&gt;--&gt;
+                                        &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;col-sm-6&quot;&gt;--&gt;
+                                                &lt;!--&lt;img src=&quot;/img/job-new/map.png&quot; width=&quot;100%&quot;/&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;col-sm-5&quot;&gt;--&gt;
+                                                &lt;!--&lt;h4&gt;Indianapolis, IN&lt;/h4&gt;--&gt;
+                                                &lt;!--&lt;ul&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;Population: 820,445&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;Avg. Monthly Cost: 2.5k&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;Humid Continental Climate&lt;/li&gt;--&gt;
+                                                &lt;!--&lt;/ul&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                        &lt;!--&lt;/div&gt;--&gt;
+                                        &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;col-sm-12&quot;&gt;--&gt;
+                                                &lt;!--&lt;ul class=&quot;bottom-links&quot;&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                &lt;!--&lt;/ul&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                        &lt;!--&lt;/div&gt;--&gt;
+                                    &lt;!--&lt;/div&gt;--&gt;
+
+                                    &lt;!--&lt;div class=&quot;main-box card-purple card job-detail-card&quot;&gt;--&gt;
+                                        &lt;!--&lt;h2&gt;Reputation&lt;/h2&gt;--&gt;
+                                        &lt;!--&lt;div class=&quot;row&quot;&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;col-sm-12 text-center margin-top-60&quot;&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-sm-6&quot;&gt;--&gt;
+                                                    &lt;!--&lt;h4&gt;Work / Life Balance &lt;a data-original-title=&quot;How current employees feel about not having to work all the time.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;--&gt;
+                                                    &lt;!--&lt;p&gt;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#189;&lt;/p&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-sm-6&quot;&gt;--&gt;
+                                                    &lt;!--&lt;h4&gt;Opportunity &lt;a data-original-title=&quot;How current employees feel about the ability to advance within the company.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;--&gt;
+                                                    &lt;!--&lt;p&gt;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#189;&lt;/p&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;col-sm-12 text-center&quot;&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-xs-6&quot;&gt;--&gt;
+                                                    &lt;!--&lt;h4&gt;Culture &amp; Values &lt;a data-original-title=&quot;How employees measure company culture.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;--&gt;
+                                                    &lt;!--&lt;p&gt;&amp;#9733;&amp;#9733;&lt;/p&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                                &lt;!--&lt;div class=&quot;col-xs-6&quot;&gt;--&gt;
+                                                    &lt;!--&lt;h4&gt;Leadership &lt;a data-original-title=&quot;How employees measure the vision and confidence in the company\'s executive team.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot; class=&quot;fa fa-question-circle&quot;&gt;&lt;/a&gt;&lt;/h4&gt;--&gt;
+                                                    &lt;!--&lt;p&gt;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#9733;&amp;#189;&lt;/p&gt;--&gt;
+                                                &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;col-sm-12 text-center margin-top-20&quot;&gt;--&gt;
+                                                &lt;!--&lt;p class=&quot;small&quot;&gt;&lt;a href='http://www.glassdoor.com/index.htm'&gt;powered by &lt;img src='http://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /&gt;&lt;/a&gt;&lt;/p&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                        &lt;!--&lt;/div&gt;--&gt;
+
+                                    &lt;!--&lt;/div&gt;--&gt;
+
+                                    &lt;!--&lt;div class=&quot;main-box card&quot;&gt;--&gt;
+                                        &lt;!--&lt;h2&gt;Contact Information&lt;/h2&gt;--&gt;
+                                        &lt;!--&lt;div class=&quot;main-box-body clearfix&quot;&gt;--&gt;
+                                            &lt;!--&lt;div class=&quot;col-sm-12&quot;&gt;--&gt;
+                                                &lt;!--&lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Name: &lt;strong&gt;Joshua Thomas&lt;/strong&gt;&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Email: &lt;a href=&quot;#&quot;&gt;hiring@carouse...ics.com&lt;/a&gt;&lt;/li&gt;--&gt;
+                                                    &lt;!--&lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Phone: &lt;strong&gt;(312) 999-9999&lt;/strong&gt;&lt;/li&gt;--&gt;
+                                                &lt;!--&lt;/ul&gt;--&gt;
+                                            &lt;!--&lt;/div&gt;--&gt;
+                                        &lt;!--&lt;/div&gt;--&gt;
+                                    &lt;!--&lt;/div&gt;--&gt;
+                                &lt;!--&lt;/div&gt;--&gt;
+                            &lt;!--&lt;/div&gt;--&gt;
+                        &lt;!--&lt;/div&gt;--&gt;
+
+                    &lt;!--&lt;/div&gt;--&gt;
+                &lt;!--&lt;/div&gt;--&gt;
 
                 &lt;!-- Begin Footer --&gt;
                 &lt;footer id=&quot;footer-bar&quot; class=&quot;row&quot;&gt;
