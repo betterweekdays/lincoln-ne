@@ -849,18 +849,28 @@
                                                     &lt;hr /&gt;
                                                 &lt;/div&gt;
                                                 &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade pre-scrollable&quot; id=&quot;notes-tab&quot; aria-labelledBy=&quot;notes-tab&quot;&gt;
-                                                    &lt;p&gt;Date: 12/07/2015&lt;/p&gt;
-                                                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+                                                    &lt;p&gt;&lt;strong class=&quot;gray-color&quot;&gt;Kunal Parbadia&lt;/strong&gt; noted:&lt;/p&gt;
+                                                    &lt;p&gt;I'd want to talk to her one more time before I make a decision.&lt;/p&gt;
+                                                    &lt;p class=&quot;message-date&quot;&gt;12/08/2015 - 3:30pm&lt;/p&gt;
 
                                                     &lt;hr /&gt;
 
-                                                    &lt;p&gt;Date: 12/03/2015&lt;/p&gt;
-                                                    &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.&lt;/p&gt;
+                                                    &lt;p&gt;&lt;strong class=&quot;gray-color&quot;&gt;Jade McNear&lt;/strong&gt; &lt;strong&gt;shared&lt;/strong&gt; with Kunal Parbadia.&lt;/p&gt;
+                                                    &lt;p class=&quot;message-date&quot;&gt;12/08/2015 - 8:30am&lt;/p&gt;
 
                                                     &lt;hr /&gt;
 
-                                                    &lt;p&gt;Date: 12/01/2015&lt;/p&gt;
-                                                    &lt;p&gt;Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.&lt;/p&gt;                                                &lt;/div&gt;
+                                                    &lt;p&gt;&lt;strong class=&quot;gray-color&quot;&gt;Jade McNear&lt;/strong&gt; &lt;strong class=&quot;text-primary&quot;&gt;favorited&lt;/strong&gt; for &lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Medical Assistant&lt;/a&gt; and noted:&lt;/p&gt;
+                                                    &lt;p&gt;Great meeting her in person. Really liked her enthusiasm! I'm going to encourage her to apply to our position.&lt;/p&gt;
+                                                    &lt;p class=&quot;message-date&quot;&gt;12/07/2015 - 3:30pm&lt;/p&gt;
+
+                                                    &lt;hr /&gt;
+
+                                                    &lt;p&gt;&lt;strong class=&quot;gray-color&quot;&gt;Chris Motley&lt;/strong&gt; &lt;strong class=&quot;text-danger&quot;&gt;passed&lt;/strong&gt; and noted:&lt;/p&gt;
+                                                    &lt;p&gt;Great enthusiasm, but doesn't have a lot of experience.&lt;/p&gt;
+                                                    &lt;p class=&quot;message-date&quot;&gt;12/07/2015 - 1:30pm&lt;/p&gt;
+
+                                                    &lt;hr /&gt;                                                &lt;/div&gt;
                                                 &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade pre-scrollable&quot; id=&quot;verified-tab&quot; aria-labelledBy=&quot;verified-tab&quot;&gt;
                                                     &lt;h4 style=&quot;float:left;&quot;&gt; Complete: 9 / 9&lt;/h4&gt;
 
@@ -1191,12 +1201,34 @@
             &lt;div class=&quot;modal-body&quot;&gt;
                 &lt;form&gt;
                     &lt;div class=&quot;form-group&quot;&gt;
-                        &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Student:&lt;/label&gt;
+                        &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Candidate:&lt;/label&gt;
                         &lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Name or Email&quot; type=&quot;text&quot; &gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;margin-bottom-10&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#create-note-modal&quot;&gt;
+                            Favorite &lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
+                        &lt;/button&gt;                        &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#&quot;&gt;
+                            Pass &lt;span class=&quot;fa fa-times&quot;&gt;&lt;/span&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label&gt;For a particular job:&lt;/label&gt;
+                        &lt;select style=&quot;width:100%;&quot;&gt;
+                            &lt;option value=&quot;&quot;&gt;&lt;/option&gt;
+                            &lt;option value=&quot;&quot;&gt;Environment, Health and Safety Manager&lt;/option&gt;
+                            &lt;option value=&quot;&quot;&gt;Environment Protection Specialist&lt;/option&gt;
+                            &lt;option value=&quot;&quot;&gt;Environmental Health Specialist&lt;/option&gt;
+                            &lt;option value=&quot;&quot;&gt;Environmental Health and Safety Delivery Specialist&lt;/option&gt;
+                            &lt;option value=&quot;&quot;&gt;Environmental Health and Safety Engineer&lt;/option&gt;
+                            &lt;option value=&quot;&quot;&gt;Environmental Health and Safety Manager&lt;/option&gt;
+                            &lt;option value=&quot;&quot;&gt;Environmental Protection Specialist&lt;/option&gt;
+                            &lt;option value=&quot;&quot;&gt;Environmental Quality Analyst&lt;/option&gt;
+                            &lt;option value=&quot;&quot;&gt;Environmental Scientist&lt;/option&gt;
+                        &lt;/select&gt;
                     &lt;/div&gt;
                     &lt;div class=&quot;form-group&quot;&gt;
                         &lt;label for=&quot;comment&quot;&gt;Note:&lt;/label&gt;
-                        &lt;textarea class=&quot;form-control&quot; placeholder=&quot;Note&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;
+                        &lt;textarea class=&quot;form-control&quot; placeholder=&quot;This candidate has a lot of potential to be a great team member.&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;
                     &lt;/div&gt;
                 &lt;/form&gt;
             &lt;/div&gt;

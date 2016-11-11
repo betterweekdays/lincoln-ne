@@ -1,28 +1,32 @@
 &lt;div class=&quot;match lead-new&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
 
-            &lt;div class=&quot;col-sm-8&quot;&gt;
-                &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;{{ link.pages-e-student-profile }}&quot;&gt;
-                    Jane Awesome
-                &lt;/a&gt;&lt;/p&gt;
-                &lt;p class=&quot;lead-new-meta&quot;&gt;BWD - Healthcare Administration&lt;/p&gt;
-                &lt;p class=&quot;lead-new-meta&quot;&gt;Locations: St. Louis, MO&lt;/p&gt;
-                &lt;p class=&quot;lead-new-meta&quot;&gt;GPA: 3.4&lt;/p&gt;
-                &lt;p class=&quot;lead-new-meta&quot;&gt;
-                    &lt;a data-original-title=&quot;Student is looking for an internship.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;&lt;span class=&quot;fa fa-info&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-                    &amp;nbsp;&lt;a data-original-title=&quot;Student has taken then assessment.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;&lt;span class=&quot;fa fa-pie-chart&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;div class=&quot;col-sm-8&quot;&gt;
+            &lt;p class=&quot;lead-new-title&quot;&gt;&lt;a href=&quot;{{ link.pages-e-student-profile }}&quot;&gt;
+                Jane Awesome
+            &lt;/a&gt;&lt;/p&gt;
+            &lt;p class=&quot;lead-new-meta&quot;&gt;BWD - Healthcare Administration&lt;/p&gt;
+            &lt;p class=&quot;lead-new-meta&quot;&gt;Locations: St. Louis, MO&lt;/p&gt;
+            &lt;p class=&quot;lead-new-meta&quot;&gt;GPA: 3.4&lt;/p&gt;
+            &lt;p class=&quot;lead-new-meta&quot;&gt;
+                &lt;a data-original-title=&quot;Student is looking for an internship.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;&lt;span class=&quot;fa fa-info&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                &amp;nbsp;&lt;a data-original-title=&quot;Student has taken then assessment.&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;&lt;span class=&quot;fa fa-pie-chart&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;col-sm-4 text-left&quot;&gt;
+            &lt;p class=&quot;added&quot;&gt;Engaged&lt;/p&gt;
+            {{#is_js}}
+                &lt;div class=&quot;lead-buttons&quot;&gt;
+                    {{&gt; molecules-buttons-e-js }}
+                &lt;/div&gt;
+            {{/is_js}}
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-12 text-right&quot;&gt;
+            &lt;div class=&quot;lead-buttons&quot;&gt;
+                &lt;p&gt;Previewed &lt;a href=&quot;{{ link.pages-e-job-posting }}&quot;&gt;Medical Assistant II&lt;/a&gt;, Favorited your article &lt;a href=&quot;#&quot;&gt;How You Can Impact Healthcare through Technology&lt;/a&gt;
                 &lt;/p&gt;
             &lt;/div&gt;
-
-            &lt;div class=&quot;col-sm-4 text-left&quot;&gt;
-                &lt;p class=&quot;added&quot;&gt;Last Seen: 2 days ago&lt;/p&gt;
-                &lt;p class=&quot;lead-new-meta&quot;&gt;MatchRank: N/A&lt;/p&gt;
-                {{#is_js}}
-                    &lt;div class=&quot;lead-buttons&quot;&gt;
-                        &lt;button type=&quot;submit&quot; class=&quot;btn btn-danger&quot;&gt;&lt;span class=&quot;fa fa-times&quot;&gt; Pass&lt;/button&gt;
-                        &lt;button type=&quot;submit&quot; data-toggle=&quot;modal&quot; data-target=&quot;#employerFavoriteStudentModal&quot; class=&quot;btn btn-success&quot;&gt;&lt;span class=&quot;fa fa-heart&quot;&gt; Favorite&lt;/span&gt;&lt;/button&gt;
-                    &lt;/div&gt;
-                {{/is_js}}
-            &lt;/div&gt;
         &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
