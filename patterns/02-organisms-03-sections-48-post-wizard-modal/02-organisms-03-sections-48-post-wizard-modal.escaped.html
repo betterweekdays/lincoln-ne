@@ -1,0 +1,103 @@
+&lt;div class=&quot;modal multi-step&quot; id=&quot;step-modal&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;h4 class=&quot;modal-title step-1&quot; data-step=&quot;1&quot;&gt;Step 1&lt;/h4&gt;
+                &lt;h4 class=&quot;modal-title step-2&quot; data-step=&quot;2&quot;&gt;Step 2&lt;/h4&gt;
+                &lt;h4 class=&quot;modal-title step-3&quot; data-step=&quot;3&quot;&gt;Step 3&lt;/h4&gt;
+                &lt;div class=&quot;m-progress&quot;&gt;
+                    &lt;div class=&quot;m-progress-bar-wrapper&quot;&gt;
+                        &lt;div class=&quot;m-progress-bar&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;m-progress-complete&quot;&gt;
+                        Completed
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;form&gt;
+                &lt;div class=&quot;modal-body step step-1&quot;&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label&gt;Select type:&lt;/label&gt;
+                        &lt;select&gt;
+                            &lt;option value=&quot;Job&quot;&gt;Job&lt;/option&gt;
+                            &lt;option value=&quot;Project&quot;&gt;Project&lt;/option&gt;
+                            &lt;option value=&quot;Article&quot;&gt;Article&lt;/option&gt;
+                        &lt;/select&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;modal-body step step-2&quot;&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;school&quot;&gt;Title&lt;/label&gt;
+                        &lt;div class=&quot;input-group col-lg-12&quot;&gt;
+                            &lt;input id=&quot;title&quot; class=&quot;form-control&quot; placeholder=&quot;Customer Success&quot; type=&quot;text&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;school&quot;&gt;Location&lt;/label&gt;
+                        &lt;div class=&quot;input-group col-lg-12&quot;&gt;
+                            &lt;input id=&quot;location&quot; class=&quot;form-control&quot; placeholder=&quot;St. Louis, MO&quot; type=&quot;text&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;school&quot;&gt;Description and Responsibilities&lt;/label&gt;
+                        &lt;div class=&quot;input-group col-lg-12&quot;&gt;
+                            &lt;textarea id=&quot;description&quot; class=&quot;form-control&quot; placeholder=&quot;What is this position responsible for?&quot; rows=&quot;8&quot;&gt;&lt;/textarea&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;modal-body step step-3&quot;&gt;
+                    &lt;div class=&quot;form-group form-group-select2&quot;&gt;
+                        &lt;label&gt;Only show this job to the following Degree/Programs:&lt;/label&gt;
+                        &lt;div class=&quot;input-group col-lg-12&quot;&gt;
+                            &lt;select id=&quot;sel2Multi&quot; style=&quot;width:100%;&quot; multiple&gt;
+                                &lt;option value=&quot;All&quot;&gt;All&lt;/option&gt;
+                                &lt;option value=&quot;Administration&quot;&gt;Administration&lt;/option&gt;
+                                &lt;option value=&quot;Accounting/Auditing&quot;&gt;Accounting/Auditing&lt;/option&gt;
+                                &lt;option value=&quot;Business&quot;&gt;Business&lt;/option&gt;
+                                &lt;option value=&quot;Criminal Justice&quot;&gt;Criminal Justice&lt;/option&gt;
+                                &lt;option value=&quot;Nursing&quot;&gt;Nursing&lt;/option&gt;
+                                &lt;option value=&quot;Technology&quot;&gt;Technology&lt;/option&gt;
+                            &lt;/select&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;school&quot;&gt;Contact Email&lt;/label&gt;
+                        &lt;div class=&quot;input-group col-lg-12&quot;&gt;
+                            &lt;input id=&quot;contactemail&quot; class=&quot;form-control&quot; placeholder=&quot;hiring@abccompany.com&quot; type=&quot;text&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;school&quot;&gt;Contact URL&lt;/label&gt;
+                        &lt;div class=&quot;input-group col-lg-12&quot;&gt;
+                            &lt;input id=&quot;contacturl&quot; class=&quot;form-control&quot; placeholder=&quot;abccompany.com/myjob/apply&quot; type=&quot;text&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary step step-1&quot; data-step=&quot;1&quot; onclick=&quot;sendEvent('#step-modal', 2)&quot;&gt;Continue&lt;/button&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary step step-2&quot; data-step=&quot;2&quot; onclick=&quot;sendEvent('#step-modal', 1)&quot;&gt;Back&lt;/button&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary step step-2&quot; data-step=&quot;2&quot; onclick=&quot;sendEvent('#step-modal', 3)&quot;&gt;Continue&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;button class=&quot;btn btn-default&quot; data-toggle=&quot;modal&quot; data-target=&quot;#demo-modal&quot;&gt;Show&lt;/button&gt;
+&lt;style&gt;
+    .m-progress-bar {
+        min-height: 1em;
+        background: #c12d2d;
+        width: 5%;
+    }
+&lt;/style&gt;
+&lt;script&gt;
+    sendEvent = function(sel, step) {
+        $(sel).trigger('next.m.' + step);
+    }
+&lt;/script&gt;

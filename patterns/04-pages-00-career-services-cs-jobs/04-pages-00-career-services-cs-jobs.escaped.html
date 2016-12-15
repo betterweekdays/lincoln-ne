@@ -200,10 +200,6 @@
 
                                           &lt;div class=&quot;col-xs-12 visible-lg&quot;&gt;
 
-                                            &lt;button type=&quot;button&quot; id=&quot;open-wizard&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
-                                              Post Job Wizard
-                                              &lt;span class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/span&gt;
-                                            &lt;/button&gt;
 
                                           &lt;/div&gt;
 
@@ -348,110 +344,6 @@
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;wizard&quot; id=&quot;wizard-demo&quot;&gt;
-    &lt;h1&gt;Post Job&lt;/h1&gt;
-
-    &lt;div class=&quot;wizard-card&quot; data-cardname=&quot;name&quot; data-onvalidated=&quot;setServerName&quot;&gt;
-      &lt;h3&gt;&lt;span&gt;Company&lt;/span&gt;&lt;/h3&gt;
-      &lt;div class=&quot;wizard-input-section&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label&gt;Company Name&lt;/label&gt;
-            &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Name&quot;&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;wizard-input-section&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label&gt;Company Website URL&lt;/label&gt;
-            &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Website URL&quot;&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;wizard-input-section&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label&gt;City &amp;amp; State&lt;/label&gt;
-            &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;City &amp; State&quot;&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;wizard-input-section&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label&gt;Recruiting Contact Name&lt;/label&gt;
-            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Recruiting Contact Name&quot;&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;wizard-input-section&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label&gt;Recruiting Contact Email&lt;/label&gt;
-                &lt;input id=&quot;contactemail&quot; class=&quot;form-control&quot; placeholder=&quot;Recruiting Contact Email&quot; type=&quot;email&quot;&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;wizard-input-section&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label&gt;Recruiting URL&lt;/label&gt;
-            &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Recruiting URL&quot;&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-
-    &lt;/div&gt;
-
-    &lt;div class=&quot;wizard-card&quot; data-cardname=&quot;group&quot;&gt;
-      &lt;h3&gt;&lt;span&gt;Position&lt;/span&gt;&lt;/h3&gt;
-      &lt;div class=&quot;wizard-input-section&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label&gt;Title&lt;/label&gt;
-            &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Title&quot;&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;wizard-input-section&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label&gt;Description &amp;amp; Responsibilities&lt;/label&gt;
-            &lt;textarea class=&quot;form-control&quot; placeholder=&quot;What is this position responsible for?&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;wizard-card&quot;&gt;
-      &lt;h3&gt;&lt;span&gt;Program &amp;amp; Visibility&lt;/span&gt;&lt;/h3&gt;
-      &lt;div class=&quot;wizard-input-section&quot;&gt;
-        &lt;div class=&quot;form-group form-group-select2&quot;&gt;
-            &lt;div class=&quot;input-group col-lg-12&quot;&gt;
-                &lt;select id=&quot;sel2Multi&quot; style=&quot;width:100%;&quot; multiple&gt;
-                    &lt;option value=&quot;All&quot;&gt;All&lt;/option&gt;
-                    &lt;option value=&quot;Administration&quot;&gt;Administration&lt;/option&gt;
-                    &lt;option value=&quot;Accounting/Auditing&quot;&gt;Accounting/Auditing&lt;/option&gt;
-                    &lt;option value=&quot;Business&quot;&gt;Business&lt;/option&gt;
-                    &lt;option value=&quot;Criminal Justice&quot;&gt;Criminal Justice&lt;/option&gt;
-                    &lt;option value=&quot;Nursing&quot;&gt;Nursing&lt;/option&gt;
-                    &lt;option value=&quot;Technology&quot;&gt;Technology&lt;/option&gt;
-                &lt;/select&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-    &lt;/div&gt;
-
-    &lt;div class=&quot;wizard-error&quot;&gt;
-      &lt;div class=&quot;alert alert-error&quot;&gt;
-        &lt;strong&gt;There was a problem&lt;/strong&gt; with your submission. Please
-        correct the errors and re-submit.
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;wizard-failure&quot;&gt;
-      &lt;div class=&quot;alert alert-error&quot;&gt;
-        &lt;strong&gt;There was a problem&lt;/strong&gt; submitting the form. Please try
-        again in a minute.
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;wizard-success&quot;&gt;
-      &lt;div class=&quot;alert alert-success&quot;&gt;
-        Job was posted
-        &lt;strong&gt;successfully.&lt;/strong&gt;
-      &lt;/div&gt;&lt;a class=&quot;btn btn-default create-another-server&quot;&gt;Add another
-      job&lt;/a&gt; &lt;span style=&quot;padding:0 10px&quot;&gt;or&lt;/span&gt; &lt;a class=&quot;btn btn-primary im-done&quot;&gt;Done&lt;/a&gt;
-    &lt;/div&gt;
-
-  &lt;/div&gt;
 &lt;style&gt;
 .modal-backdrop {display:none;}
 &lt;/style&gt;
