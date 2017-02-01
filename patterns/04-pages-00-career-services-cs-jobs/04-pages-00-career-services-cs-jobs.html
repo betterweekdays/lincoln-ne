@@ -7,8 +7,8 @@
         <link rel="stylesheet" type="text/css" href="//centaurus.adbee.technology/css/bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/libs/nanoscroller.css" />
-				<link rel="stylesheet" href="../../css/centaurus/centaurus.css?1481844885" media="all" />
-				<link rel="stylesheet" href="../../css/betterweekdays/betterweekdays.css?1481844885" media="all" />
+				<link rel="stylesheet" href="../../css/centaurus/centaurus.css?1485986091" media="all" />
+				<link rel="stylesheet" href="../../css/betterweekdays/betterweekdays.css?1485986091" media="all" />
 		        <link rel="stylesheet" type="text/css" href="../../css/libs/dataTables.fixedHeader.css">
 		        <link rel="stylesheet" type="text/css" href="../../css/libs/dataTables.tableTools.css">
 		        <link rel="stylesheet" type="text/css" href="../../css/libs/bootstrap-wizard.css">
@@ -27,8 +27,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1481844885" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1481844885" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1485986091" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1485986091" media="all" />
 		
 
 			<!-- End Pattern Lab -->
@@ -236,6 +236,10 @@
 
                                           <div class="col-xs-12 visible-lg">
 
+                                            <button type="button" id="open-wizard" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#step-modal">
+                                              Post
+                                              <span class="fa fa-thumb-tack"></span>
+                                            </button>
 
                                           </div>
 
@@ -365,6 +369,7 @@
 
 
                                     </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -380,7 +385,109 @@
     </div>
 </div>
 
+<div class="modal multi-step" id="step-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title step-1" data-step="1">Step 1</h4>
+                <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+                <h4 class="modal-title step-3" data-step="3">Step 3</h4>
+                <div class="m-progress">
+                    <div class="m-progress-bar-wrapper">
+                        <div class="m-progress-bar">
+                        </div>
+                    </div>
+                    <div class="m-progress-complete">
+                        Completed
+                    </div>
+                </div>
+            </div>
+            <form>
+                <div class="modal-body step step-1">
+                    <div class="form-group">
+                        <label>Select type:</label>
+                        <select>
+                            <option value="Job">Job</option>
+                            <option value="Project">Project</option>
+                            <option value="Article">Article</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-body step step-2">
+                    <div class="form-group">
+                        <label for="school">Title</label>
+                        <div class="input-group col-lg-12">
+                            <input id="title" class="form-control" placeholder="Customer Success" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="school">Location</label>
+                        <div class="input-group col-lg-12">
+                            <input id="location" class="form-control" placeholder="St. Louis, MO" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="school">Description and Responsibilities</label>
+                        <div class="input-group col-lg-12">
+                            <textarea id="description" class="form-control" placeholder="What is this position responsible for?" rows="8"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body step step-3">
+                    <div class="form-group form-group-select2">
+                        <label>Only show this job to the following Degree/Programs:</label>
+                        <div class="input-group col-lg-12">
+                            <select id="sel2Multi" style="width:100%;" multiple>
+                                <option value="All">All</option>
+                                <option value="Administration">Administration</option>
+                                <option value="Accounting/Auditing">Accounting/Auditing</option>
+                                <option value="Business">Business</option>
+                                <option value="Criminal Justice">Criminal Justice</option>
+                                <option value="Nursing">Nursing</option>
+                                <option value="Technology">Technology</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="school">Contact Email</label>
+                        <div class="input-group col-lg-12">
+                            <input id="contactemail" class="form-control" placeholder="hiring@abccompany.com" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="school">Contact URL</label>
+                        <div class="input-group col-lg-12">
+                            <input id="contacturl" class="form-control" placeholder="abccompany.com/myjob/apply" type="text">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#step-modal', 2)">Continue</button>
+                <button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#step-modal', 1)">Back</button>
+                <button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#step-modal', 3)">Continue</button>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="btn btn-default" data-toggle="modal" data-target="#demo-modal">Show</button>
 <style>
+    .m-progress-bar {
+        min-height: 1em;
+        background: #c12d2d;
+        width: 5%;
+    }
+</style>
+<script>
+    sendEvent = function(sel, step) {
+        $(sel).trigger('next.m.' + step);
+    }
+</script><style>
 .modal-backdrop {display:none;}
 </style>
 <!--DO NOT REMOVE-->
@@ -388,7 +495,7 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "pages-cs-jobs";
-		var lineage        = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"},{"lineagePattern":"molecules-cs-left-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-cs-left-nav\/01-molecules-05-navigation-05-cs-left-nav.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
+		var lineage        = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"},{"lineagePattern":"molecules-cs-left-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-cs-left-nav\/01-molecules-05-navigation-05-cs-left-nav.html"},{"lineagePattern":"organisms-post-wizard-button","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-49-post-wizard-button\/02-organisms-03-sections-49-post-wizard-button.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"},{"lineagePattern":"organisms-post-wizard-modal","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-48-post-wizard-modal\/02-organisms-03-sections-48-post-wizard-modal.html"}];
 		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;
@@ -425,10 +532,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1481844885">
+	<script id="pl-js-polyfill-insert-1485986091">
 		(function() {
 			if (self != top) {
-				var cb = '1481844885';
+				var cb = '1485986091';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -437,10 +544,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1481844885">
+	<script id="pl-js-insert-1485986091">
 		(function() {
 			if (self != top) {
-				var cb = '1481844885';
+				var cb = '1485986091';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

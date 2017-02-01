@@ -200,50 +200,77 @@
                                   &lt;/div&gt;
                               &lt;/div&gt;
 
-                                &lt;div class=&quot;main-box clearfix&quot;&gt;
-                                    &lt;div class=&quot;main-box-body clearfix bdubs-box&quot;&gt;
-                                        &lt;div class=&quot;conversation-wrapper&quot;&gt;
-                                            &lt;div class=&quot;conversation-content&quot;&gt;
-                                                &lt;div class=&quot;conversation-inner&quot;&gt;
+                                &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                    &lt;ul class=&quot;list-group to-do-list-checkbox-nice to-dos&quot;&gt;
+                                        &lt;li class=&quot;list-group-item to-do-item-title&quot;&gt;
+                                            &lt;strong&gt;&lt;i class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/i&gt; What Should I Do Next?&lt;/strong&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class=&quot;list-group-item&quot;&gt;
+                                            &lt;div class=&quot;col-sm-12&quot;&gt;
+                                            &lt;div class=&quot;checkbox-nice&quot;&gt;
+                                                &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-1&quot;&gt;
+                                                &lt;label for=&quot;checkbox-1&quot;&gt;
+                                                    &lt;span class=&quot;to-do-title&quot;&gt;Set your &lt;a href=&quot;/profile&quot;&gt;hiring preferences&lt;/a&gt;.&lt;/span&gt;
+                                                  &lt;p class=&quot;time-estimate&quot;&gt;10min to use Better Weekdays&lt;/p&gt;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                          &lt;/div&gt;
 
-
-                                                    &lt;div class=&quot;conversation-item item-left clearfix&quot;&gt;
-                                                        &lt;div class=&quot;conversation-user&quot;&gt;
-                                                            &lt;img src=&quot;../../img/robot50x50.png&quot; alt=&quot;&quot;/&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;conversation-body&quot;&gt;
-                                                            &lt;div class=&quot;name&quot;&gt;
-                                                                BDubs Bot
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;headline text&quot;&gt;
-                                                                    &lt;p&gt;My user research has shown that personal encouragement is most important to job seekers.&lt;/p&gt;
-
-
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
-
-
-
-
+                                            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class=&quot;list-group-item&quot;&gt;
+                                            &lt;div class=&quot;col-sm-12&quot;&gt;
+                                                &lt;div class=&quot;checkbox-nice&quot;&gt;
+                                                    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-1&quot;&gt;
+                                                    &lt;label for=&quot;checkbox-1&quot;&gt;
+                                                        &lt;span class=&quot;to-do-title&quot;&gt;Review &lt;a href=&quot;/company&quot;&gt;your company profile&lt;/a&gt;.&lt;/span&gt;
+                                                        &lt;p class=&quot;time-estimate&quot;&gt;10min to use Better Weekdays&lt;/p&gt;
+                                                    &lt;/label&gt;
                                                 &lt;/div&gt;
                                             &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
+
+                                            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class=&quot;list-group-item&quot;&gt;
+                                            &lt;div class=&quot;col-sm-12&quot;&gt;
+                                                &lt;div class=&quot;checkbox-nice&quot;&gt;
+                                                    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-1&quot;&gt;
+                                                    &lt;label for=&quot;checkbox-1&quot;&gt;
+                                                        &lt;span class=&quot;to-do-title&quot;&gt;Send a message to encourage &lt;a href=&quot;#&quot;&gt;Sophia Frost&lt;/a&gt; to view your posted project&lt;/span&gt;
+                                                        &lt;p class=&quot;time-estimate&quot;&gt;10min to use Better Weekdays&lt;/p&gt;
+                                                    &lt;/label&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+
+                                            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class=&quot;list-group-item&quot;&gt;
+                                            &lt;button type=&quot;submit&quot; class=&quot;btn btn-success&quot;&gt;Get Suggestion&lt;/button&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
                                 &lt;/div&gt;
+
                               &lt;div class=&quot;main-box clearfix&quot;&gt;
                                 &lt;header class=&quot;main-box-header clearfix&quot;&gt;
                                   &lt;select&gt;
                                     &lt;option&gt;Suggested Candidates&lt;/option&gt;
-                                    &lt;option&gt;My Favorites&lt;/option&gt;
-                                    &lt;option&gt;Candidates I've Contacted&lt;/option&gt;
+                                    &lt;option&gt;Recently Active Candidates&lt;/option&gt;
                                   &lt;/select&gt;
                                     &lt;select&gt;
                                         &lt;option&gt;Last 30 days&lt;/option&gt;
                                         &lt;option&gt;Last 60 days&lt;/option&gt;
                                         &lt;option&gt;Last 90 days&lt;/option&gt;
                                     &lt;/select&gt;
+                                    &lt;div class=&quot;pull-right&quot;&gt;
+                                      &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;/&gt; Hide Passed/Favorited
+                                    &lt;/div&gt;
                                 &lt;/header&gt;
+                                  &lt;div class=&quot;col-lg-12&quot;&gt;
+                                      &lt;div class=&quot;alert alert-info col-lg-8 col-lg-offset-2&quot;&gt;
+                                          &lt;i class=&quot;fa fa-info fa-fw fa-lg&quot;&gt;&lt;/i&gt;
+                                          200+ candidates available who are not visible. &lt;strong&gt;&lt;a href=&quot;#&quot;&gt;Request upgrade&lt;/a&gt;&lt;/strong&gt;
+                                      &lt;/div&gt;
+                                  &lt;/div&gt;
     &lt;hr /&gt;
     &lt;div class=&quot;clearfix &quot;&gt;
         &lt;div class=&quot;main-box-body clearfix&quot;&gt;
@@ -265,7 +292,7 @@
                     &lt;/div&gt;
 
                     &lt;div class=&quot;col-sm-4 text-left&quot;&gt;
-                        &lt;p class=&quot;added&quot;&gt;Highly Engaged&lt;/p&gt;
+                        &lt;p class=&quot;added&quot;&gt;Highly Engaged, Relevant&lt;/p&gt;
                             &lt;div class=&quot;lead-buttons&quot;&gt;
                         &lt;div class=&quot;btn-group&quot;&gt;
                             &lt;button type=&quot;submit&quot; class=&quot;btn btn-danger&quot; data-toggle=&quot;modal&quot; data-target=&quot;#create-note-modal&quot;&gt;
@@ -365,7 +392,7 @@
                     &lt;/div&gt;
 
                     &lt;div class=&quot;col-sm-4 text-left&quot;&gt;
-                        &lt;p class=&quot;added&quot;&gt;Highly Engaged&lt;/p&gt;
+                        &lt;p class=&quot;added&quot;&gt;Highly Engaged, Relevant&lt;/p&gt;
                             &lt;div class=&quot;lead-buttons&quot;&gt;
                         &lt;div class=&quot;btn-group&quot;&gt;
                             &lt;button type=&quot;submit&quot; class=&quot;btn btn-danger&quot; data-toggle=&quot;modal&quot; data-target=&quot;#create-note-modal&quot;&gt;
@@ -465,7 +492,7 @@
                     &lt;/div&gt;
 
                     &lt;div class=&quot;col-sm-4 text-left&quot;&gt;
-                        &lt;p class=&quot;added&quot;&gt;Highly Engaged&lt;/p&gt;
+                        &lt;p class=&quot;added&quot;&gt;Highly Engaged, Relevant&lt;/p&gt;
                             &lt;div class=&quot;lead-buttons&quot;&gt;
                         &lt;div class=&quot;btn-group&quot;&gt;
                             &lt;button type=&quot;submit&quot; class=&quot;btn btn-danger&quot; data-toggle=&quot;modal&quot; data-target=&quot;#create-note-modal&quot;&gt;
@@ -565,7 +592,7 @@
                     &lt;/div&gt;
 
                     &lt;div class=&quot;col-sm-4 text-left&quot;&gt;
-                        &lt;p class=&quot;added&quot;&gt;Highly Engaged&lt;/p&gt;
+                        &lt;p class=&quot;added&quot;&gt;Highly Engaged, Relevant&lt;/p&gt;
                             &lt;div class=&quot;lead-buttons&quot;&gt;
                         &lt;div class=&quot;btn-group&quot;&gt;
                             &lt;button type=&quot;submit&quot; class=&quot;btn btn-danger&quot; data-toggle=&quot;modal&quot; data-target=&quot;#create-note-modal&quot;&gt;
