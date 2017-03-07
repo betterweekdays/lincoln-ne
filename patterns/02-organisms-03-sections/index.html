@@ -7,8 +7,8 @@
         <link rel="stylesheet" type="text/css" href="//centaurus.adbee.technology/css/bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/libs/nanoscroller.css" />
-				<link rel="stylesheet" href="../../css/centaurus/centaurus.css?1485986091" media="all" />
-				<link rel="stylesheet" href="../../css/betterweekdays/betterweekdays.css?1485986091" media="all" />
+				<link rel="stylesheet" href="../../css/centaurus/centaurus.css?1488914234" media="all" />
+				<link rel="stylesheet" href="../../css/betterweekdays/betterweekdays.css?1488914234" media="all" />
         <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
         <!--[if lt IE 9]>
 					<script src="../../js/html5shiv.js"></script>
@@ -22,8 +22,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1485986091" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1485986091" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1488914234" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1488914234" media="all" />
 		
 
 			<!-- End Pattern Lab -->
@@ -2982,9 +2982,6 @@
 
             <div class="clear"></div>
         </li>
-        <li class="list-group-item">
-            <button type="submit" class="btn btn-success">Get Suggestion</button>
-        </li>
     </ul>
 </div>
 
@@ -3035,9 +3032,6 @@
             &lt;/div&gt;
 
             &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li class=&quot;list-group-item&quot;&gt;
-            &lt;button type=&quot;submit&quot; class=&quot;btn btn-success&quot;&gt;Get Suggestion&lt;/button&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
@@ -9081,44 +9075,48 @@
 							</div>
 						</div>
 					</div>
-					<div id="organisms-employer-stats" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-03-sections-50-employer-stats/02-organisms-03-sections-50-employer-stats.html" class="patternLink" data-patternpartial="organisms-employer-stats">Employer Stats</a></h2>
+					<div id="organisms-employer-stats-alt" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-03-sections-50-employer-stats-alt/02-organisms-03-sections-50-employer-stats-alt.html" class="patternLink" data-patternpartial="organisms-employer-stats-alt">Employer Stats Alt</a></h2>
 						<div class="sg-pattern-body">
 							<div class="main-box clearfix">
     <div class="main-box-header">
-        <h2>My Overall Candidate Engagement</h2>
+        <h2>Quick Funnel</h2>
+        <br/>
+        <select onchange="javascript:location.href = this.value;">
+            <option value="../../patterns/04-pages-02-employer-e-dashboard/04-pages-02-employer-e-dashboard.html">Candidate Engagement </option>
+            <option value="../../patterns/04-pages-02-employer-e-dashboard-alt/04-pages-02-employer-e-dashboard-alt.html" selected>My Engagement</option>
+        </select>
+        <select>
+            <option>Last 30 days</option>
+            <option>Last 60 days</option>
+            <option>Last 90 days</option>
+        </select>
     </div>
     <div class="main-box-body clearfix">
         <div class="infographic-box margin-bottom-10 text-center">
             <div class="col-sm-1"></div>
             <button class="col-sm-10 btn btn-lg btn-default">
-                35 searched&nbsp;<span class="fa fa-search"></span>
+                4 viewed&nbsp;<span class="fa fa-user"></span>
             </button>
             <div class="col-sm-1"></div>
             <div class="col-sm-12 margin-bottom-10 margin-top-10"><span class="fa fa-arrow-down" aria-hidden="true"></span></div>
             <div class="col-sm-2"></div>
             <button class="col-sm-8 btn btn-lg btn-primary">
-                4 viewed&nbsp;<span class="fa fa-user"></span>
+                1 favorited&nbsp;<span class="fa fa-heart"></span>
             </button>
             <div class="col-sm-2"></div>
             <div class="col-sm-12 margin-bottom-10 margin-top-10"><span class="fa fa-arrow-down" aria-hidden="true"></span></div>
             <div class="col-sm-3"></div>
             <button class="col-sm-6 btn btn-lg btn-primary">
-                1 favorited&nbsp;<span class="fa fa-heart"></span>
+                4 contacted&nbsp;<span class="fa fa-send"></span>
             </button>
             <div class="col-sm-3"></div>
             <div class="col-sm-12 margin-bottom-10 margin-top-10"><span class="fa fa-arrow-down" aria-hidden="true"></span></div>
             <div class="col-sm-4"></div>
-            <button class="col-sm-4 btn btn-lg btn-primary">
-                4 contacted&nbsp;<span class="fa fa-send"></span>
-            </button>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-12 margin-bottom-10 margin-top-10"><span class="fa fa-arrow-down" aria-hidden="true"></span></div>
-            <div class="col-sm-5"></div>
-            <button class="col-sm-2 btn btn-lg btn-success">
+            <button class="col-sm-4 btn btn-lg btn-success">
                 0 shared&nbsp;<span class="fa fa-share"></span>
             </button>
-            <div class="col-sm-5"></div>
+            <div class="col-sm-4"></div>
         </div>
     </div>
 </div>
@@ -9129,39 +9127,141 @@
 									<code>
 										&lt;div class=&quot;main-box clearfix&quot;&gt;
     &lt;div class=&quot;main-box-header&quot;&gt;
-        &lt;h2&gt;My Overall Candidate Engagement&lt;/h2&gt;
+        &lt;h2&gt;Quick Funnel&lt;/h2&gt;
+        &lt;br/&gt;
+        &lt;select onchange=&quot;javascript:location.href = this.value;&quot;&gt;
+            &lt;option value=&quot;../../patterns/04-pages-02-employer-e-dashboard/04-pages-02-employer-e-dashboard.html&quot;&gt;Candidate Engagement &lt;/option&gt;
+            &lt;option value=&quot;../../patterns/04-pages-02-employer-e-dashboard-alt/04-pages-02-employer-e-dashboard-alt.html&quot; selected&gt;My Engagement&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;select&gt;
+            &lt;option&gt;Last 30 days&lt;/option&gt;
+            &lt;option&gt;Last 60 days&lt;/option&gt;
+            &lt;option&gt;Last 90 days&lt;/option&gt;
+        &lt;/select&gt;
     &lt;/div&gt;
     &lt;div class=&quot;main-box-body clearfix&quot;&gt;
         &lt;div class=&quot;infographic-box margin-bottom-10 text-center&quot;&gt;
             &lt;div class=&quot;col-sm-1&quot;&gt;&lt;/div&gt;
             &lt;button class=&quot;col-sm-10 btn btn-lg btn-default&quot;&gt;
-                35 searched&amp;nbsp;&lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;
+                4 viewed&amp;nbsp;&lt;span class=&quot;fa fa-user&quot;&gt;&lt;/span&gt;
             &lt;/button&gt;
             &lt;div class=&quot;col-sm-1&quot;&gt;&lt;/div&gt;
             &lt;div class=&quot;col-sm-12 margin-bottom-10 margin-top-10&quot;&gt;&lt;span class=&quot;fa fa-arrow-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
             &lt;div class=&quot;col-sm-2&quot;&gt;&lt;/div&gt;
             &lt;button class=&quot;col-sm-8 btn btn-lg btn-primary&quot;&gt;
-                4 viewed&amp;nbsp;&lt;span class=&quot;fa fa-user&quot;&gt;&lt;/span&gt;
+                1 favorited&amp;nbsp;&lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
             &lt;/button&gt;
             &lt;div class=&quot;col-sm-2&quot;&gt;&lt;/div&gt;
             &lt;div class=&quot;col-sm-12 margin-bottom-10 margin-top-10&quot;&gt;&lt;span class=&quot;fa fa-arrow-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
             &lt;div class=&quot;col-sm-3&quot;&gt;&lt;/div&gt;
             &lt;button class=&quot;col-sm-6 btn btn-lg btn-primary&quot;&gt;
-                1 favorited&amp;nbsp;&lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
+                4 contacted&amp;nbsp;&lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
             &lt;/button&gt;
             &lt;div class=&quot;col-sm-3&quot;&gt;&lt;/div&gt;
             &lt;div class=&quot;col-sm-12 margin-bottom-10 margin-top-10&quot;&gt;&lt;span class=&quot;fa fa-arrow-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
             &lt;div class=&quot;col-sm-4&quot;&gt;&lt;/div&gt;
-            &lt;button class=&quot;col-sm-4 btn btn-lg btn-primary&quot;&gt;
-                4 contacted&amp;nbsp;&lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
-            &lt;/button&gt;
-            &lt;div class=&quot;col-sm-4&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;col-sm-12 margin-bottom-10 margin-top-10&quot;&gt;&lt;span class=&quot;fa fa-arrow-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-            &lt;div class=&quot;col-sm-5&quot;&gt;&lt;/div&gt;
-            &lt;button class=&quot;col-sm-2 btn btn-lg btn-success&quot;&gt;
+            &lt;button class=&quot;col-sm-4 btn btn-lg btn-success&quot;&gt;
                 0 shared&amp;nbsp;&lt;span class=&quot;fa fa-share&quot;&gt;&lt;/span&gt;
             &lt;/button&gt;
-            &lt;div class=&quot;col-sm-5&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-sm-4&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-employer-stats" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-03-sections-50-employer-stats/02-organisms-03-sections-50-employer-stats.html" class="patternLink" data-patternpartial="organisms-employer-stats">Employer Stats</a></h2>
+						<div class="sg-pattern-body">
+							<div class="main-box clearfix">
+    <div class="main-box-header">
+        <h2>Quick Funnel</h2>
+        <br/>
+        <select onchange="javascript:location.href = this.value;">
+            <option value="../../patterns/04-pages-02-employer-e-dashboard/04-pages-02-employer-e-dashboard.html" selected>Candidate Engagement</option>
+            <option value="../../patterns/04-pages-02-employer-e-dashboard-alt/04-pages-02-employer-e-dashboard-alt.html">My Engagement</option>
+        </select>
+        <select>
+            <option>Last 30 days</option>
+            <option>Last 60 days</option>
+            <option>Last 90 days</option>
+        </select>
+    </div>
+    <div class="main-box-body clearfix">
+        <div class="infographic-box margin-bottom-10 text-center">
+            <div class="col-sm-1"></div>
+            <button class="col-sm-10 btn btn-lg btn-default">
+                40 viewed your posts&nbsp;<span class="fa fa-user"></span>
+            </button>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-12 margin-bottom-10 margin-top-10"><span class="fa fa-arrow-down" aria-hidden="true"></span></div>
+            <div class="col-sm-2"></div>
+            <button class="col-sm-8 btn btn-lg btn-primary">
+                10 favorited your posts&nbsp;<span class="fa fa-heart"></span>
+            </button>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-12 margin-bottom-10 margin-top-10"><span class="fa fa-arrow-down" aria-hidden="true"></span></div>
+            <div class="col-sm-3"></div>
+            <button class="col-sm-6 btn btn-lg btn-primary">
+                4 interested in applying&nbsp;<span class="fa fa-chevron-right"></span>
+            </button>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-12 margin-bottom-10 margin-top-10"><span class="fa fa-arrow-down" aria-hidden="true"></span></div>
+            <div class="col-sm-4"></div>
+            <button class="col-sm-4 btn btn-lg btn-success">
+                3 sent messages&nbsp;<span class="fa fa-send"></span>
+            </button>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;main-box clearfix&quot;&gt;
+    &lt;div class=&quot;main-box-header&quot;&gt;
+        &lt;h2&gt;Quick Funnel&lt;/h2&gt;
+        &lt;br/&gt;
+        &lt;select onchange=&quot;javascript:location.href = this.value;&quot;&gt;
+            &lt;option value=&quot;../../patterns/04-pages-02-employer-e-dashboard/04-pages-02-employer-e-dashboard.html&quot; selected&gt;Candidate Engagement&lt;/option&gt;
+            &lt;option value=&quot;../../patterns/04-pages-02-employer-e-dashboard-alt/04-pages-02-employer-e-dashboard-alt.html&quot;&gt;My Engagement&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;select&gt;
+            &lt;option&gt;Last 30 days&lt;/option&gt;
+            &lt;option&gt;Last 60 days&lt;/option&gt;
+            &lt;option&gt;Last 90 days&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+        &lt;div class=&quot;infographic-box margin-bottom-10 text-center&quot;&gt;
+            &lt;div class=&quot;col-sm-1&quot;&gt;&lt;/div&gt;
+            &lt;button class=&quot;col-sm-10 btn btn-lg btn-default&quot;&gt;
+                40 viewed your posts&amp;nbsp;&lt;span class=&quot;fa fa-user&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;div class=&quot;col-sm-1&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-sm-12 margin-bottom-10 margin-top-10&quot;&gt;&lt;span class=&quot;fa fa-arrow-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-sm-2&quot;&gt;&lt;/div&gt;
+            &lt;button class=&quot;col-sm-8 btn btn-lg btn-primary&quot;&gt;
+                10 favorited your posts&amp;nbsp;&lt;span class=&quot;fa fa-heart&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;div class=&quot;col-sm-2&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-sm-12 margin-bottom-10 margin-top-10&quot;&gt;&lt;span class=&quot;fa fa-arrow-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-sm-3&quot;&gt;&lt;/div&gt;
+            &lt;button class=&quot;col-sm-6 btn btn-lg btn-primary&quot;&gt;
+                4 interested in applying&amp;nbsp;&lt;span class=&quot;fa fa-chevron-right&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;div class=&quot;col-sm-3&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-sm-12 margin-bottom-10 margin-top-10&quot;&gt;&lt;span class=&quot;fa fa-arrow-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-sm-4&quot;&gt;&lt;/div&gt;
+            &lt;button class=&quot;col-sm-4 btn btn-lg btn-success&quot;&gt;
+                3 sent messages&amp;nbsp;&lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;div class=&quot;col-sm-4&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -10561,63 +10661,142 @@
                     <br><span class="small">07/22/15 9:10 AM</span></td>
                     <td>Project</td>
                     <td><a href="#">7 views / 2 faves</a></td>
-                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                    <td>
+                        <div class="lead-buttons">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="fa fa-ellipsis-h"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="fa fa-share"></span>&nbsp;Share</a></li>
+                                    <li><a href="#"><span class="fa fa-pencil"></span>&nbsp;Edit</a></li>
+                                    <li><a href="#"><span class="fa fa-archive"></span>&nbsp;Archive</a></li>
+                                </ul>
+                            </div>                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="">What It's Like to Work at Amazon.com</a>
                     <br/><span class="small">07/22/15 9:09 AM</span></td>
                     <td>Article</td>
                     <td><a href="#">3 views / 0 faves</a></td>
-                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                    <td>
+                        <div class="lead-buttons">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="fa fa-ellipsis-h"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="fa fa-share"></span>&nbsp;Share</a></li>
+                                    <li><a href="#"><span class="fa fa-pencil"></span>&nbsp;Edit</a></li>
+                                    <li><a href="#"><span class="fa fa-archive"></span>&nbsp;Archive</a></li>
+                                </ul>
+                            </div>                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="">Amazon.com is a great place for English majors</a>
                     <br/><span class="small">07/22/15 9:11 AM</span></td>
                     <td>Article</td>
                     <td><a href="#">7 views / 2 faves</a></td>
-                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                    <td>
+                        <div class="lead-buttons">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="fa fa-ellipsis-h"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="fa fa-share"></span>&nbsp;Share</a></li>
+                                    <li><a href="#"><span class="fa fa-pencil"></span>&nbsp;Edit</a></li>
+                                    <li><a href="#"><span class="fa fa-archive"></span>&nbsp;Archive</a></li>
+                                </ul>
+                            </div>                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Digital Marketing Analyst</a>
                     <br/><span class="small">07/22/15 9:09 AM</span></td>
                     <td>Job</td>
                     <td><a href="#">10 previews / 2 faves / 1 interested</a></td>
-                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                    <td>
+                        <div class="lead-buttons">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="fa fa-ellipsis-h"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="fa fa-share"></span>&nbsp;Share</a></li>
+                                    <li><a href="#"><span class="fa fa-pencil"></span>&nbsp;Edit</a></li>
+                                    <li><a href="#"><span class="fa fa-archive"></span>&nbsp;Archive</a></li>
+                                </ul>
+                            </div>                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="main-box clearfix">
+    <header class="main-box-header clearfix">
+        <h2>Archives</h2>
+    </header>
+
+    <div class="main-box-body clearfix">
+
+        <div class="table-responsive">
+            <table id="table-activity" class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Stats</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a href="">Solve This Hard Problem for Your Summer 2017 Internship</a>
+                        <br><span class="small">07/22/15 9:10 AM</span></td>
+                    <td>Project</td>
+                    <td><a href="#">7 views / 2 faves</a></td>
+                    <td>
+                        <div class="lead-buttons">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="fa fa-ellipsis-h"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="fa fa-pencil"></span>&nbsp;Edit</a></li>
+                                    <li><a href="#"><span class="fa fa-star"></span>&nbsp;Publish</a></li>
+                                </ul>
+                            </div>                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Computer Technician</a>
-                    <br/><span class="small">07/22/15 9:08 AM</span></td>
-                    <td>Job</td>
-                    <td><a href="#">37 previews / 10 faves / 5 interested</a></td>
-                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Phlebotomist</a>
-                    <br /><span class="small">07/22/15 9:07 AM</span></td>
-                    <td>Job</td>
-                    <td><a href="#">0 previews / 0 faves / 0 interested</a></td>
-                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Dialysis Technician</a>
-                    <br/><span class="small">07/22/15 9:06 AM</span></td>
-                    <td>Job</td>
-                    <td><a href="#">2 previews / 0 faves / 0 interested</a></td>
-                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">IT Support Specialist</a>
-                    <br/><span class="small">07/22/15 9:05 AM</span></td>
-                    <td>Job</td>
-                    <td><a href="#">0 previews / 0 faves / 0 interested</a></td>
-                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Automotive Mechanic</a>
-                    <br /><span class="small">07/22/15 9:02 AM</span></td>
-                    <td>Job</td>
-                    <td><a href="#">0 previews / 0 faves / 0 interested</a></td>
-                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                    <td><a href="">What It's Like to Work at Amazon.com</a>
+                        <br/><span class="small">07/22/15 9:09 AM</span></td>
+                    <td>Article</td>
+                    <td><a href="#">3 views / 0 faves</a></td>
+                    <td>
+                        <div class="lead-buttons">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="fa fa-ellipsis-h"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="fa fa-pencil"></span>&nbsp;Edit</a></li>
+                                    <li><a href="#"><span class="fa fa-star"></span>&nbsp;Publish</a></li>
+                                </ul>
+                            </div>                        </div>
+                    </td>
                 </tr>
                 </tbody>
             </table>
@@ -10625,6 +10804,11 @@
     </div>
 </div>
 							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/01-molecules-06-components-07-buttons-posts-edit/01-molecules-06-components-07-buttons-posts-edit.html"><code>molecules-buttons-posts-edit</code></a>
+											<a href="../../patterns/01-molecules-06-components-07-buttons-posts-edit-alt/01-molecules-06-components-07-buttons-posts-edit-alt.html"><code>molecules-buttons-posts-edit-alt</code></a>
+									</div>
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
@@ -10651,63 +10835,142 @@
                     &lt;br&gt;&lt;span class=&quot;small&quot;&gt;07/22/15 9:10 AM&lt;/span&gt;&lt;/td&gt;
                     &lt;td&gt;Project&lt;/td&gt;
                     &lt;td&gt;&lt;a href=&quot;#&quot;&gt;7 views / 2 faves&lt;/a&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Edit&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;div class=&quot;lead-buttons&quot;&gt;
+                            &lt;div class=&quot;btn-group dropup&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                                    &lt;span class=&quot;fa fa-ellipsis-h&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-share&quot;&gt;&lt;/span&gt;&amp;nbsp;Share&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-pencil&quot;&gt;&lt;/span&gt;&amp;nbsp;Edit&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-archive&quot;&gt;&lt;/span&gt;&amp;nbsp;Archive&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;                        &lt;/div&gt;
+                    &lt;/td&gt;
                 &lt;/tr&gt;
                 &lt;tr&gt;
                     &lt;td&gt;&lt;a href=&quot;&quot;&gt;What It's Like to Work at Amazon.com&lt;/a&gt;
                     &lt;br/&gt;&lt;span class=&quot;small&quot;&gt;07/22/15 9:09 AM&lt;/span&gt;&lt;/td&gt;
                     &lt;td&gt;Article&lt;/td&gt;
                     &lt;td&gt;&lt;a href=&quot;#&quot;&gt;3 views / 0 faves&lt;/a&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Edit&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;div class=&quot;lead-buttons&quot;&gt;
+                            &lt;div class=&quot;btn-group dropup&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                                    &lt;span class=&quot;fa fa-ellipsis-h&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-share&quot;&gt;&lt;/span&gt;&amp;nbsp;Share&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-pencil&quot;&gt;&lt;/span&gt;&amp;nbsp;Edit&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-archive&quot;&gt;&lt;/span&gt;&amp;nbsp;Archive&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;                        &lt;/div&gt;
+                    &lt;/td&gt;
                 &lt;/tr&gt;
                 &lt;tr&gt;
                     &lt;td&gt;&lt;a href=&quot;&quot;&gt;Amazon.com is a great place for English majors&lt;/a&gt;
                     &lt;br/&gt;&lt;span class=&quot;small&quot;&gt;07/22/15 9:11 AM&lt;/span&gt;&lt;/td&gt;
                     &lt;td&gt;Article&lt;/td&gt;
                     &lt;td&gt;&lt;a href=&quot;#&quot;&gt;7 views / 2 faves&lt;/a&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Edit&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;div class=&quot;lead-buttons&quot;&gt;
+                            &lt;div class=&quot;btn-group dropup&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                                    &lt;span class=&quot;fa fa-ellipsis-h&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-share&quot;&gt;&lt;/span&gt;&amp;nbsp;Share&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-pencil&quot;&gt;&lt;/span&gt;&amp;nbsp;Edit&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-archive&quot;&gt;&lt;/span&gt;&amp;nbsp;Archive&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;                        &lt;/div&gt;
+                    &lt;/td&gt;
                 &lt;/tr&gt;
                 &lt;tr&gt;
                     &lt;td&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Digital Marketing Analyst&lt;/a&gt;
                     &lt;br/&gt;&lt;span class=&quot;small&quot;&gt;07/22/15 9:09 AM&lt;/span&gt;&lt;/td&gt;
                     &lt;td&gt;Job&lt;/td&gt;
                     &lt;td&gt;&lt;a href=&quot;#&quot;&gt;10 previews / 2 faves / 1 interested&lt;/a&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Edit&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;div class=&quot;lead-buttons&quot;&gt;
+                            &lt;div class=&quot;btn-group dropup&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                                    &lt;span class=&quot;fa fa-ellipsis-h&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-share&quot;&gt;&lt;/span&gt;&amp;nbsp;Share&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-pencil&quot;&gt;&lt;/span&gt;&amp;nbsp;Edit&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-archive&quot;&gt;&lt;/span&gt;&amp;nbsp;Archive&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;                        &lt;/div&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;main-box clearfix&quot;&gt;
+    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+        &lt;h2&gt;Archives&lt;/h2&gt;
+    &lt;/header&gt;
+
+    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+
+        &lt;div class=&quot;table-responsive&quot;&gt;
+            &lt;table id=&quot;table-activity&quot; class=&quot;table table-hover&quot;&gt;
+                &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Title&lt;/th&gt;
+                    &lt;th&gt;Type&lt;/th&gt;
+                    &lt;th&gt;Stats&lt;/th&gt;
+                    &lt;th&gt;Actions&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;a href=&quot;&quot;&gt;Solve This Hard Problem for Your Summer 2017 Internship&lt;/a&gt;
+                        &lt;br&gt;&lt;span class=&quot;small&quot;&gt;07/22/15 9:10 AM&lt;/span&gt;&lt;/td&gt;
+                    &lt;td&gt;Project&lt;/td&gt;
+                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;7 views / 2 faves&lt;/a&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;div class=&quot;lead-buttons&quot;&gt;
+                            &lt;div class=&quot;btn-group dropup&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                                    &lt;span class=&quot;fa fa-ellipsis-h&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-pencil&quot;&gt;&lt;/span&gt;&amp;nbsp;Edit&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-star&quot;&gt;&lt;/span&gt;&amp;nbsp;Publish&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;                        &lt;/div&gt;
+                    &lt;/td&gt;
                 &lt;/tr&gt;
                 &lt;tr&gt;
-                    &lt;td&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Computer Technician&lt;/a&gt;
-                    &lt;br/&gt;&lt;span class=&quot;small&quot;&gt;07/22/15 9:08 AM&lt;/span&gt;&lt;/td&gt;
-                    &lt;td&gt;Job&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;37 previews / 10 faves / 5 interested&lt;/a&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Edit&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Phlebotomist&lt;/a&gt;
-                    &lt;br /&gt;&lt;span class=&quot;small&quot;&gt;07/22/15 9:07 AM&lt;/span&gt;&lt;/td&gt;
-                    &lt;td&gt;Job&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;0 previews / 0 faves / 0 interested&lt;/a&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Edit&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Dialysis Technician&lt;/a&gt;
-                    &lt;br/&gt;&lt;span class=&quot;small&quot;&gt;07/22/15 9:06 AM&lt;/span&gt;&lt;/td&gt;
-                    &lt;td&gt;Job&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;2 previews / 0 faves / 0 interested&lt;/a&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Edit&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;IT Support Specialist&lt;/a&gt;
-                    &lt;br/&gt;&lt;span class=&quot;small&quot;&gt;07/22/15 9:05 AM&lt;/span&gt;&lt;/td&gt;
-                    &lt;td&gt;Job&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;0 previews / 0 faves / 0 interested&lt;/a&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Edit&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Automotive Mechanic&lt;/a&gt;
-                    &lt;br /&gt;&lt;span class=&quot;small&quot;&gt;07/22/15 9:02 AM&lt;/span&gt;&lt;/td&gt;
-                    &lt;td&gt;Job&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;0 previews / 0 faves / 0 interested&lt;/a&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Edit&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;a href=&quot;&quot;&gt;What It's Like to Work at Amazon.com&lt;/a&gt;
+                        &lt;br/&gt;&lt;span class=&quot;small&quot;&gt;07/22/15 9:09 AM&lt;/span&gt;&lt;/td&gt;
+                    &lt;td&gt;Article&lt;/td&gt;
+                    &lt;td&gt;&lt;a href=&quot;#&quot;&gt;3 views / 0 faves&lt;/a&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;div class=&quot;lead-buttons&quot;&gt;
+                            &lt;div class=&quot;btn-group dropup&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                                    &lt;span class=&quot;fa fa-ellipsis-h&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-pencil&quot;&gt;&lt;/span&gt;&amp;nbsp;Edit&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fa fa-star&quot;&gt;&lt;/span&gt;&amp;nbsp;Publish&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;                        &lt;/div&gt;
+                    &lt;/td&gt;
                 &lt;/tr&gt;
                 &lt;/tbody&gt;
             &lt;/table&gt;
@@ -10763,10 +11026,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1485986091">
+	<script id="pl-js-polyfill-insert-1488914234">
 		(function() {
 			if (self != top) {
-				var cb = '1485986091';
+				var cb = '1488914234';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -10775,10 +11038,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1485986091">
+	<script id="pl-js-insert-1488914234">
 		(function() {
 			if (self != top) {
-				var cb = '1485986091';
+				var cb = '1488914234';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

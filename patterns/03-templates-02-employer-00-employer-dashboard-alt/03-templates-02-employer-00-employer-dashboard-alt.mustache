@@ -1,0 +1,115 @@
+&lt;div id=&quot;theme-wrapper&quot;&gt;
+    {{&gt; organisms-header }}
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div id=&quot;nav-col&quot;&gt;
+                &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
+                    &lt;div id=&quot;col-left-inner&quot; class=&quot;col-left-nano-content&quot;&gt;
+                        {{&gt; molecules-employer-left-nav }}
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;content-wrapper&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12 hidden-lg&quot;&gt;
+
+                                &lt;div class=&quot;margin-bottom-16&quot;&gt;
+
+                                    &lt;!-- Button trigger modal --&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#jump-to-profile-modal&quot;&gt;
+                                        Jump to Profile &lt;span class=&quot;fa fa-user&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;
+
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
+                                        Find Candidates &lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;
+
+                                  {{&gt; organisms-new-message-button }}
+
+                                &lt;/div&gt;
+                                {{&gt; organisms-bdubs-conversation-small }}
+
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-8&quot;&gt;
+                                &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                    &lt;h1&gt;{{title}}&lt;/h1&gt;
+                                &lt;/div&gt;
+
+                                {{&gt; organisms-request-to-dos-e }}
+
+                              {{&gt; organisms-employer-stats-alt }}
+
+                              {{&gt; organisms-cohort-list-employer }}
+
+                                {{&gt; organisms-employer-graphs }}
+
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+
+                                &lt;!-- Button trigger modal --&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg visible-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#jump-to-profile-modal&quot;&gt;
+                                    Jump to Profile &lt;span class=&quot;fa fa-user&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+
+                                &lt;!-- Modal --&gt;
+                                &lt;div class=&quot;modal fade&quot; id=&quot;jump-to-profile-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+                                    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+                                        &lt;div class=&quot;modal-content&quot;&gt;
+                                            &lt;div class=&quot;modal-header&quot;&gt;
+                                                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                                                &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Jump to Profile&lt;/h4&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;modal-body&quot;&gt;
+                                                &lt;form&gt;
+                                                    &lt;div class=&quot;form-group&quot;&gt;
+                                                        &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Name or Email:&lt;/label&gt;
+                                                        &lt;input id=&quot;search&quot; class=&quot;form-control&quot; placeholder=&quot;Name or Email&quot; type=&quot;text&quot; &gt;
+                                                    &lt;/div&gt;
+                                                &lt;/form&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;modal-footer&quot;&gt;
+                                                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                                                &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='{{ link.pages-e-students-browse }}';&quot;&gt;Go&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg visible-lg&quot; onclick=&quot;window.location='{{ link.pages-e-student-playlist }}';&quot;&gt;
+                                    Find Candidates &lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                          &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                            {{&gt; organisms-new-message-button }}
+                          &lt;/div&gt;
+                          &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg visible-lg&quot;&gt;
+                              Create Post &lt;span class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12 hidden&quot;&gt;
+                                {{&gt; molecules-morris-pie-chart }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                {{&gt; organisms-footer }}
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+{{&gt; organisms-peek-student-modal-employer }}
+{{&gt; organisms-create-to-do-modal }}
