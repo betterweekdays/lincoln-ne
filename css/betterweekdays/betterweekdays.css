@@ -60,7 +60,8 @@ blockquote.quote {
 
 #content-wrapper {
   background-color: #F0F0F0;
-  min-height: 900px; }
+  min-height: 900px;
+  margin-left: 0; }
 
 p, ul li, label, .radio label, select {
   font-size: 1.2em;
@@ -107,7 +108,14 @@ p, ul li, label, .radio label, select {
 
 @media (min-width: 992px) {
   .navbar > .container .navbar-brand {
-    background-color: #2b2b2b; } }
+    background-color: white; } }
+
+.navbar-nav {
+  margin: 0 0 0 40px; }
+
+#logo.navbar-brand > img {
+  height: 40px;
+  margin-top: -5px; }
 
 .navbar-toggle {
   padding: 5px 10px; }

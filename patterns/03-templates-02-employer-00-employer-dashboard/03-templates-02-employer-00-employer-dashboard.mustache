@@ -1,20 +1,13 @@
 &lt;div id=&quot;theme-wrapper&quot;&gt;
-    {{&gt; organisms-header }}
+    {{&gt; organisms-header-alt}}
     &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
-            &lt;div id=&quot;nav-col&quot;&gt;
-                &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
-                    &lt;div id=&quot;col-left-inner&quot; class=&quot;col-left-nano-content&quot;&gt;
-                        {{&gt; molecules-employer-left-nav }}
-                    &lt;/div&gt;
-                &lt;/section&gt;
-            &lt;/div&gt;
             &lt;div id=&quot;content-wrapper&quot;&gt;
                 &lt;div class=&quot;row&quot;&gt;
-                    &lt;div class=&quot;col-lg-12&quot;&gt;
+                    &lt;div class=&quot;col-md-10 col-md-offset-2&quot;&gt;
 
                         &lt;div class=&quot;row&quot;&gt;
-                            &lt;div class=&quot;col-lg-12 hidden-lg&quot;&gt;
+                            &lt;div class=&quot;col-md-12 hidden-lg hidden-md&quot;&gt;
 
                                 &lt;div class=&quot;margin-bottom-16&quot;&gt;
 
@@ -23,37 +16,29 @@
                                         Jump to Profile &lt;span class=&quot;fa fa-user&quot;&gt;&lt;/span&gt;
                                     &lt;/button&gt;
 
-                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
-                                        Find Candidates &lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;
-                                    &lt;/button&gt;
-
-                                  {{&gt; organisms-new-message-button }}
-
                                 &lt;/div&gt;
                                 {{&gt; organisms-bdubs-conversation-small }}
 
                             &lt;/div&gt;
                         &lt;/div&gt;
                         &lt;div class=&quot;row&quot;&gt;
-                            &lt;div class=&quot;col-lg-8&quot;&gt;
+                            &lt;div class=&quot;col-md-8&quot;&gt;
                                 &lt;div class=&quot;main-box clearfix&quot;&gt;
                                     &lt;h1&gt;{{title}}&lt;/h1&gt;
                                 &lt;/div&gt;
+
+                                {{&gt; organisms-e-post-link }}
 
                                 {{&gt; organisms-request-to-dos-e }}
 
                               {{&gt; organisms-employer-stats }}
 
-                              {{&gt; organisms-cohort-list-employer }}
-
-                                {{&gt; organisms-employer-graphs }}
-
                             &lt;/div&gt;
 
-                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                            &lt;div class=&quot;col-sm-4 margin-bottom-16&quot;&gt;
 
                                 &lt;!-- Button trigger modal --&gt;
-                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg visible-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#jump-to-profile-modal&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg hidden-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#jump-to-profile-modal&quot;&gt;
                                     Jump to Profile &lt;span class=&quot;fa fa-user&quot;&gt;&lt;/span&gt;
                                 &lt;/button&gt;
 
@@ -80,25 +65,6 @@
                                         &lt;/div&gt;
                                     &lt;/div&gt;
                                 &lt;/div&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
-                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg visible-lg&quot; onclick=&quot;window.location='{{ link.pages-e-student-playlist }}';&quot;&gt;
-                                    Find Candidates &lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;
-                                &lt;/button&gt;
-                            &lt;/div&gt;
-                          &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
-                            {{&gt; organisms-new-message-button }}
-                          &lt;/div&gt;
-                          &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg visible-lg&quot;&gt;
-                              Create Post &lt;span class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/span&gt;
-                            &lt;/button&gt;
-                          &lt;/div&gt;
-                        &lt;/div&gt;
-
-                        &lt;div class=&quot;row&quot;&gt;
-                            &lt;div class=&quot;col-lg-12 hidden&quot;&gt;
-                                {{&gt; molecules-morris-pie-chart }}
                             &lt;/div&gt;
                         &lt;/div&gt;
 

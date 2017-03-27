@@ -7,12 +7,13 @@
         <link rel="stylesheet" type="text/css" href="//centaurus.adbee.technology/css/bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/libs/nanoscroller.css" />
-				<link rel="stylesheet" href="../../css/centaurus/centaurus.css?1488914234" media="all" />
-				<link rel="stylesheet" href="../../css/betterweekdays/betterweekdays.css?1488914234" media="all" />
+				<link rel="stylesheet" href="../../css/centaurus/centaurus.css?1490620242" media="all" />
+				<link rel="stylesheet" href="../../css/betterweekdays/betterweekdays.css?1490620242" media="all" />
 		        <link rel="stylesheet" type="text/css" href="../../css/libs/dataTables.fixedHeader.css">
 		        <link rel="stylesheet" type="text/css" href="../../css/libs/dataTables.tableTools.css">
 		        <link rel="stylesheet" type="text/css" href="../../css/libs/daterangepicker.css">
 		        <link rel="stylesheet" type="text/css" href="../../css/libs/select2.css">
+		        <link rel="stylesheet" type="text/css" href="../../css/libs/morris.css">
         <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
         <!--[if lt IE 9]>
 					<script src="../../js/html5shiv.js"></script>
@@ -26,8 +27,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1488914234" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1488914234" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1490620242" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1490620242" media="all" />
 		
 
 			<!-- End Pattern Lab -->
@@ -38,39 +39,52 @@
     <header class="navbar" id="header-navbar">
         <div class="container">
             <a href="#" id="logo" class="navbar-brand">
-                <img src="../../../img/bw_logo_white.png" alt="" class="normal-logo logo-white">
-                <img src="../../../img/bw_logo_small_white.png" alt="" class="normal-logo">
-                <img src="../../../img/bw_logo_small_white.png" alt="" class="small-logo hidden-xs hidden-sm hidden">
+                <img src="//jobs.thewhether.com/img/blue-wordmark.955697d.svg" alt="" class="normal-logo logo-white">
             </a>
 
             <div class="clearfix">
 
-              <ul class="nav navbar-nav pull-left">
-                <li class="visible-md visible-lg loading-spinner loading-graphic-lg hidden"><img src="../../../img/loading-nav-black.gif" alt="Loading graphic"></li>
-                <li class="hidden-md hidden-lg loading-spinner loading-graphic-sm hidden"><img src="../../../img/loading-nav-white.gif" alt="Loading graphic"></li>
-              </ul>
+                <ul class="nav navbar-nav pull-left">
+                    <li class="visible-md visible-lg loading-spinner loading-graphic-lg hidden"><img src="../../../img/loading-nav-black.gif" alt="Loading graphic"></li>
+                    <li class="hidden-md hidden-lg loading-spinner loading-graphic-sm hidden"><img src="../../../img/loading-nav-white.gif" alt="Loading graphic"></li>
+                </ul>
 
-                <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="fa fa-bars"></span>
-                    <span class="x-small">Menu</span>
-                </button>
-
-                <div class="nav-no-collapse pull-right" id="header-nav">
+                <div class="nav-no-collapse" id="header-nav">
+                    <ul class="nav navbar-nav">
+                            <li class="">
+                                    <a href="/patterns/04-pages-02-employer-e-dashboard/04-pages-02-employer-e-dashboard.html">
+                                        <span>Dashboard</span>
+                                    </a>
+                            </li>
+                            <li class="">
+                                    <a href="/patterns/04-pages-02-employer-e-posts/04-pages-02-employer-e-posts.html">
+                                        <span>Posts</span>
+                                    </a>
+                            </li>
+                            <li class="">
+                                    <a href="/patterns/04-pages-02-employer-e-student-playlist/04-pages-02-employer-e-student-playlist.html">
+                                        <span>Candidates</span>
+                                    </a>
+                            </li>
+                            <li class="">
+                                    <a href="/patterns/04-pages-02-employer-e-messages/04-pages-02-employer-e-messages.html">
+                                        <span>Messages</span>
+                                    </a>
+                            </li>
+                            <li class="">
+                                    <a href="/patterns/04-pages-02-employer-e-reports/04-pages-02-employer-e-reports.html">
+                                        <span>Reports</span>
+                                    </a>
+                            </li>
+                            <li class="">
+                                    <a href="/patterns/04-pages-02-employer-e-profile/04-pages-02-employer-e-profile.html">
+                                        <span>Profile</span>
+                                    </a>
+                            </li>
+                    </ul>
                     <ul class="nav navbar-nav pull-right">
                         <li class="dropdown">
-                            <a href="#"><span>My Organization</span></a>
-                        </li>
-                        <li class="dropdown profile-dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="hidden-xs">john@email.com</span> <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#"><i class="fa fa-user"></i>Profile</a></li>
-                                <li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o"></i>Messages</a></li>
-                                <li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
-                            </ul>
+                            <a href="#"><i class="fa fa-power-off"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -80,66 +94,9 @@
     <!-- End .header -->
     <div id="page-wrapper" class="container">
         <div class="row">
-            <div id="nav-col">
-                <section id="col-left" class="col-left-nano">
-                    <div id="col-left-inner" class="col-left-nano-content">
-                        <div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">
-                            <ul class="nav nav-pills nav-stacked">
-                                    <li class="">
-                                        <a href="/patterns/04-pages-02-employer-e-dashboard/04-pages-02-employer-e-dashboard.html">
-                                            <i class="fa fa-dashboard"></i>
-                                            <span>Dashboard</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="/patterns/04-pages-02-employer-e-company-landing-new/04-pages-02-employer-e-company-landing-new.html">
-                                            <i class="fa fa-building"></i>
-                                            <span>Company</span>
-                                        </a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="/patterns/04-pages-02-employer-e-posts/04-pages-02-employer-e-posts.html">
-                                            <i class="fa fa-thumb-tack"></i>
-                                            <span>Posts</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="/patterns/04-pages-02-employer-e-student-playlist/04-pages-02-employer-e-student-playlist.html">
-                                            <i class="fa fa-users"></i>
-                                            <span>Candidates</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="/patterns/04-pages-02-employer-e-messages/04-pages-02-employer-e-messages.html">
-                                            <i class="fa fa-send"></i>
-                                            <span>Messages</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="/patterns/04-pages-02-employer-e-reports/04-pages-02-employer-e-reports.html">
-                                            <i class="fa fa-list"></i>
-                                            <span>Reports</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="/patterns/04-pages-02-employer-e-profile/04-pages-02-employer-e-profile.html">
-                                            <i class="fa fa-user"></i>
-                                            <span>Profile</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="/patterns/04-pages-05-landing-l-login/04-pages-05-landing-l-login.html">
-                                            <i class="fa fa-power-off"></i>
-                                            <span>Logout</span>
-                                        </a>
-                                    </li>
-                            </ul>
-                        </div>                    </div>
-                </section>
-            </div>
             <div id="content-wrapper">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-md-10 col-md-offset-2">
 
                         <div class="row hidden-lg margin-bottom-16">
                             <div class="col-xs-4">
@@ -151,8 +108,67 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-8">
-                                <div class="main-box clearfix">
+                            <div class="col-md-8">
+                                <!-- Begin horrible hack to display graphs on this page. Do not replicate this! Not enough time to properly debug... -->
+
+                                <div class="graph" id="graph-line-1" style="display:none;">
+                                  <div class="morris-hover morris-default-style" style="display: none;">
+                                  </div> 
+                                </div> 
+                                <div class="graph" id="graph-line-2" style="display:none;">
+                                  <div class="morris-hover morris-default-style" style="display: none;">
+                                  </div> 
+                                </div> 
+                                <div class="graph" id="graph-line-3" style="display:none;">
+                                  <div class="morris-hover morris-default-style" style="display: none;">
+                                  </div> 
+                                </div> 
+                                <div class="graph" id="graph-line-4" style="display:none;">
+                                  <div class="morris-hover morris-default-style" style="display: none;">
+                                  </div> 
+                                </div> 
+                                <div class="graph" id="graph-line-5" style="display:none;">
+                                  <div class="morris-hover morris-default-style" style="display: none;">
+                                  </div> 
+                                </div> 
+                                <div class="graph" id="graph-line-6" style="display:none;">
+                                  <div class="morris-hover morris-default-style" style="display: none;">
+                                  </div>
+                                </div>
+                                <!-- End hack. -->
+
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="main-box">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                          <div class="graph-box">
+                                            <h2>Company Views by Students</h2>
+                                            <div class="graph" id="graph-line-7">
+                                              <div class="morris-hover morris-default-style" style="display: none;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="main-box">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                          <div class="graph-box">
+                                            <h2 class="orange">Job Views by Students</h2>
+                                            <div class="graph" id="graph-line-8" style="max-height: 335px; position: relative;">
+                                              <div class="morris-hover morris-default-style" style="display: none;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>                                <div class="main-box clearfix">
                                     <header class="main-box-header clearfix">
                                         <h2>Posts</h2>
                                     </header>
@@ -170,6 +186,26 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
+                                                <tr>
+                                                    <td><a href="../../patterns/04-pages-02-employer-e-company-landing-new/04-pages-02-employer-e-company-landing-new.html">World Wide Technology</a>
+                                                        <br><span class="small">07/22/15 9:10 AM</span></td>
+                                                    <td>Company</td>
+                                                    <td><a href="#">7 views / 2 faves</a></td>
+                                                    <td>
+                                                        <div class="lead-buttons">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="fa fa-ellipsis-h"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="fa fa-share"></span>&nbsp;Share</a></li>
+                                    <li><a href="#"><span class="fa fa-pencil"></span>&nbsp;Edit</a></li>
+                                    <li><a href="#"><span class="fa fa-archive"></span>&nbsp;Archive</a></li>
+                                </ul>
+                            </div>                                                        </div>
+                                                    </td>
+                                                </tr>
                                                 <tr>
                                                     <td><a href="">Solve This Hard Problem for Your Summer 2017 Internship</a>
                                                     <br><span class="small">07/22/15 9:10 AM</span></td>
@@ -332,12 +368,24 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-lg-12 hidden">
+                                <div class="main-box">
+                                    <header class="main-box-header clearfix">
+                                        <h2>Overall</h2>
+                                    </header>
+
+                                    <div class="main-box-body clearfix">
+                                        <div id="hero-donut"></div>
+                                    </div>
+                                </div>                            </div>
+                        </div>
                     </div>
 
                     <!-- Begin Footer -->
                     <footer id="footer-bar" class="row">
                         <p id="footer-copyright" class="col-xs-12">
-                            &copy; 2015 <a href="http://www.betterweekdays.com/" target="_blank">Better Weekdays</a>. All rights reserved.
+                            My Organization&nbsp;|&nbsp;&copy; 2015 <a href="http://www.betterweekdays.com/" target="_blank">Better Weekdays</a>. All rights reserved.
                         </p>
                     </footer>
                     <!-- End Footer -->                </div>
@@ -452,7 +500,7 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "pages-e-posts";
-		var lineage        = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"},{"lineagePattern":"molecules-employer-left-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-employer-left-nav\/01-molecules-05-navigation-05-employer-left-nav.html"},{"lineagePattern":"organisms-post-content-list","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-55-post-content-list\/02-organisms-03-sections-55-post-content-list.html"},{"lineagePattern":"organisms-post-wizard-button","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-49-post-wizard-button\/02-organisms-03-sections-49-post-wizard-button.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"},{"lineagePattern":"organisms-post-wizard-modal","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-48-post-wizard-modal\/02-organisms-03-sections-48-post-wizard-modal.html"}];
+		var lineage        = [{"lineagePattern":"organisms-employer-graphs","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-54-employer-graphs\/02-organisms-03-sections-54-employer-graphs.html"},{"lineagePattern":"organisms-post-content-list","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-55-post-content-list\/02-organisms-03-sections-55-post-content-list.html"},{"lineagePattern":"organisms-post-wizard-button","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-49-post-wizard-button\/02-organisms-03-sections-49-post-wizard-button.html"},{"lineagePattern":"molecules-morris-pie-chart","lineagePath":"..\/..\/patterns\/01-molecules-06-components-05-morris-pie-chart\/01-molecules-06-components-05-morris-pie-chart.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"},{"lineagePattern":"organisms-post-wizard-modal","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-48-post-wizard-modal\/02-organisms-03-sections-48-post-wizard-modal.html"}];
 		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;
@@ -489,10 +537,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1488914234">
+	<script id="pl-js-polyfill-insert-1490620242">
 		(function() {
 			if (self != top) {
-				var cb = '1488914234';
+				var cb = '1490620242';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -501,10 +549,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1488914234">
+	<script id="pl-js-insert-1490620242">
 		(function() {
 			if (self != top) {
-				var cb = '1488914234';
+				var cb = '1490620242';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
@@ -547,6 +595,9 @@
     <script src="../../js/moment.js"></script>
 
 
+    <script src="../../js/jquery.knob.js"></script>
+    <script src="../../js/raphael-min.js"></script>
+    <script src="../../js/morris.js"></script>
 
 
 <!-- theme scripts -->
@@ -681,6 +732,378 @@ $('.nav li a').click(function(e) {
     </script>
 
 
+    <script>
+        $(function($) {
+            graphDonut = Morris.Donut({
+                element: 'hero-donut',
+                data: [
+                    { label: "Has Password",  value: 20},
+                    { label: "Job Preferences",  value: 36},
+                    { label: "Resume Uploaded",  value: 10},
+                    { label: "Job Matches",  value: 17},
+                    { label: "Viewed Job",  value: 20},
+                    { label: "Applied to Job",  value: 14}
+                ],
+                colors: ['#f1c40f', '#9b59b6', '#3498db', '#2ecc71', '#e74c3c', '#95a5a6'],
+                formatter: function (y) { return y + "%" },
+                resize: true
+            });
+
+            graphLine = Morris.Line({
+                element: 'graph-line-1',
+                data: [
+                    {date: '2016-01-01', campus: 0, program: 0},
+                    {date: '2016-01-02', campus: 5, program: 4},
+                    {date: '2016-01-03', campus: 10, program: 8},
+                    {date: '2016-01-04', campus: 15, program: 12},
+                    {date: '2016-01-05', campus: 25, program: 16},
+                    {date: '2016-01-06', campus: 50, program: 22},
+                    {date: '2016-01-07', campus: 75, program: 30},
+                    {date: '2016-01-08', campus: 100, program: 38}
+                ],
+                xkey: 'date',
+                ykeys: ['campus', 'program'],
+                xLabelFormat: function(date) {
+                    return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
+                },
+                labels: ['% of St. Louis Campus Students', '% of Medical Assistant Degree Program Students'],
+                lineColors: ['#0691F9','#F7941E'],
+                lineWidth: 2,
+                pointSize: 3,
+                hideHover: 'auto',
+                gridTextColor: '#555',
+                gridLineColor: '#ccc',
+                resize: true,
+                dateFormat: function(date) {
+                    d = new Date(date);
+                    return (d.getMonth()+1)+'/'+d.getDate()+'/'+d.getFullYear();
+                }
+            });
+
+            graphLine2 = Morris.Line({
+                element: 'graph-line-2',
+                data: [
+                    {date: '2016-01-01', campus: 0, program: 0},
+                    {date: '2016-01-07', campus: -5, program: 1},
+                    {date: '2016-01-14', campus: 5, program: -5},
+                    {date: '2016-01-21', campus: -10, program: 10},
+                    {date: '2016-01-28', campus: 25, program: 10}
+                ],
+                xkey: 'date',
+                ykeys: ['campus', 'program'],
+                xLabelFormat: function(date) {
+                    return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
+                },
+                labels: ['%Δ of St. Louis Campus Students', '%Δ of Medical Assistant Degree Program Students'],
+
+                lineColors: ['#0691F9','#F7941E'],
+                lineWidth: 2,
+                pointSize: 3,
+                hideHover: 'auto',
+                gridTextColor: '#555',
+                gridLineColor: '#ccc',
+                resize: true,
+                dateFormat: function(date) {
+                    d = new Date(date);
+                    return (d.getMonth()+1)+'/'+d.getDate()+'/'+d.getFullYear();
+                }
+            });
+
+            graphLine3 = Morris.Line({
+                element: 'graph-line-3',
+                data: [
+                    {date: '2016-01-01', campus: 155, program: 125},
+                    {date: '2016-01-02', campus: 199, program: 166},
+                    {date: '2016-01-03', campus: 115, program: 120},
+                    {date: '2016-01-04', campus: 176, program: 140},
+                    {date: '2016-01-05', campus: 173, program: 160},
+                    {date: '2016-01-06', campus: 115, program: 190},
+                    {date: '2016-01-07', campus: 140, program: 180},
+                    {date: '2016-01-08', campus: 190, program: 140}
+                ],
+                xkey: 'date',
+                ykeys: ['campus', 'program'],
+                xLabelFormat: function(date) {
+                    return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
+                },
+                labels: ['Campus Students', 'Degree Program Students'],
+                lineColors: ['#e74c3c','#9b59b6'],
+                lineWidth: 2,
+                pointSize: 3,
+                hideHover: 'auto',
+                gridTextColor: '#555',
+                gridLineColor: '#ccc',
+                resize: true,
+                dateFormat: function(date) {
+                    d = new Date(date);
+                    return (d.getMonth()+1)+'/'+d.getDate()+'/'+d.getFullYear();
+                }
+            });
+
+            // Redraw graph for tabs
+            $('ul.nav a').on('shown.bs.tab', function (e) {
+                graphLine3.redraw();
+            });
+
+            graphLine4 = Morris.Line({
+                element: 'graph-line-4',
+                data: [
+                    {date: '2016-01-01', campus: 0, program: 0},
+                    {date: '2016-01-07', campus: 10, program: -10},
+                    {date: '2016-01-14', campus: -5, program: 0},
+                    {date: '2016-01-21', campus: 15, program: 15},
+                    {date: '2016-01-28', campus: 25, program: 20}
+                ],
+                xkey: 'date',
+                ykeys: ['campus', 'program'],
+                xLabelFormat: function(date) {
+                    return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
+                },
+                labels: ['%Δ Campus Students', '%Δ Degree Program Students'],
+                lineColors: ['#e74c3c','#9b59b6'],
+                lineWidth: 2,
+                pointSize: 3,
+                hideHover: 'auto',
+                gridTextColor: '#555',
+                gridLineColor: '#ccc',
+                resize: true,
+                dateFormat: function(date) {
+                    d = new Date(date);
+                    return (d.getMonth()+1)+'/'+d.getDate()+'/'+d.getFullYear();
+                }
+            });
+
+            // Redraw graph for tabs
+            $('ul.nav a').on('shown.bs.tab', function (e) {
+                graphLine4.redraw();
+            });
+
+            graphLine5 = Morris.Line({
+                element: 'graph-line-5',
+                data: [
+                    {date: '2016-01-01', small: 50, middle: 100, enterprise: 150},
+                    {date: '2016-01-07', small: 75, middle: 150, enterprise: 215},
+                    {date: '2016-01-14', small: 15, middle: 130, enterprise: 250},
+                    {date: '2016-01-21', small: 12, middle: 160, enterprise: 150},
+                    {date: '2016-01-28', small: 75, middle: 135, enterprise: 175}
+                ],
+                xkey: 'date',
+                ykeys: ['small', 'middle', 'enterprise'],
+                xLabelFormat: function(date) {
+                    return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
+                },
+                labels: ['Small Business', 'Mid-Sized Business', 'Enterprise Business'],
+                lineColors: ['#e74c3c','#9b59b6', '#F7941E'],
+                lineWidth: 2,
+                pointSize: 3,
+                hideHover: 'auto',
+                gridTextColor: '#555',
+                gridLineColor: '#ccc',
+                resize: true,
+                dateFormat: function(date) {
+                    d = new Date(date);
+                    return (d.getMonth()+1)+'/'+d.getDate()+'/'+d.getFullYear();
+                }
+            });
+
+            // Redraw graph for tabs
+            $('ul.nav a').on('shown.bs.tab', function (e) {
+                graphLine5.redraw();
+            });
+
+            graphLine6 = Morris.Line({
+                element: 'graph-line-6',
+                data: [
+                    {date: '2016-01-01', small: 5, middle: 0, enterprise: 15},
+                    {date: '2016-01-07', small: -5, middle: 15, enterprise: 20},
+                    {date: '2016-01-14', small: 15, middle: 20, enterprise: 0},
+                    {date: '2016-01-21', small: 0, middle: 15, enterprise: 5},
+                    {date: '2016-01-28', small: 25, middle: -20, enterprise: -5}
+                ],
+                xkey: 'date',
+                ykeys: ['small', 'middle', 'enterprise'],
+                xLabelFormat: function(date) {
+                    return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
+                },
+                labels: ['%Δ Small Business', '%Δ Mid-Sized Business', '%Δ Enterprise Business'],
+                lineColors: ['#e74c3c','#9b59b6', '#F7941E'],
+                lineWidth: 2,
+                pointSize: 3,
+                hideHover: 'auto',
+                gridTextColor: '#555',
+                gridLineColor: '#ccc',
+                resize: true,
+                dateFormat: function(date) {
+                    d = new Date(date);
+                    return (d.getMonth()+1)+'/'+d.getDate()+'/'+d.getFullYear();
+                }
+            });
+
+            // Redraw graph for tabs
+            $('ul.nav a').on('shown.bs.tab', function (e) {
+                graphLine6.redraw();
+            });
+
+            graphLine7 = Morris.Line({
+                element: 'graph-line-7',
+                data: [
+                    {date: '2016-01-01', campus: 10, program: 80},
+                    {date: '2016-01-02', campus: 50, program: 50},
+                    {date: '2016-01-03', campus: 30, program: 120},
+                    {date: '2016-01-04', campus: 78, program: 140},
+                    {date: '2016-01-05', campus: 130, program: 160},
+                    {date: '2016-01-06', campus: 100, program: 190},
+                    {date: '2016-01-07', campus: 128, program: 180},
+                    {date: '2016-01-08', campus: 150, program: 190}
+                ],
+                xkey: 'date',
+                ykeys: ['campus', 'program'],
+                xLabelFormat: function(date) {
+                    return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
+                },
+                labels: ['# of Students from St. Louis Campus', '# of Students from Chicago Campus'],
+                lineColors: ['#0691F9','#F7941E'],
+                lineWidth: 2,
+                pointSize: 3,
+                hideHover: 'auto',
+                gridTextColor: '#555',
+                gridLineColor: '#ccc',
+                resize: true,
+                dateFormat: function(date) {
+                    d = new Date(date);
+                    return (d.getMonth()+1)+'/'+d.getDate()+'/'+d.getFullYear();
+                }
+            });
+
+            // Redraw graph for tabs
+            $('ul.nav a').on('shown.bs.tab', function (e) {
+                graphLine7.redraw();
+            });
+
+            graphLine8 = Morris.Line({
+                element: 'graph-line-8',
+                data: [
+                    {date: '2016-01-01', campus: 155, program: 125},
+                    {date: '2016-01-02', campus: 199, program: 166},
+                    {date: '2016-01-03', campus: 115, program: 120},
+                    {date: '2016-01-04', campus: 176, program: 140},
+                    {date: '2016-01-05', campus: 173, program: 160},
+                    {date: '2016-01-06', campus: 115, program: 190},
+                    {date: '2016-01-07', campus: 140, program: 180},
+                    {date: '2016-01-08', campus: 190, program: 140}
+                ],
+                xkey: 'date',
+                ykeys: ['campus', 'program'],
+                xLabelFormat: function(date) {
+                    return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
+                },
+                labels: ['# of Students from St. Louis Campus', '# of Students from Chicago Campus'],
+                lineColors: ['#0691F9','#F7941E'],
+                lineWidth: 2,
+                pointSize: 3,
+                hideHover: 'auto',
+                gridTextColor: '#555',
+                gridLineColor: '#ccc',
+                resize: true,
+                dateFormat: function(date) {
+                    d = new Date(date);
+                    return (d.getMonth()+1)+'/'+d.getDate()+'/'+d.getFullYear();
+                }
+            });
+
+            // Redraw graph for tabs
+            $('ul.nav a').on('shown.bs.tab', function (e) {
+                graphLine8.redraw();
+            });
+
+            /* KNOB CHART LIBRARY */
+
+            $(".knob").knob({
+                change : function (value) {
+                    //console.log("change : " + value);
+                },
+                release : function (value) {
+                    //console.log(this.$.attr('value'));
+                    console.log("release : " + value);
+                },
+                cancel : function () {
+                    console.log("cancel : ", this);
+                },
+                draw : function () {
+
+                    // "tron" case
+                    if(this.$.data('skin') == 'tron') {
+
+                        var a = this.angle(this.cv)  // Angle
+                                , sa = this.startAngle		  // Previous start angle
+                                , sat = this.startAngle		 // Start angle
+                                , ea							// Previous end angle
+                                , eat = sat + a				 // End angle
+                                , r = 1;
+
+                        this.g.lineWidth = this.lineWidth;
+
+                        this.o.cursor
+                        && (sat = eat - 0.3)
+                        && (eat = eat + 0.3);
+
+                        if (this.o.displayPrevious) {
+                            ea = this.startAngle + this.angle(this.v);
+                            this.o.cursor
+                            && (sa = ea - 0.3)
+                            && (ea = ea + 0.3);
+                            this.g.beginPath();
+                            this.g.strokeStyle = this.pColor;
+                            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
+                            this.g.stroke();
+                        }
+
+                        this.g.beginPath();
+                        this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
+                        this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
+                        this.g.stroke();
+
+                        this.g.lineWidth = 2;
+                        this.g.beginPath();
+                        this.g.strokeStyle = this.o.fgColor;
+                        this.g.arc( this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                        this.g.stroke();
+
+                        return false;
+                    }
+                }
+            });
+
+            // Example of infinite knob, iPod click wheel
+            var v, up=0,down=0,i=0
+                    ,$idir = $("div.idir")
+                    ,$ival = $("div.ival")
+                    ,incr = function() { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
+                    ,decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
+
+            $("input.infinite").knob({
+                min : 0
+                , max : 20
+                , stopper : false
+                , change : function () {
+                    if(v > this.cv){
+                        if(up){
+                            decr();
+                            up=0;
+                        }else{up=1;down=0;}
+                    } else {
+                        if(v < this.cv){
+                            if(down){
+                                incr();
+                                down=0;
+                            }else{down=1;up=0;}
+                        }
+                    }
+                    v = this.cv;
+                }
+            });
+        });
+    </script>
     <script src="../../js/multi-step-modal.js"></script>
 
 </body>

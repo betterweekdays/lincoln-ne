@@ -1,17 +1,10 @@
 &lt;div id=&quot;theme-wrapper&quot; class=&quot;messages-home&quot;&gt;
-    {{&gt; organisms-header }}
+    {{&gt; organisms-header-alt}}
     &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
-            &lt;div id=&quot;nav-col&quot;&gt;
-                &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
-                    &lt;div id=&quot;col-left-inner&quot; class=&quot;col-left-nano-content&quot;&gt;
-                        {{&gt; molecules-employer-left-nav }}
-                    &lt;/div&gt;
-                &lt;/section&gt;
-            &lt;/div&gt;
             &lt;div id=&quot;content-wrapper&quot;&gt;
                 &lt;div class=&quot;row&quot;&gt;
-                    &lt;div class=&quot;col-lg-12&quot;&gt;
+                    &lt;div class=&quot;col-md-10 col-md-offset-2&quot;&gt;
 
                         &lt;div class=&quot;row hidden-lg margin-bottom-16&quot;&gt;
                             {{&gt; organisms-new-message-button }}
@@ -22,6 +15,41 @@
                         &lt;/div&gt;
 
                         &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-8&quot;&gt;
+                                &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                        &lt;h2&gt;Message&lt;/h2&gt;
+                                    &lt;/header&gt;
+                                    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                        &lt;p&gt;{{&gt; molecules-single-browse-student }}&lt;/p&gt;
+                                        &lt;hr&gt;
+                                        &lt;div class=&quot;form-group clearfix&quot;&gt;
+                                            &lt;p&gt;Kickstart:&lt;/p&gt;
+                                            &lt;div class=&quot;col-md-4&quot;&gt;
+                                                &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Say hello and send encouragement&lt;/a&gt;&lt;/p&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;col-md-4&quot;&gt;
+                                                &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Ask questions about interests&lt;/a&gt;&lt;/p&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;col-md-4&quot;&gt;
+                                                &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Recommend an article&lt;/a&gt;&lt;/p&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;hr&gt;
+                                        &lt;form role=&quot;form&quot;&gt;
+                                            &lt;div class=&quot;form-group&quot;&gt;
+                                                &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea&quot; rows=&quot;8&quot; placeholder=&quot;Your positive and informative message goes here.&quot;&gt;&lt;/textarea&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;form-group&quot;&gt;
+                                                &lt;button class=&quot;btn btn-success&quot;&gt;Send&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/form&gt;
+                                        &lt;div class=&quot;pre-scrollable&quot;&gt;
+                                            {{&gt; organisms-messages-list-employer }}
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
                             &lt;div class=&quot;col-lg-4&quot;&gt;
                                 &lt;div class=&quot;main-box clearfix&quot;&gt;
                                     &lt;header class=&quot;main-box-header clearfix&quot;&gt;
@@ -87,41 +115,6 @@
                                                 &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
                                             &lt;/li&gt;
                                         &lt;/ul&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&quot;col-lg-8&quot;&gt;
-                                &lt;div class=&quot;main-box clearfix&quot;&gt;
-                                    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
-                                        &lt;h2&gt;Message&lt;/h2&gt;
-                                    &lt;/header&gt;
-                                    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
-                                        &lt;p&gt;{{&gt; molecules-single-browse-student }}&lt;/p&gt;
-                                        &lt;hr&gt;
-                                        &lt;div class=&quot;form-group clearfix&quot;&gt;
-                                            &lt;p&gt;Kickstart:&lt;/p&gt;
-                                            &lt;div class=&quot;col-md-4&quot;&gt;
-                                                &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Say hello and send encouragement&lt;/a&gt;&lt;/p&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class=&quot;col-md-4&quot;&gt;
-                                                &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Ask questions about interests&lt;/a&gt;&lt;/p&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class=&quot;col-md-4&quot;&gt;
-                                                &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Recommend an article&lt;/a&gt;&lt;/p&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                        &lt;hr&gt;
-                                        &lt;form role=&quot;form&quot;&gt;
-                                            &lt;div class=&quot;form-group&quot;&gt;
-                                                &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea&quot; rows=&quot;8&quot; placeholder=&quot;Your positive and informative message goes here.&quot;&gt;&lt;/textarea&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class=&quot;form-group&quot;&gt;
-                                                &lt;button class=&quot;btn btn-success&quot;&gt;Send&lt;/button&gt;
-                                            &lt;/div&gt;
-                                        &lt;/form&gt;
-                                        &lt;div class=&quot;pre-scrollable&quot;&gt;
-                                            {{&gt; organisms-messages-list-employer }}
-                                        &lt;/div&gt;
                                     &lt;/div&gt;
                                 &lt;/div&gt;
                             &lt;/div&gt;

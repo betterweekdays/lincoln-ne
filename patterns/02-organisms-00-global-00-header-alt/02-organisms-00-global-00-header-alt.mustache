@@ -1,0 +1,85 @@
+&lt;!-- Begin .header --&gt;
+&lt;header class=&quot;navbar&quot; id=&quot;header-navbar&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;a href=&quot;#&quot; id=&quot;logo&quot; class=&quot;navbar-brand&quot;&gt;
+            &lt;img src=&quot;//jobs.thewhether.com/img/blue-wordmark.955697d.svg&quot; alt=&quot;&quot; class=&quot;normal-logo logo-white&quot;&gt;
+        &lt;/a&gt;
+
+        &lt;div class=&quot;clearfix&quot;&gt;
+
+            &lt;ul class=&quot;nav navbar-nav pull-left&quot;&gt;
+                &lt;li class=&quot;visible-md visible-lg loading-spinner loading-graphic-lg hidden&quot;&gt;&lt;img src=&quot;../../../img/loading-nav-black.gif&quot; alt=&quot;Loading graphic&quot;&gt;&lt;/li&gt;
+                &lt;li class=&quot;hidden-md hidden-lg loading-spinner loading-graphic-sm hidden&quot;&gt;&lt;img src=&quot;../../../img/loading-nav-white.gif&quot; alt=&quot;Loading graphic&quot;&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;div class=&quot;nav-no-collapse&quot; id=&quot;header-nav&quot;&gt;
+                &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                    {{# employer-nav-items }}
+                        &lt;li class=&quot;{{ class }}&quot;&gt;
+                            {{# link}}
+                                &lt;a href=&quot;{{ link }}&quot;&gt;
+                                    &lt;span&gt;{{ title }}&lt;/span&gt;
+                                &lt;/a&gt;
+                            {{/link}}
+                            {{^ link}}
+                                &lt;i class=&quot;fa {{ icon }}&quot;&gt;&lt;/i&gt;
+                                &lt;span&gt;{{ title }}&lt;/span&gt;
+                            {{/link}}
+                        &lt;/li&gt;
+                    {{/ employer-nav-items }}
+                    {{# jobseeker }}
+                    &lt;li class=&quot;dropdown&quot;&gt;
+                        &lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+                            &lt;i class=&quot;fa fa-bell-o&quot;&gt;&lt;/i&gt;
+                            &lt;span class=&quot;count&quot;&gt;4&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;ul class=&quot;dropdown-menu notifications-list&quot;&gt;
+                            &lt;li class=&quot;pointer&quot;&gt;
+                                &lt;div class=&quot;pointer-inner&quot;&gt;
+                                    &lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;item-header&quot;&gt;You have 4 new matches&lt;/li&gt;
+                            &lt;li class=&quot;item&quot;&gt;
+                                &lt;a href=&quot;#&quot;&gt;
+                                    &lt;span class=&quot;content&quot;&gt;Certified Medical Assistant : Veterans Affairs Hospital : Chicago, IL&lt;/span&gt;
+                                    &lt;span class=&quot;time&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;1 day ago&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;item&quot;&gt;
+                                &lt;a href=&quot;#&quot;&gt;
+                                    &lt;span class=&quot;content&quot;&gt;&lt;strong&gt;Medical Assistant&lt;/strong&gt; | BJC Healthcare | St. Louis, IL&lt;/span&gt;
+                                    &lt;span class=&quot;time&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;1 day ago&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;item&quot;&gt;
+                                &lt;a href=&quot;#&quot;&gt;
+                                    &lt;span class=&quot;content&quot;&gt;Medical Assistant - Veterans Affairs Regional Hospital - Peoria, IL&lt;/span&gt;
+                                    &lt;span class=&quot;time&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;3 days ago&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;item&quot;&gt;
+                                &lt;a href=&quot;#&quot;&gt;
+                                    &lt;span class=&quot;content&quot;&gt;Certified Medical Assistant - Veterans Affairs - Bloomington, IL&lt;/span&gt;
+                                    &lt;span class=&quot;time&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;1 day ago&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;item-footer&quot;&gt;
+                                &lt;a href=&quot;#&quot;&gt;
+                                    View all matches
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    {{/jobseeker}}
+                &lt;/ul&gt;
+                &lt;ul class=&quot;nav navbar-nav pull-right&quot;&gt;
+                    &lt;li class=&quot;dropdown&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-power-off&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+&lt;!-- End .header --&gt;
